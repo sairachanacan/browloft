@@ -138,17 +138,52 @@
   .header-upper .logo-box{
     position: relative;
     top: 0px;
-    padding: 15px 0px 25px 0px;
-    text-align: center;
-    margin: 0 auto;
+    padding: 15px 0px 15px 0px;
+    text-align: left;
+    margin: 0px;
+    max-width: 260px;
+    width: auto;
+    margin-right: auto;
+  }
+
+  .header-upper .upper-inner{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
   }
 
   .header-upper{
-    padding-left: 0px;
+    padding: 0px;
+    height: 80px;
+    position: relative;
+  }
+
+  .header-lower{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    height: 100%;
+    width: auto;
+  }
+
+  .main-header .outer-box{
+    justify-content: flex-end;
+    height: 100%;
+    margin-top:20px;
+  }
+
+  .main-header .menu-area{
+    justify-content: flex-end;
+    height: 100%;
   }
 
   .main-header .menu-right-content{
-    margin-top: 25px;
+    margin-top: 0px;
+  }
+
+  .menu-area .mobile-nav-toggler{
+    margin: 0px;
+    padding: 0px 0px 0px 10px;
   }
 
   .mobile-menu .navigation li .megamenu ul li:first-child{
@@ -156,8 +191,8 @@
   }
 
   .banner-carousel .content-box .title-text{
-    font-size: 120px;
-    line-height: 120px;
+    font-size: 60px;
+    line-height: 70px;
   }
 
   #content_block_3 .content-box{
@@ -299,7 +334,31 @@
   }
 
   .banner-carousel .slide-item{
-    padding: 140px 0px 150px 0px;
+    padding: 300px 0px 150px 0px;
+  }
+
+  .banner-carousel .slide-item .image-layer{
+    display: block;
+  }
+
+  .banner-carousel .content-box{
+    /* text-align: center; */
+  }
+
+  .banner-carousel .content-box .title-text{
+    font-size: 30px;
+    line-height: 40px;
+    margin-top: 20px;
+    margin-bottom: 6px;
+  }
+
+  .banner-carousel .content-box .btn-box{
+    opacity: 1;
+    transform: none;
+  }
+
+  .banner-image-mobile{
+    display: none;
   }
 
   .sidebar-page-container .pagination-wrapper{
@@ -863,8 +922,8 @@
   }
 
   .banner-carousel .content-box .title-text{
-    font-size: 60px;
-    line-height: 60px;
+    font-size: 32px;
+    line-height: 38px;
   }
 
   .team-block-one .inner-box .image-box .signature{
@@ -885,7 +944,7 @@
   }
 
   .banner-carousel .content-box .btn-box .theme-btn-one{
-    padding: 23.5px 30px;
+    padding: 15px 50px;
   }
 
   .news-block-one .inner-box .lower-content{
