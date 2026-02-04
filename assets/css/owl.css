@@ -238,16 +238,16 @@
   opacity: 0.5;
 }
 .owl-theme .owl-dots .owl-dot {
-    display: inline-block;
+    /* display: inline-block; */
 }
 .owl-theme .owl-dots .owl-dot span {
   background: #222;
   display: block;
   margin: 0px 5px 0px 5px;
   transition: opacity 200ms ease 0s;
-  width: 15px;
-  height: 15px;
+  /* width: 15px;
+  height: 15px; */
 }
-.owl-theme .owl-dots .owl-dot.active span {
+/* .owl-theme .owl-dots .owl-dot.active span {
   background: none repeat scroll 0 0 #cda274;
-}
+} */
