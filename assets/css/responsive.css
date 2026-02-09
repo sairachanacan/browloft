@@ -41,6 +41,7 @@
 
   .appointment-section .content-box{
     margin-right: 0px;
+    /* margin-top: 0px; */
   }
 
   .features-style-two .inner-container .single-item .inner-box{
@@ -331,7 +332,7 @@
 @media only screen and (max-width: 767px){
 
   .sec-pad{
-    padding: 70px 0px !important;
+    padding: 70px 40px !important;
   }
 
   .banner-carousel .slide-item{
@@ -407,7 +408,7 @@
   }
 
   .service-section{
-    padding: 30px 0px 120px 0px;
+    padding: 30px 0px 50px 0px;
   }
 
   .sec-title{
@@ -415,17 +416,18 @@
   }
 
   .service-style-two{
-    padding: 65px 0px 70px 0px;
+    padding: 50px 30px 50px 30px;
   }
 
   #content_block_5 .content-box h2{
     font-size: 36px;
     line-height: 45px;
+    text-align: center;
   }
 
   .service-style-two #content_block_5 .content-box{
     margin-right: 0px;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
   }
 
   .team-block-one{
@@ -480,8 +482,10 @@
   }
 
   .appointment-section .content-box .upper-inner h2{
-    font-size: 36px;
+    font-size: 26px;
     line-height: 45px;
+    margin-top: 0px !important;
+    text-align: center;
   }
 
   .appointment-section .content-box .upper-inner{
@@ -498,7 +502,7 @@
   }
 
   .footer-top{
-    padding: 70px 0px 40px 0px;
+    padding: 50px 30px 50px 30px;
   }
 
   .footer-top .pattern-layer{
@@ -751,6 +755,12 @@
     text-align: center;
   }
 
+  .footer-top .footer-social{
+    float: left !important;
+    display: block;
+    text-align: left;
+  }
+
   .rtl .header-upper .social-links,
   .rtl .header-upper .info-box{
     float: none;
@@ -889,9 +899,10 @@
   }
 
   .page-title .title-box .title-text{
-    font-size: 60px;
-    line-height: 60px;
+    font-size: 35px;
+    line-height: 85px;
     top: -10px;
+    color:#bfbfbf;
   }
 
   .service-sidebar .sidebar-support{

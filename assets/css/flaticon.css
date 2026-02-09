@@ -66,7 +66,7 @@
 .flaticon-alarm-clock-1:before { content: "\f123"; }
 .flaticon-clocks:before { content: "\f124"; }
 .flaticon-scissors:before { content: "\f125"; }
-.flaticon-salon:before { content: "\f126"; }
+.flaticon-salon:before { content: "\f126"; color: #c5a36d;}
 .flaticon-essential-oils:before { content: "\f127"; }
 .flaticon-spa:before { content: "\f128"; }
 .flaticon-face-mask:before { content: "\f129"; }
@@ -86,8 +86,8 @@
 .flaticon-scissors-1:before { content: "\f137"; }
 .flaticon-scissors-2:before { content: "\f138"; }
 .flaticon-hair-curler:before { content: "\f139"; }
-.flaticon-beauty-treatment:before { content: "\f13a"; }
-.flaticon-perfume:before { content: "\f13b"; }
+.flaticon-beauty-treatment:before { content: "\f13a"; color: #c5a36d;}
+.flaticon-perfume:before { content: "\f13b"; color: #c5a36d;}
 .flaticon-perfume-1:before { content: "\f13c"; }
 .flaticon-curler:before { content: "\f13d"; }
 .flaticon-happy:before { content: "\f13e"; }

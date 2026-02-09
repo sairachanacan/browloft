@@ -81,6 +81,10 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+.text-center-custom{
+  text-align: center;
+}
+
   @media (min-width:1200px) {
   .container {
     max-width: 1170px;
@@ -452,7 +456,7 @@ img {
 }
 
 .sec-pad{
-  padding: 120px 0px !important;
+  padding: 50px 130px !important;
 }
 
 .mr-0{
@@ -495,7 +499,7 @@ img {
   width: 100%;
   transform: translateX(-50%);
   top: 0px;
-  font-size: 150px;
+  font-size: 100px;
   line-height: 120px;
   font-family: 'Mrs Saint Delafield', cursive;
   color: #bba889;
@@ -711,6 +715,15 @@ img {
     position: absolute;
     top: 75px;
     left: 96px;
+  }
+
+  .service-details .row.align-items-center > .col-lg-6.col-md-12{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .service-details .row.align-items-center > .col-lg-6.col-md-12:first-child{
+    padding-bottom: 30px !important;
   }
 }
 
@@ -936,7 +949,7 @@ img {
   font-weight:500;
   opacity:1;
   font-family: 'Jost', sans-serif;
-  color:#8a8582;
+  color:#bfbfbf;
   z-index:1;
   text-transform: uppercase;
   -webkit-transition:all 500ms ease;
@@ -959,13 +972,20 @@ img {
   transition: all 500ms ease;
 }
 
+.main-menu .navigation > li:hover > a{
+  color: #bd9964;
+}
+
+.main-menu .navigation > li.current:hover > a{
+  color: #bd9964;
+}
+
 .main-menu .navigation > li.current > a:before,
 .main-menu .navigation > li:hover > a:before{
   /* transform: scale(1,1); */
 }
 
-.main-menu .navigation > li.current > a,
-.main-menu .navigation > li:hover > a{
+.main-menu .navigation > li.current > a{
   color: #bfbfbf;
 }
 
@@ -2519,7 +2539,7 @@ div#mCSB_1_container{
 .service-block-one .inner-box .lower-content h4 a,
 .service-block-one .inner-box .lower-content h1 a{
   display: inline-block;
-  color: #b6a07f;
+  color: #9c8766;
 }
 
 .service-block-one .inner-box .lower-content h1 a:hover{
@@ -2558,67 +2578,334 @@ div#mCSB_1_container{
 
 .service-style-two{
   position: relative;
-  padding: 111px 0px 120px 0px;
+  padding: 50px 130px 50px 130px;
+  background: #ffffff;
 }
 
-.service-style-two .pattern-layer{
+.service-style-two .heading{
+  text-align: center;
+}
+.service-style-two .heading p{
+  color:#ffffff;
+  padding: 20px 200px 50px 200px;
+}
+
+.service-style-two .heading h2{
+  color:#ffffff;
+  padding-bottom:20px;
+}
+
+.beauty-section{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* gap: 40px; */
+}
+
+.beauty-content{
+  flex: 1 1 30%;
+}
+
+.service-style-two .beauty-content h2{
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.service-style-two .beauty-content .list{
+  display: block;
+}
+
+.service-style-two .beauty-content .list li{
+  float: none !important;
+  display: block !important;
+  width: 100% !important;
+}
+
+.beauty-cards{
+  flex: 1 1 48%;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+  text-align: center;
+}
+
+.beauty-cards .single-item{
+  padding: 24px 18px;
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: 0 0 0 1px #36312f inset, 0 0 0 1px #efe4c8;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  text-align: left;
+  flex-wrap: nowrap;
+}
+
+.service-style-two .beauty-cards .single-item{
+  flex-direction: row;
+}
+
+.beauty-cards .icon-box{
+  flex: 0 0 auto;
+  width: 68px;
+  height: 68px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.beauty-cards .icon-box img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  transform: none;
+}
+
+.beauty-cards .icon-box .beauty-icon-img{
+  width: 120%;
+  height: 120%;
+  opacity: 1;
+  filter: brightness(0) saturate(100%) invert(70%) sepia(28%) saturate(452%) hue-rotate(2deg) brightness(92%) contrast(91%);
+}
+
+.beauty-cards .icon-box i{
+  font-size: 45px;
+  line-height: 1;
+  transform: scale(1.2);
+  display: inline-block;
+}
+
+.beauty-cards .card-content{
+  flex: 1 1 auto;
+}
+
+.beauty-cards .card-content p{
+  color: #36312f;
+} 
+
+.beauty-cards .card-content h4{
+  font-style: bold;
+  padding-bottom: 10px;
+  color: #000000;
+} 
+
+.beauty-cards .single-item h5{
+  margin-top: 10px;
+}
+
+.team-section.beauty-hero{
+  position: relative;
+  padding: 50px 130px;
+  background: #f7f1ea;
+  overflow: hidden;
+}
+
+.team-section.beauty-hero .pattern-layer{
   position: absolute;
   left: 0px;
   top: 0px;
-  height: 100%;
-  width: 545px;
-  background-size: cover;
+  width: 360px;
+  height: 360px;
+  background-size: contain;
   background-repeat: no-repeat;
+  background-position: left top;
+  opacity: 0.55;
+  pointer-events: none;
 }
 
-.service-style-two .image-layer{
+.beauty-hero-inner{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.beauty-hero-content{
+  flex: 1 1 52%;
+  max-width: 560px;
+}
+
+.beauty-hero-title{
+  font-size: 46px;
+  line-height: 1.15;
+  color: #9d7d57;
+  margin-bottom: 20px;
+}
+
+.beauty-hero-script{
+  font-family: inherit;
+  font-size: 57px;
+  font-weight: 700;
+  color: #b08a61;
+  display: inline-block;
+  line-height: 1;
+}
+
+.beauty-hero-main{
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  color: #b08a61;
+  margin-left: 6px;
+}
+
+.beauty-hero-text{
+  font-size: 17px;
+  line-height: 1.7;
+  color: #7b6d5d;
+  margin-bottom: 22px;
+}
+
+.beauty-hero-list{
+  margin-bottom: 28px;
+}
+
+.beauty-hero-list li{
+  position: relative;
+  padding-left: 26px;
+  margin-bottom: 10px;
+  color: #9a7b58;
+  font-weight: 500;
+}
+
+.beauty-hero-list li:before{
+  content: "→";
   position: absolute;
-  right: 0px;
-  top: -118px;
+  left: 0;
+  top: 0;
+  color: #b08a61;
+  font-weight: 600;
 }
 
-.service-style-two #content_block_5 .content-box{
+.beauty-hero-btn{
+  padding: 12px 28px;
+  border-radius: 8px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background: #e9dccb;
+  color: #9d7d57 !important;
+  border: 1px solid #d4b690;
+}
+
+.beauty-hero-btn:hover{
+  background: #d9c3a2;
+  color: #8b6c48;
+}
+
+.beauty-hero-media{
+  flex: 1 1 48%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 26px;
+}
+
+.beauty-hero-frame{
+  width: min(420px, 100%);
+  aspect-ratio: 3 / 2;
+  border-radius: 999px;
+  border: 6px solid #d4b690;
+  background: #f2e7d6;
+  overflow: hidden;
+  box-shadow: 0 18px 30px rgba(125, 100, 70, 0.15);
+}
+
+.beauty-hero-frame img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.beauty-hero-frame--bottom{
   margin-right: 70px;
 }
 
-#content_block_5 .content-box h2{
-  position: relative;
-  display: block;
-  font-size: 44px;
-  line-height: 53px;
-  color: #fff;
-  text-transform: uppercase;
-  margin-bottom: 39px;
+@media only screen and (max-width: 991px){
+  .team-section.beauty-hero{
+    padding: 50px 30px;
+  }
+
+  .beauty-section{
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .beauty-cards{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .service-style-two .heading p{
+    padding: 30px;
+    text-align: left;
+  }
+
+  .beauty-hero-inner{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .beauty-hero-content{
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .beauty-hero-list{
+    display: inline-block;
+    text-align: center;
+  }
+
+  .beauty-hero-list li{
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .beauty-hero-list li:before{
+    position: relative;
+    left: 0;
+    top: 0;
+    margin-right: 8px;
+    display: inline-block;
+  }
+
+  .beauty-hero-media{
+    width: 100%;
+    align-items: center;
+  }
+
+  .beauty-hero-frame--bottom{
+    margin-right: 0;
+  }
 }
 
-#content_block_5 .content-box p{
-  font-size: 18px;
-  line-height: 34px;
-  color: #fff;
-  margin-bottom: 33px;
-}
+@media only screen and (max-width: 575px){
+  .service-style-two{
+    padding: 50px 20px;
+  }
 
-#content_block_5 .content-box .list li{
-  position: relative;
-  display: block;
-  float: left;
-  width: 50%;
-  font-size: 18px;
-  font-weight: 600;
-  color: #fff;
-  margin-bottom: 12px;
-  padding-left: 28px;
-}
+  .service-style-two .beauty-content .content-box{
+    padding: 30px;
+  }
 
-#content_block_5 .content-box .list li:before{
-  position: absolute;
-  content: "\f106";
-  font-size: 18px;
-  color: #fff;
-  font-family: 'Flaticon';
-  left: 0px;
-  top: 0px;
-  font-weight: 400;
+  .beauty-cards{
+    grid-template-columns: 1fr;
+    padding: 30px;
+  }
+
+  .service-style-two .heading p{
+    padding: 30px;
+    text-align: left;
+  }
+
+  .beauty-hero-title{
+    font-size: 38px;
+  }
+
+  .beauty-hero-script{
+    font-size: 54px;
+  }
 }
 
 #content_block_5 .content-box .list{
@@ -2629,7 +2916,7 @@ div#mCSB_1_container{
   position: relative;
   display: block;
   font-size: 18px;
-  color: #fff;
+  color: #ebe0d6;
   font-weight: 500;
   margin-bottom: 43px;
 }
@@ -3238,8 +3525,9 @@ div#mCSB_1_container{
 
 .appointment-section{
   position: relative;
-  padding: 120px 0px;
+  padding: 50px 130px;
   border-bottom: 1px solid #f1e6df;
+  background-color: #fbf4f1;
 }
 
 .appointment-section .bg-layer{
@@ -3278,7 +3566,8 @@ div#mCSB_1_container{
   font-size: 44px;
   line-height: 53px;
   text-transform: uppercase;
-  margin-bottom: 39px;
+  margin-top: 250px;
+  font-weight:500;
 }
 
 .appointment-section .content-box .upper-inner p{
@@ -3289,7 +3578,7 @@ div#mCSB_1_container{
 
 .appointment-section .content-box .upper-inner{
   position: relative;
-  margin-bottom: 208px;
+  /* margin-bottom: 208px; */
 }
 
 .appointment-section .content-box .lower-inner{
@@ -3333,7 +3622,7 @@ div#mCSB_1_container{
   position: relative;
   display: block;
   background: #fff;
-  padding: 53px 70px 80px 70px;
+  padding: 50px 70px 50px 70px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 }
 
@@ -3352,7 +3641,7 @@ div#mCSB_1_container{
 }
 
 #appointment_block .form-inner:before{
-  position: absolute;
+  /* position: absolute;
   content: '';
   width: 100%;
   max-width: 310px;
@@ -3360,7 +3649,7 @@ div#mCSB_1_container{
   left: 0px;
   right: 0px;
   top: 0px;
-  margin: 0 auto;
+  margin: 0 auto; */
 }
 
 /** nice-select **/
@@ -3400,6 +3689,8 @@ div#mCSB_1_container{
 
 #appointment_block .form-inner .form-group:last-child{
   margin-bottom: 0px;
+  text-align: center;
+  margin-top: 30px;
 }
 
 #appointment_block .form-inner .form-group input[type='text'],
@@ -3552,7 +3843,7 @@ div#mCSB_1_container{
   position: relative;
   display: block;
   background: #35312f;
-  padding: 140px 0px 120px 0px;
+  padding: 50px 130px 50px 130px;
   border-bottom: 1px solid rgba(255,255,255,0.1);
 }
 
@@ -3747,7 +4038,7 @@ div#mCSB_1_container{
   position: relative;
   display: block;
   background: #302c2a;
-  padding: 38px 0px;
+  padding: 5px 0px;
 }
 
 .footer-botton .copyright p{
@@ -3756,6 +4047,7 @@ div#mCSB_1_container{
   line-height: 40px;
   font-weight: 600;
   color: #a9a6a4;
+  text-align: center;
 }
 
 .footer-botton .copyright p a{
@@ -3766,17 +4058,20 @@ div#mCSB_1_container{
 
 }
 
-.footer-botton .footer-social li{
+.footer-botton .footer-social li,
+.footer-top .footer-social li{
   position: relative;
   display: inline-block;
   margin-right: 5px;
 }
 
-.footer-botton .footer-social li:last-child{
+.footer-botton .footer-social li:last-child,
+.footer-top .footer-social li:last-child{
   margin-right: 0px;
 }
 
-.footer-botton .footer-social li a{
+.footer-botton .footer-social li a,
+.footer-top .footer-social li a{
   position: relative;
   display: inline-block;
   font-size: 14px;
@@ -3788,7 +4083,8 @@ div#mCSB_1_container{
   text-align: center;
 }
 
-.footer-botton .footer-social li a:hover{
+.footer-botton .footer-social li a:hover,
+.footer-top .footer-social li a:hover{
   color: #fff;
 }
 
@@ -4989,7 +5285,7 @@ div#mCSB_1_container{
 .page-title:before{
   position: absolute;
   content: '';
-  background: #35312f;
+  background: #35312fd1;
   width: 100%;
   height: 100%;
   left: 0px;
@@ -5009,11 +5305,11 @@ div#mCSB_1_container{
   left: 50%;
   top: -45px;
   transform: translateX(-50%);
-  font-size: 150px;
-  line-height: 150px;
+  font-size: 60px;
+  /* line-height: 150px; */
   width: 100%;
-  font-family: 'Mrs Saint Delafield', cursive;
-  color: rgba(255,255,255,0.1);
+  font-family: 'Jost', sans-serif;
+  color: #bfbfbf;
 }
 
 .page-title .title-box h1{
@@ -5493,7 +5789,7 @@ div#mCSB_1_container{
 .service-details-content .image-box{
   position: relative;
   display: block;
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
 }
 
 .service-details-content .text{
