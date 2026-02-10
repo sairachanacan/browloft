@@ -27,144 +27,20 @@
 <link href="assets/css/style.css" rel="stylesheet">
 <link href="assets/css/responsive.css" rel="stylesheet">
 
-<style>
-    .booking-container {
-        max-width: 900px;
-        margin: 0 auto;
-    }
-
-    .booking-header {
-        text-align: center;
-        padding: 40px 0;
-    }
-
-    .booking-header h1 {
-        font-size: 36px;
-        color: #35312f;
-        margin-bottom: 10px;
-    }
-
-    .booking-header p {
-        font-size: 16px;
-        color: #666;
-    }
-
-    .services-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        gap: 30px;
-        margin: 40px 0;
-    }
-
-    .service-card {
-        background: #fff;
-        border: 2px solid #f0f0f0;
-        border-radius: 8px;
-        padding: 30px;
-        text-align: center;
-        cursor: pointer;
-        transition: all 0.3s ease;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    }
-
-    .service-card:hover {
-        border-color: #a2895fba;
-        box-shadow: 0 4px 12px rgba(162, 137, 95, 0.3);
-        transform: translateY(-5px);
-    }
-
-    .service-card h3 {
-        font-size: 24px;
-        color: #35312f;
-        margin: 15px 0;
-        font-weight: 600;
-    }
-
-    .service-card p {
-        color: #666;
-        margin-bottom: 20px;
-        line-height: 1.6;
-    }
-
-    .service-card .duration {
-        font-size: 14px;
-        color: #a2895fba;
-        font-weight: 600;
-        margin-bottom: 15px;
-    }
-
-    .service-card .book-btn {
-        background-color: #a2895fba;
-        color: white;
-        border: none;
-        padding: 12px 30px;
-        border-radius: 5px;
-        font-size: 16px;
-        cursor: pointer;
-        transition: background-color 0.3s;
-        width: 100%;
-    }
-
-    .service-card .book-btn:hover {
-        background-color: #8a6f4f;
-    }
-
-    .breadcrumb-nav {
-        background-color: #f9f9f9;
-        padding: 15px 20px;
-        border-radius: 5px;
-        margin-bottom: 30px;
-        font-size: 14px;
-    }
-
-    .breadcrumb-nav a {
-        color: #a2895fba;
-        cursor: pointer;
-        text-decoration: none;
-    }
-
-    .breadcrumb-nav a:hover {
-        text-decoration: underline;
-    }
-
-    .breadcrumb-nav span {
-        color: #999;
-        margin: 0 8px;
-    }
-
-    .booking-summary-actions {
-        display: flex;
-        align-items: center;
-        gap: 8px;
-    }
-
-    .booking-summary-button {
-        background: #b08a61;
-        color: #fff;
-        border: none;
-        padding: 4px 10px;
-        font-size: 12px;
-        line-height: 1.2;
-        border-radius: 999px;
-        cursor: pointer;
-    }
-
-    .booking-summary-button:hover {
-        background: #8a6f4f;
-    }
-</style>
-
 </head>
 
 <!-- page wrapper -->
 <body>
+
+    <script>
+        window.location.replace('booking.html');
+    </script>
 
     <div class="boxed_wrapper">
 
         <!-- preloader -->
         <div class="loader-wrap">
             <div class="preloader">
-                <div class="preloader-close">Preloader Close</div>
                 <div id="handle-preloader" class="handle-preloader">
                     <div class="animation-preloader">
                         <div class="spinner"></div>
@@ -223,8 +99,8 @@
                                             </ul>
                                         </li>
                                         <li><a href="about.html">About</a></li>
-                                        <li><a href="contact.html">Contact</a></li>
-                                        <!-- <li class="current"><a href="booking-langley.html">Book Now</a></li> -->
+                                        <li><a href="index.html#enquiry">Contact</a></li>
+                                        <!-- <li class="current"><a href="booking.html">Book Now</a></li> -->
                                     </ul>
                                 </div>
                             </nav>
@@ -287,7 +163,7 @@
         </div><!-- End Mobile Menu -->
 
         <!--Page Title-->
-    <section class="page-title centred" style="background-image: url(assets/images/image14.png);">
+    <section class="page-title centred page-title--booking">
             <div class="auto-container">
                 <div class="title-box">
                     <!-- <span class="title-text">Book Appointment</span> -->
@@ -300,801 +176,539 @@
         <!-- Booking Section -->
         <section class="sec-pad">
             <div class="auto-container">
-                <div class="booking-container" style="max-width: 960px; margin: 0 auto;">
-                    <div class="text" style="text-align: left;">
-                        <h2 style="text-align: left; color: #b08a61;">Eye Brow Threading</h2>
-                        <ul style="list-style: none; padding-left: 0; margin-bottom: 30px;">
-                            <li style="border-bottom: 1px solid #b08a61; padding: 6px 0;">
-                                <details>
-                                    <summary style="list-style: none; color: #b08a61; font-weight: 600; cursor: pointer; display: flex; align-items: center; justify-content: space-between;">
-                                        <span style="color: #1e1e1e;">Luxe Brows – $12</span>
-                                        <span class="booking-summary-actions">
-                                            <button class="booking-summary-button" type="button" onclick="goToBooking('luxe-brows')">Book Now</button>
-                                            <span style="color: #b08a61;">▼</span>
-                                        </span>
-                                    </summary>
-                                    <div style="color: #1e1e1e; margin: 6px 0 0 18px;">
+                <div class="booking-container">
+                    <h2 class="booking-services-heading">Services</h2>
+                    <div class="text">
+                        <details>
+                            <summary>
+                                <span>Eye Brow Threading</span>
+                                <span>▼</span>
+                            </summary>
+                            <ul>
+                                <li>
+                                    <div>
+                                        <span>Luxe Brows – $12</span>
+                                        <button class="booking-summary-button" type="button" onclick="goToBooking('luxe-brows')">Book Now</button>
+                                    </div>
+                                    <!-- <div class="booking-item-description">
                                         Enjoy expert brow threading and shaping designed to enhance your natural features. This service includes a complimentary consultation, precise trimming, personalized brow design, and a soothing massage to complete your experience.
+                                    </div> -->
+                                </li>
+                                <li>
+                                    <div>
+                                        <span>Teen Brows – $10</span>
+                                        <button class="booking-summary-button" type="button" onclick="goToBooking('teen-brows')">Book Now</button>
                                     </div>
-                                </details>
-                            </li>
-                            <li style="border-bottom: 1px solid #b08a61; padding: 6px 0;">
-                                <details>
-                                    <summary style="list-style: none; color: #b08a61; font-weight: 600; cursor: pointer; display: flex; align-items: center; justify-content: space-between;">
-                                        <span style="color: #1e1e1e;">Teen Brows – $10</span>
-                                        <span class="booking-summary-actions">
-                                            <button class="booking-summary-button" type="button" onclick="goToBooking('teen-brows')">Book Now</button>
-                                            <span style="color: #b08a61;">▼</span>
-                                        </span>
-                                    </summary>
-                                    <div style="color: #1e1e1e; margin: 6px 0 0 18px;">
+                                    <!-- <div class="booking-item-description">
                                         Receive the same professional threading and shaping as our Luxe Brows, specifically tailored for teens.
+                                    </div> -->
+                                </li>
+                                <li>
+                                    <div>
+                                        <span>Velvet Touch – $8</span>
+                                        <button class="booking-summary-button" type="button" onclick="goToBooking('velvet-touch')">Book Now</button>
                                     </div>
-                                </details>
-                            </li>
-                            <li style="border-bottom: 1px solid #b08a61; padding: 6px 0;">
-                                <details>
-                                    <summary style="list-style: none; color: #b08a61; font-weight: 600; cursor: pointer; display: flex; align-items: center; justify-content: space-between;">
-                                        <span style="color: #1e1e1e;">Velvet Touch – $8</span>
-                                        <span class="booking-summary-actions">
-                                            <button class="booking-summary-button" type="button" onclick="goToBooking('velvet-touch')">Book Now</button>
-                                            <span style="color: #b08a61;">▼</span>
-                                        </span>
-                                    </summary>
-                                    <div style="color: #1e1e1e; margin: 6px 0 0 18px;">
+                                    <!-- <div class="booking-item-description">
                                         Choose one area for targeted threading: upper lip, chin, cheeks, sideburns, forehead, or neck.
+                                    </div> -->
+                                </li>
+                                <li>
+                                    <div>
+                                        <span>Luxe Brows + 1 Velvet Touch – $17</span>
+                                        <button class="booking-summary-button" type="button" onclick="goToBooking('luxe-brows-velvet-touch-1')">Book Now</button>
                                     </div>
-                                </details>
-                            </li>
-                            <li style="border-bottom: 1px solid #b08a61; padding: 6px 0;">
-                                <details>
-                                    <summary style="list-style: none; color: #b08a61; font-weight: 600; cursor: pointer; display: flex; align-items: center; justify-content: space-between;">
-                                        <span style="color: #1e1e1e;">Luxe Brows + 1 Velvet Touch – $17</span>
-                                        <span class="booking-summary-actions">
-                                            <button class="booking-summary-button" type="button" onclick="goToBooking('luxe-brows-velvet-touch-1')">Book Now</button>
-                                            <span style="color: #b08a61;">▼</span>
-                                        </span>
-                                    </summary>
-                                    <div style="color: #1e1e1e; margin: 6px 0 0 18px;">
+                                    <!-- <div class="booking-item-description">
                                         Combine Luxe Brows threading with threading of one additional area of your choice (upper lip, chin, cheeks, sideburns, forehead, or neck).
+                                    </div> -->
+                                </li>
+                                <li>
+                                    <div>
+                                        <span>Luxe Brows + 2 Velvet Touch – $25</span>
+                                        <button class="booking-summary-button" type="button" onclick="goToBooking('luxe-brows-velvet-touch-2')">Book Now</button>
                                     </div>
-                                </details>
-                            </li>
-                            <li style="border-bottom: 1px solid #b08a61; padding: 6px 0;">
-                                <details>
-                                    <summary style="list-style: none; color: #b08a61; font-weight: 600; cursor: pointer; display: flex; align-items: center; justify-content: space-between;">
-                                        <span style="color: #1e1e1e;">Luxe Brows + 2 Velvet Touch – $25</span>
-                                        <span class="booking-summary-actions">
-                                            <button class="booking-summary-button" type="button" onclick="goToBooking('luxe-brows-velvet-touch-2')">Book Now</button>
-                                            <span style="color: #b08a61;">▼</span>
-                                        </span>
-                                    </summary>
-                                    <div style="color: #1e1e1e; margin: 6px 0 0 18px;">
+                                    <!-- <div class="booking-item-description">
                                         Combine Luxe Brows threading with threading of any two additional areas of your choice (upper lip, chin, cheeks, sideburns, forehead, or neck).
+                                    </div> -->
+                                </li>
+                                <li>
+                                    <div>
+                                        <span>The Luxe Smooth Face – $38</span>
+                                        <button class="booking-summary-button" type="button" onclick="goToBooking('luxe-smooth-face')">Book Now</button>
                                     </div>
-                                </details>
-                            </li>
-                            <li style="padding: 6px 0;">
-                                <details>
-                                    <summary style="list-style: none; color: #b08a61; font-weight: 600; cursor: pointer; display: flex; align-items: center; justify-content: space-between;">
-                                        <span style="color: #1e1e1e;">The Luxe Smooth Face – $38</span>
-                                        <span class="booking-summary-actions">
-                                            <button class="booking-summary-button" type="button" onclick="goToBooking('luxe-smooth-face')">Book Now</button>
-                                            <span style="color: #b08a61;">▼</span>
-                                        </span>
-                                    </summary>
-                                    <div style="color: #1e1e1e; margin: 6px 0 0 18px;">
+                                    <!-- <div class="booking-item-description">
                                         Indulge in a complete facial de-fuzzing from the neck upward for a silky, flawless finish. Brows are refined with our signature luxe technique, and the treatment concludes with a complimentary smoothing facial massage.
-                                    </div>
-                                </details>
-                            </li>
-                        </ul>
+                                    </div> -->
+                                </li>
+                            </ul>
+                        </details>
 
-                        <h2 style="text-align: left; color: #b08a61;">Brow &amp; Lash Treatments</h2>
-                        <ul style="list-style: none; padding-left: 0; margin-bottom: 30px;">
-                            <li style="border-bottom: 1px solid #b08a61; padding: 6px 0;">
-                                <details>
-                                    <summary style="list-style: none; color: #b08a61; font-weight: 600; cursor: pointer; display: flex; align-items: center; justify-content: space-between;">
-                                        <span style="color: #1e1e1e;">Luxe Brow Tint – $20</span>
-                                        <span class="booking-summary-actions">
-                                            <button class="booking-summary-button" type="button" onclick="goToBooking('luxe-brow-tint')">Book Now</button>
-                                            <span style="color: #b08a61;">▼</span>
-                                        </span>
-                                    </summary>
-                                    <div style="color: #1e1e1e; margin: 6px 0 0 18px;">
+                        <details>
+                            <summary>
+                                <span>Brow &amp; Lash Treatments</span>
+                                <span>▼</span>
+                            </summary>
+                            <ul>
+                                <li>
+                                    <div>
+                                        <span>Luxe Brow Tint – $20</span>
+                                        <button class="booking-summary-button" type="button" onclick="goToBooking('luxe-brow-tint')">Book Now</button>
+                                    </div>
+                                    <!-- <div class="booking-item-description">
                                         A semi-permanent tint accentuates natural brow hairs, giving a fuller, more defined look that lasts up to 4–6 weeks.
+                                    </div> -->
+                                </li>
+                                <li>
+                                    <div>
+                                        <span>Luxe Lash Tint – $25</span>
+                                        <button class="booking-summary-button" type="button" onclick="goToBooking('luxe-lash-tint')">Book Now</button>
                                     </div>
-                                </details>
-                            </li>
-                            <li style="border-bottom: 1px solid #b08a61; padding: 6px 0;">
-                                <details>
-                                    <summary style="list-style: none; color: #b08a61; font-weight: 600; cursor: pointer; display: flex; align-items: center; justify-content: space-between;">
-                                        <span style="color: #1e1e1e;">Luxe Lash Tint – $25</span>
-                                        <span class="booking-summary-actions">
-                                            <button class="booking-summary-button" type="button" onclick="goToBooking('luxe-lash-tint')">Book Now</button>
-                                            <span style="color: #b08a61;">▼</span>
-                                        </span>
-                                    </summary>
-                                    <div style="color: #1e1e1e; margin: 6px 0 0 18px;">
+                                    <!-- <div class="booking-item-description">
                                         This waterproof, smudge-proof, and clump-free formula lasts up to 6 weeks—ideal for vacations, workouts, and contact lens wearers.
+                                    </div> -->
+                                </li>
+                                <li>
+                                    <div>
+                                        <span>Henna Luxe Brows – $50</span>
+                                        <button class="booking-summary-button" type="button" onclick="goToBooking('henna-luxe-brows')">Book Now</button>
                                     </div>
-                                </details>
-                            </li>
-                            <li style="border-bottom: 1px solid #b08a61; padding: 6px 0;">
-                                <details>
-                                    <summary style="list-style: none; color: #b08a61; font-weight: 600; cursor: pointer; display: flex; align-items: center; justify-content: space-between;">
-                                        <span style="color: #1e1e1e;">Henna Luxe Brows – $50</span>
-                                        <span class="booking-summary-actions">
-                                            <button class="booking-summary-button" type="button" onclick="goToBooking('henna-luxe-brows')">Book Now</button>
-                                            <span style="color: #b08a61;">▼</span>
-                                        </span>
-                                    </summary>
-                                    <div style="color: #1e1e1e; margin: 6px 0 0 18px;">
+                                    <!-- <div class="booking-item-description">
                                         A gentle, long-lasting tint enhances your natural brows by colouring both hair and skin for a fuller, defined look. Results last 4–6 weeks on brow hairs and 1–2 weeks on the skin.
+                                    </div> -->
+                                </li>
+                                <li>
+                                    <div>
+                                        <span>Luxe Lash Lift – $65</span>
+                                        <button class="booking-summary-button" type="button" onclick="goToBooking('luxe-lash-lift')">Book Now</button>
                                     </div>
-                                </details>
-                            </li>
-                            <li style="border-bottom: 1px solid #b08a61; padding: 6px 0;">
-                                <details>
-                                    <summary style="list-style: none; color: #b08a61; font-weight: 600; cursor: pointer; display: flex; align-items: center; justify-content: space-between;">
-                                        <span style="color: #1e1e1e;">Luxe Lash Lift – $65</span>
-                                        <span class="booking-summary-actions">
-                                            <button class="booking-summary-button" type="button" onclick="goToBooking('luxe-lash-lift')">Book Now</button>
-                                            <span style="color: #b08a61;">▼</span>
-                                        </span>
-                                    </summary>
-                                    <div style="color: #1e1e1e; margin: 6px 0 0 18px;">
+                                    <!-- <div class="booking-item-description">
                                         Lift and curl your natural lashes—no extensions, falsies, or mascara required. Results last up to 6–8 weeks with no maintenance or removal needed.
+                                    </div> -->
+                                </li>
+                                <li>
+                                    <div>
+                                        <span>Luxe Brow Lamination – $65</span>
+                                        <button class="booking-summary-button" type="button" onclick="goToBooking('luxe-brow-lamination')">Book Now</button>
                                     </div>
-                                </details>
-                            </li>
-                            <li style="padding: 6px 0;">
-                                <details>
-                                    <summary style="list-style: none; color: #b08a61; font-weight: 600; cursor: pointer; display: flex; align-items: center; justify-content: space-between;">
-                                        <span style="color: #1e1e1e;">Luxe Brow Lamination – $65</span>
-                                        <span class="booking-summary-actions">
-                                            <button class="booking-summary-button" type="button" onclick="goToBooking('luxe-brow-lamination')">Book Now</button>
-                                            <span style="color: #b08a61;">▼</span>
-                                        </span>
-                                    </summary>
-                                    <div style="color: #1e1e1e; margin: 6px 0 0 18px;">
+                                    <!-- <div class="booking-item-description">
                                         The ultimate brow service, combining shaping, 3D tint, and lamination for a lifted, full, and sleek appearance that remains flawless for up to 6–8 weeks.
+                                    </div> -->
+                                </li>
+                                <li>
+                                    <div>
+                                        <span class="booking-item-label">Add-On Services</span>
                                     </div>
-                                </details>
-                            </li>
-                            <li style="border-bottom: 1px solid #b08a61; padding: 6px 0;">
-                                <details>
-                                    <summary style="list-style: none; color: #b08a61; font-weight: 700; cursor: pointer; display: flex; align-items: center; justify-content: space-between;">
-                                        <span style="color: #b08a61;">Add-On Services</span>
-                                        <span class="booking-summary-actions">
-                                            <button class="booking-summary-button" type="button" onclick="goToBooking('add-on-services')">Book Now</button>
-                                            <span style="color: #b08a61;">▼</span>
-                                        </span>
-                                    </summary>
-                                    <ul style="list-style: none; padding-left: 0; margin: 12px 0 0;">
-                                        <li style="border-bottom: 1px solid #b08a61; padding: 6px 0;">
-                                            <details>
-                                                <summary style="list-style: none; color: #b08a61; font-weight: 600; cursor: pointer; display: flex; align-items: center; justify-content: space-between;">
-                                                    <span style="color: #1e1e1e;">10-minute Luxe Glow &amp; Go – $15</span>
-                                                    <span class="booking-summary-actions">
-                                                        <button class="booking-summary-button" type="button" onclick="goToBooking('luxe-glow-go')">Book Now</button>
-                                                        <span style="color: #b08a61;">▼</span>
-                                                    </span>
-                                                </summary>
-                                                <div style="color: #1e1e1e; margin: 6px 0 0 18px;">
-                                                    Experience a gold-finished massage wand and organic facial oil to boost circulation, restore radiance, and create a calming ritual for your skin and soul.
-                                                </div>
-                                            </details>
+                                    <ul>
+                                        <li>
+                                            <div>
+                                                <span>10-minute Luxe Glow &amp; Go – $15</span>
+                                                <button class="booking-summary-button" type="button" onclick="goToBooking('luxe-glow-go')">Book Now</button>
+                                            </div>
+                                            <!-- <div class="booking-item-description">
+                                                Experience a gold-finished massage wand and organic facial oil to boost circulation, restore radiance, and create a calming ritual for your skin and soul.
+                                            </div> -->
                                         </li>
-                                        <li style="border-bottom: 1px solid #b08a61; padding: 6px 0;">
-                                            <details>
-                                                <summary style="list-style: none; color: #b08a61; font-weight: 600; cursor: pointer; display: flex; align-items: center; justify-content: space-between;">
-                                                    <span style="color: #1e1e1e;">Eye Renewal Mask – $5</span>
-                                                    <span class="booking-summary-actions">
-                                                        <button class="booking-summary-button" type="button" onclick="goToBooking('eye-renewal-mask')">Book Now</button>
-                                                        <span style="color: #b08a61;">▼</span>
-                                                    </span>
-                                                </summary>
-                                                <div style="color: #1e1e1e; margin: 6px 0 0 18px;">
-                                                    Nourishing botanicals refresh and restore, delivering deep hydration, visible plumping, and a youthful glow while easing puffiness and fatigue.
-                                                </div>
-                                            </details>
+                                        <li>
+                                            <div>
+                                                <span>Eye Renewal Mask – $5</span>
+                                                <button class="booking-summary-button" type="button" onclick="goToBooking('eye-renewal-mask')">Book Now</button>
+                                            </div>
+                                            <!-- <div class="booking-item-description">
+                                                Nourishing botanicals refresh and restore, delivering deep hydration, visible plumping, and a youthful glow while easing puffiness and fatigue.
+                                            </div> -->
                                         </li>
-                                        <li style="padding: 6px 0;">
-                                            <details>
-                                                <summary style="list-style: none; color: #b08a61; font-weight: 600; cursor: pointer; display: flex; align-items: center; justify-content: space-between;">
-                                                    <span style="color: #1e1e1e;">Brow Prep &amp; Polish – $5</span>
-                                                    <span class="booking-summary-actions">
-                                                        <button class="booking-summary-button" type="button" onclick="goToBooking('brow-prep-polish')">Book Now</button>
-                                                        <span style="color: #b08a61;">▼</span>
-                                                    </span>
-                                                </summary>
-                                                <div style="color: #1e1e1e; margin: 6px 0 0 18px;">
-                                                    Refresh your brows and skin for an enhanced glow and improved results from your favourite brow treatments.
-                                                </div>
-                                            </details>
+                                        <li>
+                                            <div>
+                                                <span>Brow Prep &amp; Polish – $5</span>
+                                                <button class="booking-summary-button" type="button" onclick="goToBooking('brow-prep-polish')">Book Now</button>
+                                            </div>
+                                            <!-- <div class="booking-item-description">
+                                                Refresh your brows and skin for an enhanced glow and improved results from your favourite brow treatments.
+                                            </div> -->
                                         </li>
                                     </ul>
-                                </details>
-                            </li>
-                            <li style="padding: 6px 0;">
-                                <details>
-                                    <summary style="list-style: none; color: #b08a61; font-weight: 700; cursor: pointer; display: flex; align-items: center; justify-content: space-between;">
-                                        <span style="color: #b08a61;">Package Deals</span>
-                                        <span class="booking-summary-actions">
-                                            <button class="booking-summary-button" type="button" onclick="goToBooking('package-deals')">Book Now</button>
-                                            <span style="color: #b08a61;">▼</span>
-                                        </span>
-                                    </summary>
-                                    <ul style="list-style: none; padding-left: 0; margin: 12px 0 0;">
-                                        <li style="border-bottom: 1px solid #b08a61; padding: 6px 0;">
-                                            <details>
-                                                <summary style="list-style: none; color: #b08a61; font-weight: 600; cursor: pointer; display: flex; align-items: center; justify-content: space-between;">
-                                                    <span style="color: #1e1e1e;">Luxe Brows &amp; Tinting Package – $28</span>
-                                                    <span class="booking-summary-actions">
-                                                        <button class="booking-summary-button" type="button" onclick="goToBooking('luxe-brows-tinting-package')">Book Now</button>
-                                                        <span style="color: #b08a61;">▼</span>
-                                                    </span>
-                                                </summary>
-                                                <div style="color: #1e1e1e; margin: 6px 0 0 18px;">
-                                                    Save with this bundle of luxe brow threading and brow tinting.
-                                                </div>
-                                            </details>
+                                </li>
+                                <li>
+                                    <div>
+                                        <span class="booking-item-label">Package Deals</span>
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            <div>
+                                                <span>Luxe Brows &amp; Tinting Package – $28</span>
+                                                <button class="booking-summary-button" type="button" onclick="goToBooking('luxe-brows-tinting-package')">Book Now</button>
+                                            </div>
+                                            <!-- <div class="booking-item-description">
+                                                Save with this bundle of luxe brow threading and brow tinting.
+                                            </div> -->
                                         </li>
-                                        <li style="border-bottom: 1px solid #b08a61; padding: 6px 0;">
-                                            <details>
-                                                <summary style="list-style: none; color: #b08a61; font-weight: 600; cursor: pointer; display: flex; align-items: center; justify-content: space-between;">
-                                                    <span style="color: #1e1e1e;">Luxe Brows &amp; Tinting + 1 Velvet Touch – $35</span>
-                                                    <span class="booking-summary-actions">
-                                                        <button class="booking-summary-button" type="button" onclick="goToBooking('luxe-brows-tinting-velvet-touch-1')">Book Now</button>
-                                                        <span style="color: #b08a61;">▼</span>
-                                                    </span>
-                                                </summary>
-                                                <div style="color: #1e1e1e; margin: 6px 0 0 18px;">
-                                                    Save with this combination of luxe brow threading, tinting, and one velvet touch area.
-                                                </div>
-                                            </details>
+                                        <li>
+                                            <div>
+                                                <span>Luxe Brows &amp; Tinting + 1 Velvet Touch – $35</span>
+                                                <button class="booking-summary-button" type="button" onclick="goToBooking('luxe-brows-tinting-velvet-touch-1')">Book Now</button>
+                                            </div>
+                                            <!-- <div class="booking-item-description">
+                                                Save with this combination of luxe brow threading, tinting, and one velvet touch area.
+                                            </div> -->
                                         </li>
-                                        <li style="border-bottom: 1px solid #b08a61; padding: 6px 0;">
-                                            <details>
-                                                <summary style="list-style: none; color: #b08a61; font-weight: 600; cursor: pointer; display: flex; align-items: center; justify-content: space-between;">
-                                                    <span style="color: #1e1e1e;">Luxe Brows &amp; Tinting + 2 Velvet Touch – $45</span>
-                                                    <span class="booking-summary-actions">
-                                                        <button class="booking-summary-button" type="button" onclick="goToBooking('luxe-brows-tinting-velvet-touch-2')">Book Now</button>
-                                                        <span style="color: #b08a61;">▼</span>
-                                                    </span>
-                                                </summary>
-                                                <div style="color: #1e1e1e; margin: 6px 0 0 18px;">
-                                                    Save with a package that includes luxe brow threading, tinting, and two velvet touch areas.
-                                                </div>
-                                            </details>
+                                        <li>
+                                            <div>
+                                                <span>Luxe Brows &amp; Tinting + 2 Velvet Touch – $45</span>
+                                                <button class="booking-summary-button" type="button" onclick="goToBooking('luxe-brows-tinting-velvet-touch-2')">Book Now</button>
+                                            </div>
+                                            <!-- <div class="booking-item-description">
+                                                Save with a package that includes luxe brow threading, tinting, and two velvet touch areas.
+                                            </div> -->
                                         </li>
-                                        <li style="border-bottom: 1px solid #b08a61; padding: 6px 0;">
-                                            <details>
-                                                <summary style="list-style: none; color: #b08a61; font-weight: 600; cursor: pointer; display: flex; align-items: center; justify-content: space-between;">
-                                                    <span style="color: #1e1e1e;">Luxe Brows + Brow Tinting + Lash Tint Bundle – $52</span>
-                                                    <span class="booking-summary-actions">
-                                                        <button class="booking-summary-button" type="button" onclick="goToBooking('luxe-brows-brow-tinting-lash-tint')">Book Now</button>
-                                                        <span style="color: #b08a61;">▼</span>
-                                                    </span>
-                                                </summary>
-                                                <div style="color: #1e1e1e; margin: 6px 0 0 18px;">
-                                                    Enjoy luxe brow threading, brow tinting, and lash tinting together in this value package.
-                                                </div>
-                                            </details>
+                                        <li>
+                                            <div>
+                                                <span>Luxe Brows + Brow Tinting + Lash Tint Bundle – $52</span>
+                                                <button class="booking-summary-button" type="button" onclick="goToBooking('luxe-brows-brow-tinting-lash-tint')">Book Now</button>
+                                            </div>
+                                            <!-- <div class="booking-item-description">
+                                                Enjoy luxe brow threading, brow tinting, and lash tinting together in this value package.
+                                            </div> -->
                                         </li>
-                                        <li style="border-bottom: 1px solid #b08a61; padding: 6px 0;">
-                                            <details>
-                                                <summary style="list-style: none; color: #b08a61; font-weight: 600; cursor: pointer; display: flex; align-items: center; justify-content: space-between;">
-                                                    <span style="color: #1e1e1e;">Luxe Lash Lift + Lash Tint Bundle – $75</span>
-                                                    <span class="booking-summary-actions">
-                                                        <button class="booking-summary-button" type="button" onclick="goToBooking('luxe-lash-lift-lash-tint')">Book Now</button>
-                                                        <span style="color: #b08a61;">▼</span>
-                                                    </span>
-                                                </summary>
-                                                <div style="color: #1e1e1e; margin: 6px 0 0 18px;">
-                                                    Combine lash lift and lash tinting for long-lasting, beautiful lashes.
-                                                </div>
-                                            </details>
+                                        <li>
+                                            <div>
+                                                <span>Luxe Lash Lift + Lash Tint Bundle – $75</span>
+                                                <button class="booking-summary-button" type="button" onclick="goToBooking('luxe-lash-lift-lash-tint')">Book Now</button>
+                                            </div>
+                                            <!-- <div class="booking-item-description">
+                                                Combine lash lift and lash tinting for long-lasting, beautiful lashes.
+                                            </div> -->
                                         </li>
-                                        <li style="border-bottom: 1px solid #b08a61; padding: 6px 0;">
-                                            <details>
-                                                <summary style="list-style: none; color: #b08a61; font-weight: 600; cursor: pointer; display: flex; align-items: center; justify-content: space-between;">
-                                                    <span style="color: #1e1e1e;">Luxe Brows + Brow Henna – $55</span>
-                                                    <span class="booking-summary-actions">
-                                                        <button class="booking-summary-button" type="button" onclick="goToBooking('luxe-brows-brow-henna')">Book Now</button>
-                                                        <span style="color: #b08a61;">▼</span>
-                                                    </span>
-                                                </summary>
-                                                <div style="color: #1e1e1e; margin: 6px 0 0 18px;">
-                                                    Bundle luxe brow threading and brow henna for enhanced, defined brows.
-                                                </div>
-                                            </details>
+                                        <li>
+                                            <div>
+                                                <span>Luxe Brows + Brow Henna – $55</span>
+                                                <button class="booking-summary-button" type="button" onclick="goToBooking('luxe-brows-brow-henna')">Book Now</button>
+                                            </div>
+                                            <!-- <div class="booking-item-description">
+                                                Bundle luxe brow threading and brow henna for enhanced, defined brows.
+                                            </div> -->
                                         </li>
-                                        <li style="padding: 6px 0;">
-                                            <details>
-                                                <summary style="list-style: none; color: #b08a61; font-weight: 600; cursor: pointer; display: flex; align-items: center; justify-content: space-between;">
-                                                    <span style="color: #1e1e1e;">Brow Lamination + Luxe Lash Lift Bundle – $130</span>
-                                                    <span class="booking-summary-actions">
-                                                        <button class="booking-summary-button" type="button" onclick="goToBooking('brow-lamination-luxe-lash-lift')">Book Now</button>
-                                                        <span style="color: #b08a61;">▼</span>
-                                                    </span>
-                                                </summary>
-                                                <div style="color: #1e1e1e; margin: 6px 0 0 18px;">
-                                                    Get both brow lamination and a luxe lash lift for a complete eye enhancement experience.
-                                                </div>
-                                            </details>
+                                        <li>
+                                            <div>
+                                                <span>Brow Lamination + Luxe Lash Lift Bundle – $130</span>
+                                                <button class="booking-summary-button" type="button" onclick="goToBooking('brow-lamination-luxe-lash-lift')">Book Now</button>
+                                            </div>
+                                            <!-- <div class="booking-item-description">
+                                                Get both brow lamination and a luxe lash lift for a complete eye enhancement experience.
+                                            </div> -->
                                         </li>
                                     </ul>
-                                </details>
-                            </li>
-                        </ul>
+                                </li>
+                            </ul>
+                        </details>
 
-                        <h2 style="text-align: left; color: #b08a61;">Gentlemen’s Bar</h2>
-                        <ul style="list-style: none; padding-left: 0; margin-bottom: 30px;">
-                            <li style="border-bottom: 1px solid #b08a61; padding: 6px 0;">
-                                <details>
-                                    <summary style="list-style: none; color: #b08a61; font-weight: 600; cursor: pointer; display: flex; align-items: center; justify-content: space-between;">
-                                        <span style="color: #1e1e1e;">Men’s Unibrow – $12</span>
-                                        <span class="booking-summary-actions">
-                                            <button class="booking-summary-button" type="button" onclick="goToBooking('mens-unibrow')">Book Now</button>
-                                            <span style="color: #b08a61;">▼</span>
-                                        </span>
-                                    </summary>
-                                    <div style="color: #1e1e1e; margin: 6px 0 0 18px;">
+                        <details>
+                            <summary>
+                                <span>Gentlemen’s Bar</span>
+                                <span>▼</span>
+                            </summary>
+                            <ul>
+                                <li>
+                                    <div>
+                                        <span>Men’s Unibrow – $12</span>
+                                        <button class="booking-summary-button" type="button" onclick="goToBooking('mens-unibrow')">Book Now</button>
+                                    </div>
+                                    <!-- <div class="booking-item-description">
                                         Threading and clean-up between the brows for a polished look.
+                                    </div> -->
+                                </li>
+                                <li>
+                                    <div>
+                                        <span>Men’s Luxe Brows – $20</span>
+                                        <button class="booking-summary-button" type="button" onclick="goToBooking('mens-luxe-brows')">Book Now</button>
                                     </div>
-                                </details>
-                            </li>
-                            <li style="border-bottom: 1px solid #b08a61; padding: 6px 0;">
-                                <details>
-                                    <summary style="list-style: none; color: #b08a61; font-weight: 600; cursor: pointer; display: flex; align-items: center; justify-content: space-between;">
-                                        <span style="color: #1e1e1e;">Men’s Luxe Brows – $20</span>
-                                        <span class="booking-summary-actions">
-                                            <button class="booking-summary-button" type="button" onclick="goToBooking('mens-luxe-brows')">Book Now</button>
-                                            <span style="color: #b08a61;">▼</span>
-                                        </span>
-                                    </summary>
-                                    <div style="color: #1e1e1e; margin: 6px 0 0 18px;">
+                                    <!-- <div class="booking-item-description">
                                         A comprehensive brow service for men, including trimming, shaping, threading, a soothing brow massage, and a personalized consultation.
+                                    </div> -->
+                                </li>
+                                <li>
+                                    <div>
+                                        <span>Men’s Cheeks + Forehead or Ears – $15</span>
+                                        <button class="booking-summary-button" type="button" onclick="goToBooking('mens-cheeks-forehead-ears')">Book Now</button>
                                     </div>
-                                </details>
-                            </li>
-                            <li style="padding: 6px 0;">
-                                <details>
-                                    <summary style="list-style: none; color: #b08a61; font-weight: 600; cursor: pointer; display: flex; align-items: center; justify-content: space-between;">
-                                        <span style="color: #1e1e1e;">Men’s Cheeks + Forehead or Ears – $15</span>
-                                        <span class="booking-summary-actions">
-                                            <button class="booking-summary-button" type="button" onclick="goToBooking('mens-cheeks-forehead-ears')">Book Now</button>
-                                            <span style="color: #b08a61;">▼</span>
-                                        </span>
-                                    </summary>
-                                    <div style="color: #1e1e1e; margin: 6px 0 0 18px;">
+                                    <!-- <div class="booking-item-description">
                                         Threading and clean-up for both cheeks, plus your choice of either the forehead or the area around the ears.
-                                    </div>
-                                </details>
-                            </li>
-                        </ul>
+                                    </div> -->
+                                </li>
+                            </ul>
+                        </details>
 
-                        <h2 style="text-align: left; color: #b08a61;">Luxe Facial Bar</h2>
-                        <ul style="list-style: none; padding-left: 0; margin-bottom: 30px;">
-                            <li style="border-bottom: 1px solid #b08a61; padding: 6px 0;">
-                                <details>
-                                    <summary style="list-style: none; color: #b08a61; font-weight: 600; cursor: pointer; display: flex; align-items: center; justify-content: space-between;">
-                                        <span style="color: #1e1e1e;">Luxe Express Facial – $65</span>
-                                        <span class="booking-summary-actions">
-                                            <button class="booking-summary-button" type="button" onclick="goToBooking('luxe-express-facial')">Book Now</button>
-                                            <span style="color: #b08a61;">▼</span>
-                                        </span>
-                                    </summary>
-                                    <div style="color: #1e1e1e; margin: 6px 0 0 18px;">
+                        <details>
+                            <summary>
+                                <span>Luxe Facial Bar</span>
+                                <span>▼</span>
+                            </summary>
+                            <ul>
+                                <li>
+                                    <div>
+                                        <span>Luxe Express Facial – $65</span>
+                                        <button class="booking-summary-button" type="button" onclick="goToBooking('luxe-express-facial')">Book Now</button>
+                                    </div>
+                                    <!-- <div class="booking-item-description">
                                         A quick, 30-minute facial that cleanses, exfoliates, and revitalizes your skin, finished with a soothing mask and complimentary facial massage. Extractions are not included.
+                                    </div> -->
+                                </li>
+                                <li>
+                                    <div>
+                                        <span>Purely Yours Facial – $110</span>
+                                        <button class="booking-summary-button" type="button" onclick="goToBooking('purely-yours-facial')">Book Now</button>
                                     </div>
-                                </details>
-                            </li>
-                            <li style="border-bottom: 1px solid #b08a61; padding: 6px 0;">
-                                <details>
-                                    <summary style="list-style: none; color: #b08a61; font-weight: 600; cursor: pointer; display: flex; align-items: center; justify-content: space-between;">
-                                        <span style="color: #1e1e1e;">Purely Yours Facial – $110</span>
-                                        <span class="booking-summary-actions">
-                                            <button class="booking-summary-button" type="button" onclick="goToBooking('purely-yours-facial')">Book Now</button>
-                                            <span style="color: #b08a61;">▼</span>
-                                        </span>
-                                    </summary>
-                                    <div style="color: #1e1e1e; margin: 6px 0 0 18px;">
+                                    <!-- <div class="booking-item-description">
                                         Enjoy a custom facial tailored to your skin’s unique needs. Your specialist selects the perfect combination of cleansers, exfoliators, toners, masks, and moisturizers. Includes extractions for a total refresh.
+                                    </div> -->
+                                </li>
+                                <li>
+                                    <div>
+                                        <span>Coconut Glow Hydrating Facial – $110</span>
+                                        <button class="booking-summary-button" type="button" onclick="goToBooking('coconut-glow-facial')">Book Now</button>
                                     </div>
-                                </details>
-                            </li>
-                            <li style="border-bottom: 1px solid #b08a61; padding: 6px 0;">
-                                <details>
-                                    <summary style="list-style: none; color: #b08a61; font-weight: 600; cursor: pointer; display: flex; align-items: center; justify-content: space-between;">
-                                        <span style="color: #1e1e1e;">Coconut Glow Hydrating Facial – $110</span>
-                                        <span class="booking-summary-actions">
-                                            <button class="booking-summary-button" type="button" onclick="goToBooking('coconut-glow-facial')">Book Now</button>
-                                            <span style="color: #b08a61;">▼</span>
-                                        </span>
-                                    </summary>
-                                    <div style="color: #1e1e1e; margin: 6px 0 0 18px;">
+                                    <!-- <div class="booking-item-description">
                                         This antioxidant-rich, organic facial uses coconut to nourish and firm the skin, restoring a youthful texture and a glowing complexion. Extractions are included.
+                                    </div> -->
+                                </li>
+                                <li>
+                                    <div>
+                                        <span>Delicate Care Facial – $110</span>
+                                        <button class="booking-summary-button" type="button" onclick="goToBooking('delicate-care-facial')">Book Now</button>
                                     </div>
-                                </details>
-                            </li>
-                            <li style="padding: 6px 0;">
-                                <details>
-                                    <summary style="list-style: none; color: #b08a61; font-weight: 600; cursor: pointer; display: flex; align-items: center; justify-content: space-between;">
-                                        <span style="color: #1e1e1e;">Delicate Care Facial – $110</span>
-                                        <span class="booking-summary-actions">
-                                            <button class="booking-summary-button" type="button" onclick="goToBooking('delicate-care-facial')">Book Now</button>
-                                            <span style="color: #b08a61;">▼</span>
-                                        </span>
-                                    </summary>
-                                    <div style="color: #1e1e1e; margin: 6px 0 0 18px;">
+                                    <!-- <div class="booking-item-description">
                                         A gentle, restorative treatment designed to calm, comfort, and strengthen sensitive skin with soothing botanicals and hydrating ingredients. Reduces redness and leaves your complexion soft, balanced, and refreshed. Extractions are included.
+                                    </div> -->
+                                </li>
+                                <li>
+                                    <div>
+                                        <span class="booking-item-label">Facial Add-Ons</span>
                                     </div>
-                                </details>
-                            </li>
-                            <li style="padding: 6px 0;">
-                                <details>
-                                    <summary style="list-style: none; color: #b08a61; font-weight: 700; cursor: pointer; display: flex; align-items: center; justify-content: space-between;">
-                                        <span style="color: #b08a61;">Facial Add-Ons</span>
-                                        <span class="booking-summary-actions">
-                                            <button class="booking-summary-button" type="button" onclick="goToBooking('facial-add-ons')">Book Now</button>
-                                            <span style="color: #b08a61;">▼</span>
-                                        </span>
-                                    </summary>
-                                    <ul style="list-style: none; padding-left: 0; margin: 12px 0 0;">
-                                        <li style="border-bottom: 1px solid #b08a61; padding: 6px 0;">
-                                            <details>
-                                                <summary style="list-style: none; color: #b08a61; font-weight: 600; cursor: pointer; display: flex; align-items: center; justify-content: space-between;">
-                                                    <span style="color: #1e1e1e;">Lip Revival Facial – $10</span>
-                                                    <span class="booking-summary-actions">
-                                                        <button class="booking-summary-button" type="button" onclick="goToBooking('lip-revival-facial')">Book Now</button>
-                                                        <span style="color: #b08a61;">▼</span>
-                                                    </span>
-                                                </summary>
-                                                <div style="color: #1e1e1e; margin: 6px 0 0 18px;">
-                                                    Enriched with citrus and pineapple enzymes, this treatment smooths dryness, softens fine lines, deeply hydrates, and helps boost collagen for fuller, healthier-looking lips.
-                                                </div>
-                                            </details>
+                                    <ul>
+                                        <li>
+                                            <div>
+                                                <span>Lip Revival Facial – $10</span>
+                                                <button class="booking-summary-button" type="button" onclick="goToBooking('lip-revival-facial')">Book Now</button>
+                                            </div>
+                                            <!-- <div class="booking-item-description">
+                                                Enriched with citrus and pineapple enzymes, this treatment smooths dryness, softens fine lines, deeply hydrates, and helps boost collagen for fuller, healthier-looking lips.
+                                            </div> -->
                                         </li>
-                                        <li style="border-bottom: 1px solid #b08a61; padding: 6px 0;">
-                                            <details>
-                                                <summary style="list-style: none; color: #b08a61; font-weight: 600; cursor: pointer; display: flex; align-items: center; justify-content: space-between;">
-                                                    <span style="color: #1e1e1e;">Booster – $10</span>
-                                                    <span class="booking-summary-actions">
-                                                        <button class="booking-summary-button" type="button" onclick="goToBooking('booster')">Book Now</button>
-                                                        <span style="color: #b08a61;">▼</span>
-                                                    </span>
-                                                </summary>
-                                                <div style="color: #1e1e1e; margin: 6px 0 0 18px;">
-                                                    Let our estheticians select booster serums, concentrates, and oils to penetrate deeply and deliver optimal skin results.
-                                                </div>
-                                            </details>
+                                        <li>
+                                            <div>
+                                                <span>Booster – $10</span>
+                                                <button class="booking-summary-button" type="button" onclick="goToBooking('booster')">Book Now</button>
+                                            </div>
+                                            <!-- <div class="booking-item-description">
+                                                Let our estheticians select booster serums, concentrates, and oils to penetrate deeply and deliver optimal skin results.
+                                            </div> -->
                                         </li>
-                                        <li style="padding: 6px 0;">
-                                            <details>
-                                                <summary style="list-style: none; color: #b08a61; font-weight: 600; cursor: pointer; display: flex; align-items: center; justify-content: space-between;">
-                                                    <span style="color: #1e1e1e;">De-Puff &amp; Eye Brightening – $10</span>
-                                                    <span class="booking-summary-actions">
-                                                        <button class="booking-summary-button" type="button" onclick="goToBooking('de-puff-eye-brightening')">Book Now</button>
-                                                        <span style="color: #b08a61;">▼</span>
-                                                    </span>
-                                                </summary>
-                                                <div style="color: #1e1e1e; margin: 6px 0 0 18px;">
-                                                    Hydrating ingredients soothe and revitalize tired eyes, reducing puffiness, dark circles, and fatigue while supporting circulation and lymphatic drainage for a refreshed look.
-                                                </div>
-                                            </details>
+                                        <li>
+                                            <div>
+                                                <span>De-Puff &amp; Eye Brightening – $10</span>
+                                                <button class="booking-summary-button" type="button" onclick="goToBooking('de-puff-eye-brightening')">Book Now</button>
+                                            </div>
+                                            <!-- <div class="booking-item-description">
+                                                Hydrating ingredients soothe and revitalize tired eyes, reducing puffiness, dark circles, and fatigue while supporting circulation and lymphatic drainage for a refreshed look.
+                                            </div> -->
                                         </li>
                                     </ul>
-                                </details>
-                            </li>
-                        </ul>
+                                </li>
+                            </ul>
+                        </details>
 
-                        <h2 style="text-align: left; color: #b08a61;">Micro-Needling</h2>
-                        <ul style="list-style: none; padding-left: 0; margin-bottom: 30px;">
-                            <li style="border-bottom: 1px solid #b08a61; padding: 6px 0;">
-                                <details>
-                                    <summary style="list-style: none; color: #b08a61; font-weight: 600; cursor: pointer; display: flex; align-items: center; justify-content: space-between;">
-                                        <span style="color: #1e1e1e;">Micro Needling – $300</span>
-                                        <span class="booking-summary-actions">
-                                            <button class="booking-summary-button" type="button" onclick="goToBooking('micro-needling')">Book Now</button>
-                                            <span style="color: #b08a61;">▼</span>
-                                        </span>
-                                    </summary>
-                                    <div style="color: #1e1e1e; margin: 6px 0 0 18px;">
-                                        Micro-needling is a minimally invasive skin rejuvenation treatment that uses fine needles to create tiny punctures in the skin&#39;s surface. This process stimulates the body&#39;s natural healing response, promoting collagen and elastin production for smoother, firmer, and more youthful-looking skin. Ideal for reducing the appearance of fine lines, acne scars, and uneven texture, micro-needling is suitable for most skin types and requires minimal downtime.
+                        <details>
+                            <summary>
+                                <span>Micro-Needling</span>
+                                <span>▼</span>
+                            </summary>
+                            <ul>
+                                <li>
+                                    <div>
+                                        <span>Micro Needling – $300</span>
+                                        <button class="booking-summary-button" type="button" onclick="goToBooking('micro-needling')">Book Now</button>
                                     </div>
-                                </details>
-                            </li>
-                        </ul>
+                                    <!-- <div class="booking-item-description">
+                                        Micro-needling is a minimally invasive skin rejuvenation treatment that uses fine needles to create tiny punctures in the skin&#39;s surface. This process stimulates the body&#39;s natural healing response, promoting collagen and elastin production for smoother, firmer, and more youthful-looking skin. Ideal for reducing the appearance of fine lines, acne scars, and uneven texture, micro-needling is suitable for most skin types and requires minimal downtime.
+                                    </div> -->
+                                </li>
+                            </ul>
+                        </details>
 
-                        <h2 style="text-align: left; color: #b08a61;">Luxe Waxing Bar for Women</h2>
-                        <ul style="list-style: none; padding-left: 0; margin-bottom: 30px;">
-                            <li style="border-bottom: 1px solid #b08a61; padding: 6px 0;">
-                                <details>
-                                    <summary style="list-style: none; color: #b08a61; font-weight: 600; cursor: pointer; display: flex; align-items: center; justify-content: space-between;">
-                                        <span style="color: #1e1e1e;">Full Legs – $45</span>
-                                        <span class="booking-summary-actions">
-                                            <button class="booking-summary-button" type="button" onclick="goToBooking('full-legs')">Book Now</button>
-                                            <span style="color: #b08a61;">▼</span>
-                                        </span>
-                                    </summary>
-                                </details>
-                            </li>
-                            <li style="border-bottom: 1px solid #b08a61; padding: 6px 0;">
-                                <details>
-                                    <summary style="list-style: none; color: #b08a61; font-weight: 600; cursor: pointer; display: flex; align-items: center; justify-content: space-between;">
-                                        <span style="color: #1e1e1e;">Upper Legs – $35</span>
-                                        <span class="booking-summary-actions">
-                                            <button class="booking-summary-button" type="button" onclick="goToBooking('upper-legs')">Book Now</button>
-                                            <span style="color: #b08a61;">▼</span>
-                                        </span>
-                                    </summary>
-                                </details>
-                            </li>
-                            <li style="border-bottom: 1px solid #b08a61; padding: 6px 0;">
-                                <details>
-                                    <summary style="list-style: none; color: #b08a61; font-weight: 600; cursor: pointer; display: flex; align-items: center; justify-content: space-between;">
-                                        <span style="color: #1e1e1e;">Lower Legs – $30</span>
-                                        <span class="booking-summary-actions">
-                                            <button class="booking-summary-button" type="button" onclick="goToBooking('lower-legs')">Book Now</button>
-                                            <span style="color: #b08a61;">▼</span>
-                                        </span>
-                                    </summary>
-                                </details>
-                            </li>
-                            <li style="border-bottom: 1px solid #b08a61; padding: 6px 0;">
-                                <details>
-                                    <summary style="list-style: none; color: #b08a61; font-weight: 600; cursor: pointer; display: flex; align-items: center; justify-content: space-between;">
-                                        <span style="color: #1e1e1e;">Full Arms – $35</span>
-                                        <span class="booking-summary-actions">
-                                            <button class="booking-summary-button" type="button" onclick="goToBooking('full-arms')">Book Now</button>
-                                            <span style="color: #b08a61;">▼</span>
-                                        </span>
-                                    </summary>
-                                </details>
-                            </li>
-                            <li style="border-bottom: 1px solid #b08a61; padding: 6px 0;">
-                                <details>
-                                    <summary style="list-style: none; color: #b08a61; font-weight: 600; cursor: pointer; display: flex; align-items: center; justify-content: space-between;">
-                                        <span style="color: #1e1e1e;">Half Arms – $22</span>
-                                        <span class="booking-summary-actions">
-                                            <button class="booking-summary-button" type="button" onclick="goToBooking('half-arms')">Book Now</button>
-                                            <span style="color: #b08a61;">▼</span>
-                                        </span>
-                                    </summary>
-                                </details>
-                            </li>
-                            <li style="border-bottom: 1px solid #b08a61; padding: 6px 0;">
-                                <details>
-                                    <summary style="list-style: none; color: #b08a61; font-weight: 600; cursor: pointer; display: flex; align-items: center; justify-content: space-between;">
-                                        <span style="color: #1e1e1e;">Under Arms – $12</span>
-                                        <span class="booking-summary-actions">
-                                            <button class="booking-summary-button" type="button" onclick="goToBooking('under-arms')">Book Now</button>
-                                            <span style="color: #b08a61;">▼</span>
-                                        </span>
-                                    </summary>
-                                </details>
-                            </li>
-                            <li style="border-bottom: 1px solid #b08a61; padding: 6px 0;">
-                                <details>
-                                    <summary style="list-style: none; color: #b08a61; font-weight: 600; cursor: pointer; display: flex; align-items: center; justify-content: space-between;">
-                                        <span style="color: #1e1e1e;">Stomach – $30</span>
-                                        <span class="booking-summary-actions">
-                                            <button class="booking-summary-button" type="button" onclick="goToBooking('stomach')">Book Now</button>
-                                            <span style="color: #b08a61;">▼</span>
-                                        </span>
-                                    </summary>
-                                </details>
-                            </li>
-                            <li style="border-bottom: 1px solid #b08a61; padding: 6px 0;">
-                                <details>
-                                    <summary style="list-style: none; color: #b08a61; font-weight: 600; cursor: pointer; display: flex; align-items: center; justify-content: space-between;">
-                                        <span style="color: #1e1e1e;">Breast – $20</span>
-                                        <span class="booking-summary-actions">
-                                            <button class="booking-summary-button" type="button" onclick="goToBooking('breast')">Book Now</button>
-                                            <span style="color: #b08a61;">▼</span>
-                                        </span>
-                                    </summary>
-                                </details>
-                            </li>
-                            <li style="border-bottom: 1px solid #b08a61; padding: 6px 0;">
-                                <details>
-                                    <summary style="list-style: none; color: #b08a61; font-weight: 600; cursor: pointer; display: flex; align-items: center; justify-content: space-between;">
-                                        <span style="color: #1e1e1e;">Full Back – $35</span>
-                                        <span class="booking-summary-actions">
-                                            <button class="booking-summary-button" type="button" onclick="goToBooking('full-back')">Book Now</button>
-                                            <span style="color: #b08a61;">▼</span>
-                                        </span>
-                                    </summary>
-                                </details>
-                            </li>
-                            <li style="border-bottom: 1px solid #b08a61; padding: 6px 0;">
-                                <details>
-                                    <summary style="list-style: none; color: #b08a61; font-weight: 600; cursor: pointer; display: flex; align-items: center; justify-content: space-between;">
-                                        <span style="color: #1e1e1e;">Half Back – $25</span>
-                                        <span class="booking-summary-actions">
-                                            <button class="booking-summary-button" type="button" onclick="goToBooking('half-back')">Book Now</button>
-                                            <span style="color: #b08a61;">▼</span>
-                                        </span>
-                                    </summary>
-                                </details>
-                            </li>
-                            <li style="border-bottom: 1px solid #b08a61; padding: 6px 0;">
-                                <details>
-                                    <summary style="list-style: none; color: #b08a61; font-weight: 600; cursor: pointer; display: flex; align-items: center; justify-content: space-between;">
-                                        <span style="color: #1e1e1e;">Bikini Line – $20</span>
-                                        <span class="booking-summary-actions">
-                                            <button class="booking-summary-button" type="button" onclick="goToBooking('bikini-line')">Book Now</button>
-                                            <span style="color: #b08a61;">▼</span>
-                                        </span>
-                                    </summary>
-                                </details>
-                            </li>
-                            <li style="border-bottom: 1px solid #b08a61; padding: 6px 0;">
-                                <details>
-                                    <summary style="list-style: none; color: #b08a61; font-weight: 600; cursor: pointer; display: flex; align-items: center; justify-content: space-between;">
-                                        <span style="color: #1e1e1e;">French Bikini – $33+</span>
-                                        <span class="booking-summary-actions">
-                                            <button class="booking-summary-button" type="button" onclick="goToBooking('french-bikini')">Book Now</button>
-                                            <span style="color: #b08a61;">▼</span>
-                                        </span>
-                                    </summary>
-                                </details>
-                            </li>
-                            <li style="border-bottom: 1px solid #b08a61; padding: 6px 0;">
-                                <details>
-                                    <summary style="list-style: none; color: #b08a61; font-weight: 600; cursor: pointer; display: flex; align-items: center; justify-content: space-between;">
-                                        <span style="color: #1e1e1e;">Brazilian – $50</span>
-                                        <span class="booking-summary-actions">
-                                            <button class="booking-summary-button" type="button" onclick="goToBooking('brazilian')">Book Now</button>
-                                            <span style="color: #b08a61;">▼</span>
-                                        </span>
-                                    </summary>
-                                </details>
-                            </li>
-                            <li style="border-bottom: 1px solid #b08a61; padding: 6px 0;">
-                                <details>
-                                    <summary style="list-style: none; color: #b08a61; font-weight: 600; cursor: pointer; display: flex; align-items: center; justify-content: space-between;">
-                                        <span style="color: #1e1e1e;">Buttocks – $20+</span>
-                                        <span class="booking-summary-actions">
-                                            <button class="booking-summary-button" type="button" onclick="goToBooking('buttocks')">Book Now</button>
-                                            <span style="color: #b08a61;">▼</span>
-                                        </span>
-                                    </summary>
-                                </details>
-                            </li>
-                            <li style="border-bottom: 1px solid #b08a61; padding: 6px 0;">
-                                <details>
-                                    <summary style="list-style: none; color: #b08a61; font-weight: 600; cursor: pointer; display: flex; align-items: center; justify-content: space-between;">
-                                        <span style="color: #1e1e1e;">Butt Cheeks – $15</span>
-                                        <span class="booking-summary-actions">
-                                            <button class="booking-summary-button" type="button" onclick="goToBooking('butt-cheeks')">Book Now</button>
-                                            <span style="color: #b08a61;">▼</span>
-                                        </span>
-                                    </summary>
-                                </details>
-                            </li>
-                            <li style="border-bottom: 1px solid #b08a61; padding: 6px 0;">
-                                <details>
-                                    <summary style="list-style: none; color: #b08a61; font-weight: 600; cursor: pointer; display: flex; align-items: center; justify-content: space-between;">
-                                        <span style="color: #1e1e1e;">Fingers/Toes – $10</span>
-                                        <span class="booking-summary-actions">
-                                            <button class="booking-summary-button" type="button" onclick="goToBooking('fingers-toes')">Book Now</button>
-                                            <span style="color: #b08a61;">▼</span>
-                                        </span>
-                                    </summary>
-                                </details>
-                            </li>
-                            <li style="padding: 6px 0;">
-                                <details>
-                                    <summary style="list-style: none; color: #b08a61; font-weight: 600; cursor: pointer; display: flex; align-items: center; justify-content: space-between;">
-                                        <span style="color: #1e1e1e;">Full Body Waxing – $170 (neck to toes)</span>
-                                        <span class="booking-summary-actions">
-                                            <button class="booking-summary-button" type="button" onclick="goToBooking('full-body-waxing')">Book Now</button>
-                                            <span style="color: #b08a61;">▼</span>
-                                        </span>
-                                    </summary>
-                                </details>
-                            </li>
-                        </ul>
+                        <details>
+                            <summary>
+                                <span>Luxe Waxing Bar for Women</span>
+                                <span>▼</span>
+                            </summary>
+                            <ul>
+                                <li>
+                                    <div>
+                                        <span>Full Legs – $45</span>
+                                        <button class="booking-summary-button" type="button" onclick="goToBooking('full-legs')">Book Now</button>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <span>Upper Legs – $35</span>
+                                        <button class="booking-summary-button" type="button" onclick="goToBooking('upper-legs')">Book Now</button>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <span>Lower Legs – $30</span>
+                                        <button class="booking-summary-button" type="button" onclick="goToBooking('lower-legs')">Book Now</button>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <span>Full Arms – $35</span>
+                                        <button class="booking-summary-button" type="button" onclick="goToBooking('full-arms')">Book Now</button>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <span>Half Arms – $22</span>
+                                        <button class="booking-summary-button" type="button" onclick="goToBooking('half-arms')">Book Now</button>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <span>Under Arms – $12</span>
+                                        <button class="booking-summary-button" type="button" onclick="goToBooking('under-arms')">Book Now</button>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <span>Stomach – $30</span>
+                                        <button class="booking-summary-button" type="button" onclick="goToBooking('stomach')">Book Now</button>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <span>Breast – $20</span>
+                                        <button class="booking-summary-button" type="button" onclick="goToBooking('breast')">Book Now</button>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <span>Full Back – $35</span>
+                                        <button class="booking-summary-button" type="button" onclick="goToBooking('full-back')">Book Now</button>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <span>Half Back – $25</span>
+                                        <button class="booking-summary-button" type="button" onclick="goToBooking('half-back')">Book Now</button>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <span>Bikini Line – $20</span>
+                                        <button class="booking-summary-button" type="button" onclick="goToBooking('bikini-line')">Book Now</button>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <span>French Bikini – $33+</span>
+                                        <button class="booking-summary-button" type="button" onclick="goToBooking('french-bikini')">Book Now</button>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <span>Brazilian – $50</span>
+                                        <button class="booking-summary-button" type="button" onclick="goToBooking('brazilian')">Book Now</button>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <span>Buttocks – $20+</span>
+                                        <button class="booking-summary-button" type="button" onclick="goToBooking('buttocks')">Book Now</button>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <span>Butt Cheeks – $15</span>
+                                        <button class="booking-summary-button" type="button" onclick="goToBooking('butt-cheeks')">Book Now</button>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <span>Fingers/Toes – $10</span>
+                                        <button class="booking-summary-button" type="button" onclick="goToBooking('fingers-toes')">Book Now</button>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <span>Full Body Waxing – $170 (neck to toes)</span>
+                                        <button class="booking-summary-button" type="button" onclick="goToBooking('full-body-waxing')">Book Now</button>
+                                    </div>
+                                </li>
+                            </ul>
+                        </details>
 
-                        <h2 style="text-align: left; color: #b08a61;">Gentlemen’s Wax Bar</h2>
-                        <ul style="list-style: none; padding-left: 0; margin-bottom: 30px;">
-                            <li style="border-bottom: 1px solid #b08a61; padding: 6px 0;">
-                                <details>
-                                    <summary style="list-style: none; color: #b08a61; font-weight: 600; cursor: pointer; display: flex; align-items: center; justify-content: space-between;">
-                                        <span style="color: #1e1e1e;">Full Arms – $50</span>
-                                        <span class="booking-summary-actions">
-                                            <button class="booking-summary-button" type="button" onclick="goToBooking('mens-full-arms')">Book Now</button>
-                                            <span style="color: #b08a61;">▼</span>
-                                        </span>
-                                    </summary>
-                                </details>
-                            </li>
-                            <li style="border-bottom: 1px solid #b08a61; padding: 6px 0;">
-                                <details>
-                                    <summary style="list-style: none; color: #b08a61; font-weight: 600; cursor: pointer; display: flex; align-items: center; justify-content: space-between;">
-                                        <span style="color: #1e1e1e;">Full Back – $50</span>
-                                        <span class="booking-summary-actions">
-                                            <button class="booking-summary-button" type="button" onclick="goToBooking('mens-full-back')">Book Now</button>
-                                            <span style="color: #b08a61;">▼</span>
-                                        </span>
-                                    </summary>
-                                </details>
-                            </li>
-                            <li style="padding: 6px 0;">
-                                <details>
-                                    <summary style="list-style: none; color: #b08a61; font-weight: 600; cursor: pointer; display: flex; align-items: center; justify-content: space-between;">
-                                        <span style="color: #1e1e1e;">Chest/Stomach – $50</span>
-                                        <span class="booking-summary-actions">
-                                            <button class="booking-summary-button" type="button" onclick="goToBooking('mens-chest-stomach')">Book Now</button>
-                                            <span style="color: #b08a61;">▼</span>
-                                        </span>
-                                    </summary>
-                                </details>
-                            </li>
-                        </ul>
+                        <details>
+                            <summary>
+                                <span>Gentlemen’s Wax Bar</span>
+                                <span>▼</span>
+                            </summary>
+                            <ul>
+                                <li>
+                                    <div>
+                                        <span>Full Arms – $50</span>
+                                        <button class="booking-summary-button" type="button" onclick="goToBooking('mens-full-arms')">Book Now</button>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <span>Full Back – $50</span>
+                                        <button class="booking-summary-button" type="button" onclick="goToBooking('mens-full-back')">Book Now</button>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <span>Chest/Stomach – $50</span>
+                                        <button class="booking-summary-button" type="button" onclick="goToBooking('mens-chest-stomach')">Book Now</button>
+                                    </div>
+                                </li>
+                            </ul>
+                        </details>
 
-                        <h2 style="text-align: left; color: #b08a61;">Makeup and Hairstyle</h2>
-                        <ul style="list-style: none; padding-left: 0; margin-bottom: 0;">
-                            <li style="border-bottom: 1px solid #b08a61; padding: 6px 0;">
-                                <details>
-                                    <summary style="list-style: none; color: #b08a61; font-weight: 600; cursor: pointer; display: flex; align-items: center; justify-content: space-between;">
-                                        <span style="color: #1e1e1e;">Makeup – $100+</span>
-                                        <span class="booking-summary-actions">
-                                            <button class="booking-summary-button" type="button" onclick="goToBooking('makeup')">Book Now</button>
-                                            <span style="color: #b08a61;">▼</span>
-                                        </span>
-                                    </summary>
-                                </details>
-                            </li>
-                            <li style="border-bottom: 1px solid #b08a61; padding: 6px 0;">
-                                <details>
-                                    <summary style="list-style: none; color: #b08a61; font-weight: 600; cursor: pointer; display: flex; align-items: center; justify-content: space-between;">
-                                        <span style="color: #1e1e1e;">Hair Style – $50+</span>
-                                        <span class="booking-summary-actions">
-                                            <button class="booking-summary-button" type="button" onclick="goToBooking('hair-style')">Book Now</button>
-                                            <span style="color: #b08a61;">▼</span>
-                                        </span>
-                                    </summary>
-                                </details>
-                            </li>
-                            <li style="border-bottom: 1px solid #b08a61; padding: 6px 0;">
-                                <details>
-                                    <summary style="list-style: none; color: #b08a61; font-weight: 600; cursor: pointer; display: flex; align-items: center; justify-content: space-between;">
-                                        <span style="color: #1e1e1e;">Eye Makeup – $30+</span>
-                                        <span class="booking-summary-actions">
-                                            <button class="booking-summary-button" type="button" onclick="goToBooking('eye-makeup')">Book Now</button>
-                                            <span style="color: #b08a61;">▼</span>
-                                        </span>
-                                    </summary>
-                                </details>
-                            </li>
-                            <li style="border-bottom: 1px solid #b08a61; padding: 6px 0;">
-                                <details>
-                                    <summary style="list-style: none; color: #b08a61; font-weight: 600; cursor: pointer; display: flex; align-items: center; justify-content: space-between;">
-                                        <span style="color: #1e1e1e;">Eye Makeup with Lashes – $50+</span>
-                                        <span class="booking-summary-actions">
-                                            <button class="booking-summary-button" type="button" onclick="goToBooking('eye-makeup-lashes')">Book Now</button>
-                                            <span style="color: #b08a61;">▼</span>
-                                        </span>
-                                    </summary>
-                                </details>
-                            </li>
-                            <li style="padding: 6px 0;">
-                                <details>
-                                    <summary style="list-style: none; color: #b08a61; font-weight: 600; cursor: pointer; display: flex; align-items: center; justify-content: space-between;">
-                                        <span style="color: #1e1e1e;">Sari Tie – $30</span>
-                                        <span class="booking-summary-actions">
-                                            <button class="booking-summary-button" type="button" onclick="goToBooking('sari-tie')">Book Now</button>
-                                            <span style="color: #b08a61;">▼</span>
-                                        </span>
-                                    </summary>
-                                </details>
-                            </li>
-                        </ul>
+                        <details>
+                            <summary>
+                                <span>Makeup and Hairstyle</span>
+                                <span>▼</span>
+                            </summary>
+                            <ul>
+                                <li>
+                                    <div>
+                                        <span>Makeup – $100+</span>
+                                        <button class="booking-summary-button" type="button" onclick="goToBooking('makeup')">Book Now</button>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <span>Hair Style – $50+</span>
+                                        <button class="booking-summary-button" type="button" onclick="goToBooking('hair-style')">Book Now</button>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <span>Eye Makeup – $30+</span>
+                                        <button class="booking-summary-button" type="button" onclick="goToBooking('eye-makeup')">Book Now</button>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <span>Eye Makeup with Lashes – $50+</span>
+                                        <button class="booking-summary-button" type="button" onclick="goToBooking('eye-makeup-lashes')">Book Now</button>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <span>Sari Tie – $30</span>
+                                        <button class="booking-summary-button" type="button" onclick="goToBooking('sari-tie')">Book Now</button>
+                                    </div>
+                                </li>
+                            </ul>
+                        </details>
                     </div>
                 </div>
             </div>
@@ -1102,57 +716,85 @@
 
         <!-- main footer -->
         <footer class="main-footer">
-            <div class="footer-top">
+            <div class="footer-top footer-top--redesign">
+                <div class="pattern-layer footer-pattern-layer"></div>
                 <div class="auto-container">
-                    <div class="row clearfix">
-                        <div class="col-lg-4 col-md-6 col-sm-12 footer-column">
-                            <div class="footer-widget logo-widget">
-                                <figure class="footer-logo"><a href="index.html"><img src="assets/images/browloft.png" alt="Browloft"></a></figure>
-                                <div class="text">
-                                    <p>Welcome to Browloft Beauty. Your destination for professional beauty and personal care services.</p>
+                    <div class="widget-section footer-layout">
+                        <div class="row footer-row footer-row--top clearfix">
+                            <div class="col-lg-6 col-md-12 col-sm-12 footer-column footer-column--left">
+                                <div class="footer-widget contact-widget">
+                                    <div class="widget-title footer-heading">
+                                        <span class="footer-heading-line"></span>
+                                        <span class="footer-heading-icon"></span>
+                                        <h5>Contact</h5>
+                                        <span class="footer-heading-line"></span>
+                                    </div>
+                                    <div class="widget-content">
+                                        <ul class="info-list clearfix">
+                                            <li>
+                                                <i class="flaticon-phone-call"></i>
+                                                <p><a href="tel:6668880000">666 888 0000</a></p>
+                                            </li>
+                                            <li>
+                                                <i class="flaticon-email-2"></i>
+                                                <p><a href="mailto:browloft@hotmail.com">browloft@hotmail.com</a></p>
+                                            </li>
+                                            <li>
+                                                <i class="flaticon-maps-and-flags"></i>
+                                                <p>Langley, Burnaby - Vancouver, Canada</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                     <div class="col-lg-6 col-md-12 col-sm-12 footer-column footer-column--left">
+                                        <ul class="footer-social footer-social--inline clearfix">
+                                            <li><a href="index.html"><i class="fab fa-twitter"></i></a></li>
+                                            <li><a href="index.html"><i class="fab fa-facebook-square"></i></a></li>
+                                            <li><a href="index.html"><i class="fab fa-pinterest-p"></i></a></li>
+                                            <li><a href="index.html"><i class="fab fa-instagram"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-12 col-sm-12 footer-column footer-column--right">
+                                <div class="footer-widget links-widget">
+                                    <div class="widget-title footer-heading">
+                                        <span class="footer-heading-line"></span>
+                                        <span class="footer-heading-icon"></span>
+                                        <h5>Services</h5>
+                                        <span class="footer-heading-line"></span>
+                                    </div>
+                                    <div class="widget-content">
+                                        <ul class="links-list clearfix">
+                                            <li><a href="index.html">Eye Brow Threading</a></li>
+                                            <li><a href="index.html">Brow & Lash Bar</a></li>
+                                            <li><a href="index.html">Luxe Facial Bar</a></li>
+                                            <li><a href="index.html">Micro-Needling</a></li>
+                                            <li><a href="index.html">Womens/Mens Wax Bar</a></li>
+                                            <li><a href="index.html">Makeup and Hairstyle</a></li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 footer-column">
-                            <div class="footer-widget links-widget">
-                                <div class="widget-title">
-                                    <h5>Quick Links</h5>
+                        <!-- <div class="row footer-row footer-row--top clearfix">
+                            <div class="footer-column footer-logo-column">
+                                <div class="footer-widget logo-widget">
+                                    <figure class="footer-logo"><a href="index.html"><img src="assets/images/browloft.png" alt="Browloft"></a></figure>
                                 </div>
-                                <ul class="links-list">
-                                    <li><a href="index.html">Home</a></li>
-                                    <li><a href="service.html">All Services</a></li>
-                                    <li><a href="booking-langley.html">Book Now</a></li>
-                                    <li><a href="contact.html">Contact Us</a></li>
-                                </ul>
                             </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 footer-column">
-                            <div class="footer-widget contact-widget">
-                                <div class="widget-title">
-                                    <h5>Contact Info</h5>
-                                </div>
-                                <ul class="info-list">
-                                    <li>
-                                        <i class="flaticon-map-marker"></i>
-                                        <p>Langley & Burnaby, BC</p>
-                                    </li>
-                                    <li>
-                                        <i class="flaticon-phone"></i>
-                                        <p><a href="tel:+1234567890">+1 (234) 567-890</a></p>
-                                    </li>
-                                    <li>
-                                        <i class="flaticon-email-1"></i>
-                                        <p><a href="mailto:info@browloft.com">info@browloft.com</a></p>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
             <div class="footer-botton">
-                <div class="auto-container">
-                    <div class="copyright pull-left"><p>&copy; Copyright 2024 by <a href="index.html">Browloft Beauty</a></p></div>
+                <div class="auto-container clearfix">
+                    <div class="copyright"><p>&copy; 2026 Brow Loft. All rights reserved.</p></div>
+                    <!-- <ul class="footer-social pull-right clearfix">
+                        <li><a href="index.html"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="index.html"><i class="fab fa-facebook-square"></i></a></li>
+                        <li><a href="index.html"><i class="fab fa-pinterest-p"></i></a></li>
+                        <li><a href="index.html"><i class="fab fa-instagram"></i></a></li>
+                    </ul> -->
                 </div>
             </div>
         </footer>
@@ -1161,9 +803,9 @@
     </div>
 
     <!-- Scroll To Top -->
-    <div class="scroll-top" style="display: none;">
+    <div class="scroll-top">
         <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
-            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" style="transition: stroke-dashoffset 10ms linear; stroke-dasharray: 307.876, 307.876; stroke-dashoffset: 307.876;"></path>
+            <path class="scroll-top-path" d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"></path>
         </svg>
     </div>
 
@@ -1186,7 +828,7 @@
             // Store the selected service in session storage
             sessionStorage.setItem('selectedService', serviceType);
             // Redirect to booking calendar page
-            window.location.href = 'booking-calendar.html?service=' + serviceType;
+            window.location.href = 'booking.html';
         }
     </script>
 

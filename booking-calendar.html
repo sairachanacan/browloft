@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta http-equiv="refresh" content="0; url=booking.html">
 
 <title>Select Date & Time - Browloft Beauty Booking</title>
 
@@ -281,7 +282,6 @@
         <!-- preloader -->
         <div class="loader-wrap">
             <div class="preloader">
-                <div class="preloader-close">Preloader Close</div>
                 <div id="handle-preloader" class="handle-preloader">
                     <div class="animation-preloader">
                         <div class="spinner"></div>
@@ -341,7 +341,7 @@
                                             </ul>
                                         </li>
                                         <li><a href="about.html">About</a></li>
-                                        <li><a href="contact.html">Contact</a></li>
+                                        <li><a href="index.html#enquiry">Contact</a></li>
                                     </ul>
                                 </div>
                             </nav>
@@ -711,7 +711,7 @@
                     time: selectedTime
                 };
                 sessionStorage.setItem('bookingData', JSON.stringify(bookingData));
-                window.location.href = 'booking-details.html';
+                window.location.href = 'booking.html';
             }
         }
 

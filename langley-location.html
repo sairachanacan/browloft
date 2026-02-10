@@ -37,7 +37,6 @@
         <!-- preloader -->
         <div class="loader-wrap">
             <div class="preloader">
-                <div class="preloader-close">Preloader Close</div>
                 <div id="handle-preloader" class="handle-preloader">
                     <div class="animation-preloader">
                         <div class="spinner"></div>
@@ -131,14 +130,14 @@
                                         <li><a href="index.html">Home</a></li> 
                                         <li class="dropdown"><a href="index.html">Services</a>
                                             <ul>
-                                                <li><a href="service.html">Our Services</a></li>
+                                                <!-- <li><a href="service.html">Our Services</a></li> -->
                                                 <li><a href="langley-location.html">Langley Location</a></li>
                                                 <li><a href="burnaby-location.html">Burnaby Location</a></li>
                                             </ul>
                                         </li>
                                         <li><a href="about.html">About</a></li>
-                                        <li><a href="contact.html">Contact</a></li>
-                                        <li><a href="booking.html">Book Now</a></li>
+                                        <li><a href="index.html#enquiry">Contact</a></li>
+                                        <!-- <li><a href="booking.html">Book Now</a></li> -->
                                     </ul>   
                                     </ul>
                                 </div>
@@ -709,7 +708,7 @@
                             <div class="col-lg-6 col-md-12" style="padding-left: 60px;">
                                 <div class="text" style="text-align: left;">
                                     <h2 style="text-align: left; color: #b08a61;">Luxe Waxing Bar for Women</h2>
-                                    <ul style="list-style: none; padding-left: 0; margin-bottom: 0;">
+                                    <ul class="waxing-list--two-col"  style="list-style: none; padding-left: 0; margin-bottom: 0;">
                                         <li style="border-bottom: 1px solid #b08a61; padding: 6px 0;">
                                             <details>
                                                 <summary style="list-style: none; color: #b08a61; font-weight: 600; cursor: pointer; display: flex; align-items: center; justify-content: space-between;">
@@ -937,7 +936,7 @@
                                         <li style="padding: 6px 0;">
                                             <details>
                                                 <summary style="list-style: none; color: #b08a61; font-weight: 600; cursor: pointer; display: flex; align-items: center; justify-content: space-between;">
-                                                    <span style="color: #1e1e1e;">Sari Tie</span>
+                                                    <span style="color: #1e1e1e;">Saree Tie</span>
                                                     <!-- <span style="color: #b08a61;">▼</span> -->
                                                 </summary>
                                             </details>
@@ -946,69 +945,97 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="btn-box"><a href="booking-langley.html" class="theme-btn-one">Book Appointment</a></div>
+                        <!-- <div class="btn-box"><a href="booking.html" class="theme-btn-one">Book Appointment</a></div> -->
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- main footer -->
+        <!-- main-footer -->
         <footer class="main-footer">
-            <div class="footer-top">
+            <div class="footer-top footer-top--redesign">
+                <div class="pattern-layer" style="background-image: url(assets/images/shape/shape-6.png);"></div>
                 <div class="auto-container">
-                    <div class="row clearfix">
-                        <div class="col-lg-4 col-md-6 col-sm-12 footer-column">
-                            <div class="footer-widget logo-widget">
-                                <figure class="footer-logo"><a href="index.html"><img src="assets/images/browloft.png" alt="Browloft"></a></figure>
-                                <div class="text">
-                                    <p>Welcome to Browloft Beauty - Langley Location. Your destination for professional beauty and personal care services.</p>
+                    <div class="widget-section footer-layout">
+                        <div class="row footer-row footer-row--top clearfix">
+                            <div class="col-lg-6 col-md-12 col-sm-12 footer-column footer-column--left">
+                                <div class="footer-widget contact-widget">
+                                    <div class="widget-title footer-heading">
+                                        <span class="footer-heading-line"></span>
+                                        <span class="footer-heading-icon"></span>
+                                        <h5>Contact</h5>
+                                        <span class="footer-heading-line"></span>
+                                    </div>
+                                    <div class="widget-content">
+                                        <ul class="info-list clearfix">
+                                            <li>
+                                                <i class="flaticon-phone-call"></i>
+                                                <p><a href="tel:6668880000">666 888 0000</a></p>
+                                            </li>
+                                            <li>
+                                                <i class="flaticon-email-2"></i>
+                                                <p><a href="mailto:browloft@hotmail.com">browloft@hotmail.com</a></p>
+                                            </li>
+                                            <li>
+                                                <i class="flaticon-maps-and-flags"></i>
+                                                <p>Langley, Burnaby - Vancouver, Canada</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                     <div class="col-lg-6 col-md-12 col-sm-12 footer-column footer-column--left">
+                                        <ul class="footer-social footer-social--inline clearfix">
+                                            <li><a href="index.html"><i class="fab fa-twitter"></i></a></li>
+                                            <li><a href="index.html"><i class="fab fa-facebook-square"></i></a></li>
+                                            <li><a href="index.html"><i class="fab fa-pinterest-p"></i></a></li>
+                                            <li><a href="index.html"><i class="fab fa-instagram"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-12 col-sm-12 footer-column footer-column--right">
+                                <div class="footer-widget links-widget">
+                                    <div class="widget-title footer-heading">
+                                        <span class="footer-heading-line"></span>
+                                        <span class="footer-heading-icon"></span>
+                                        <h5>Services</h5>
+                                        <span class="footer-heading-line"></span>
+                                    </div>
+                                    <div class="widget-content">
+                                        <ul class="links-list clearfix">
+                                            <li><a href="index.html">Eye Brow Threading</a></li>
+                                            <li><a href="index.html">Brow & Lash Bar</a></li>
+                                            <li><a href="index.html">Luxe Facial Bar</a></li>
+                                            <li><a href="index.html">Micro-Needling</a></li>
+                                            <li><a href="index.html">Womens/Mens Wax Bar</a></li>
+                                            <li><a href="index.html">Makeup and Hairstyle</a></li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 footer-column">
-                            <div class="footer-widget links-widget">
-                                <div class="widget-title">
-                                    <h5>Quick Links</h5>
+                        <!-- <div class="row footer-row footer-row--top clearfix">
+                            <div class="footer-column footer-logo-column">
+                                <div class="footer-widget logo-widget">
+                                    <figure class="footer-logo"><a href="index.html"><img src="assets/images/browloft.png" alt="Browloft"></a></figure>
                                 </div>
-                                <ul class="links-list">
-                                    <li><a href="index.html">Home</a></li>
-                                    <li><a href="service.html">All Services</a></li>
-                                    <li><a href="burnaby-location.html">Burnaby Location</a></li>
-                                    <li><a href="contact.html">Contact Us</a></li>
-                                </ul>
                             </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 footer-column">
-                            <div class="footer-widget contact-widget">
-                                <div class="widget-title">
-                                    <h5>Contact Info</h5>
-                                </div>
-                                <ul class="info-list">
-                                    <li>
-                                        <i class="flaticon-map-marker"></i>
-                                        <p>Langley, BC, Canada</p>
-                                    </li>
-                                    <li>
-                                        <i class="flaticon-phone"></i>
-                                        <p><a href="tel:+1604111111">+1 (604) 111-1111</a></p>
-                                    </li>
-                                    <li>
-                                        <i class="flaticon-email-1"></i>
-                                        <p><a href="mailto:langley@browloft.com">langley@browloft.com</a></p>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
             <div class="footer-botton">
-                <div class="auto-container">
-                    <div class="copyright pull-left"><p>&copy; Copyright 2024 by <a href="index.html">Browloft Beauty</a></p></div>
+                <div class="auto-container clearfix">
+                    <div class="copyright"><p>&copy; 2026 Brow Loft. All rights reserved.</p></div>
+                    <!-- <ul class="footer-social pull-right clearfix">
+                        <li><a href="index.html"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="index.html"><i class="fab fa-facebook-square"></i></a></li>
+                        <li><a href="index.html"><i class="fab fa-pinterest-p"></i></a></li>
+                        <li><a href="index.html"><i class="fab fa-instagram"></i></a></li>
+                    </ul> -->
                 </div>
             </div>
         </footer>
-        <!-- main footer end -->
+        <!-- main-footer end -->
 
     </div>
 
