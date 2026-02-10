@@ -6058,8 +6058,18 @@ div#mCSB_1_container{
   margin-bottom: 50px;
 }
 
+.service-details-content summary::marker{
+  content: "";
+}
+
+.service-details-content summary::-webkit-details-marker{
+  display: none;
+}
+
 .service-details-content details summary span:last-child:not(:only-child){
   display: inline-block;
+  font-size: 12px;
+  line-height: 1;
   transition: transform 0.2s ease;
 }
 
@@ -6757,6 +6767,8 @@ div#mCSB_1_container{
   margin: 0 auto;
   background-color: #000000d9;
   padding: 35px;
+  box-shadow: 0 12px 30px rgb(0 0 0 / 70%);
+    border-radius: 20px;
 }
 
 .booking-services-heading{
@@ -6985,11 +6997,14 @@ div#mCSB_1_container{
   align-items: center;
   justify-content: space-between;
   gap: 12px;
+  flex-wrap: wrap;
 }
 
 .booking-container ul li > div > span:first-child{
-      font-weight: 200;
-    color: #bfbfbfb0;
+  font-weight: 200;
+  color: #bfbfbfb0;
+  flex: 1 1 70%;
+  min-width: 0;
 }
 
 .booking-item-label{
@@ -7647,6 +7662,7 @@ div#mCSB_1_container{
   align-items: center;
   justify-content: center;
   display: inline-flex;
+  flex-shrink: 0;
 }
 
 .booking-summary-button.is-primary,
@@ -7683,7 +7699,7 @@ div#mCSB_1_container{
 }
 
 .footer-contact-centered .info-list{
-  text-align: center;
+  /* text-align: center; */
 }
 
 .footer-contact-centered .info-list li{
