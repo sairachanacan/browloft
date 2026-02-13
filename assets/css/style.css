@@ -7707,3 +7707,519 @@ div#mCSB_1_container{
   justify-content: center;
   gap: 10px;
 }
+
+/*** 
+====================================================================
+  Service Booking Section - New Design
+====================================================================
+***/
+
+/* Service Booking Section - New Design */
+.service-booking-section {
+    margin-bottom: 60px;
+}
+
+.section-heading {
+    text-align: center;
+    color: #b08a61;
+    font-size: 28px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+}
+
+/* Desktop Layout */
+.desktop-view {
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    gap: 30px;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.mobile-view {
+    display: none;
+}
+
+/* Sidebar */
+.service-sidebar {
+    background: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgb(0 0 0 / 12%);
+}
+
+/* Hide mobile detail view on desktop */
+@media (min-width: 992px) {
+    .mobile-detail-view {
+        display: none !important;
+    }
+}
+
+.search-box {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.service-search {
+    width: 100%;
+    padding: 12px 40px 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #666;
+}
+
+.search-box i {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+}
+
+.service-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.service-item {
+    padding: 15px;
+    margin-bottom: 8px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.service-item:hover {
+    background: #f0f0f0;
+}
+
+.service-item.active {
+    background: #e8ddd0;
+}
+
+.service-item-content {
+    flex: 1;
+}
+
+.service-item .service-name {
+    display: block;
+    font-weight: 600;
+    color: #1e1e1e;
+    margin-bottom: 4px;
+    font-size: 18px;
+}
+
+.service-item .service-price {
+    display: block;
+    color: #b08a61;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 2px;
+}
+
+.service-item .service-duration {
+    display: block;
+    color: #666;
+    font-size: 16px;
+}
+
+.service-item .service-arrow {
+    color: #b08a61;
+    font-size: 18px;
+    margin-left: 10px;
+    transition: transform 0.3s ease;
+}
+
+.service-item:hover .service-arrow {
+    transform: translateX(3px);
+}
+
+/* Add-On Services Expandable Section */
+.addon-section {
+    margin-top: 15px;
+    border-top: 1px solid #e0e0e0;
+    padding-top: 10px;
+}
+
+.addon-header {
+    padding: 12px 15px;
+    background: #f9f9f9;
+    border-radius: 6px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.addon-header:hover {
+    background: #f0f0f0;
+}
+
+.addon-header .addon-title {
+    font-weight: 600;
+    color: #b08a61;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+
+.addon-header .addon-toggle {
+    color: #b08a61;
+    font-size: 14px;
+    transition: transform 0.3s ease;
+}
+
+.addon-header.expanded .addon-toggle {
+    transform: rotate(180deg);
+}
+
+.addon-items {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.addon-items.expanded {
+    max-height: 500px;
+}
+
+.addon-item {
+    padding: 12px 15px;
+    margin: 6px 0;
+    background: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.addon-item:hover {
+    background: #f9f9f9;
+}
+
+.addon-item.active {
+    background: #e8ddd0;
+}
+
+.addon-item-content {
+    flex: 1;
+}
+
+.addon-item .service-name {
+    display: block;
+    font-weight: 500;
+    color: #1e1e1e;
+    font-size: 14px;
+    margin-bottom: 2px;
+}
+
+.addon-item .service-price {
+    display: block;
+    color: #b08a61;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.addon-item .service-arrow {
+    color: #b08a61;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+/* Detail Panel */
+.service-detail-panel {
+    background: #fff;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 2px 10px rgb(0 0 0 / 12%);
+}
+
+.service-detail {
+    display: none;
+}
+
+.service-image {
+    width: 100%;
+    height: 280px;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.service-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.service-title {
+    font-size: 24px;
+    color: #b08a61;
+    margin-bottom: 8px;
+    font-weight: 400;
+}
+
+.service-meta {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.service-description {
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.service-features {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 15px;
+}
+
+.service-features li {
+    color: #555;
+    line-height: 1.8;
+}
+
+.service-note {
+    color: #777;
+    font-size: 13px;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.add-on-btn {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background: #fff;
+    border: 1px solid #b08a61;
+    color: #b08a61;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+    margin-bottom: 12px;
+    transition: all 0.3s ease;
+}
+
+.add-on-btn:hover {
+    background: #f9f5f0;
+}
+
+.book-btn {
+    display: block;
+    width: 100%;
+    padding: 14px;
+    background: #b08a61;
+    border: none;
+    color: #fff;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.book-btn:hover {
+    background: #9a7651;
+}
+
+/* Mobile Layout */
+@media (max-width: 991px) {
+    .desktop-view {
+        display: none;
+    }
+    
+    .mobile-view {
+        display: block;
+    }
+    
+    .mobile-back-header {
+        display: flex;
+        align-items: center;
+        padding: 15px;
+        background: #f9f9f9;
+        margin-bottom: 15px;
+    }
+    
+    .back-btn {
+        background: none;
+        border: none;
+        font-size: 20px;
+        color: #333;
+        cursor: pointer;
+        margin-right: 15px;
+    }
+    
+    .mobile-section-title {
+        font-size: 16px;
+        color: #b08a61;
+        letter-spacing: 1px;
+        margin: 0;
+    }
+    
+    .mobile-service-list {
+        background: #f9f9f9;
+        border-radius: 8px;
+        padding: 15px 0;
+    }
+    
+    .mobile-search {
+        padding: 0 15px;
+        margin-bottom: 15px;
+    }
+    
+    .mobile-service-items {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .mobile-service-item {
+        padding: 18px 15px;
+        margin: 0 10px 8px 10px;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        background: #fff;
+        border: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .mobile-service-item:hover {
+        background: #f0f0f0;
+    }
+    
+    .mobile-service-item.active {
+        background: #e8ddd0;
+    }
+    
+    .mobile-service-item-content {
+        flex: 1;
+    }
+    
+    .mobile-service-item .service-name {
+        display: block;
+        font-weight: 600;
+        color: #1e1e1e;
+        margin-bottom: 4px;
+        font-size: 18px;
+    }
+    
+    .mobile-service-item .service-price {
+        display: block;
+        color: #b08a61;
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 2px;
+    }
+    
+    .mobile-service-item .service-duration {
+        display: block;
+        color: #666;
+        font-size: 16px;
+    }
+    
+    .mobile-service-item .service-arrow {
+        color: #b08a61;
+        font-size: 18px;
+        margin-left: 10px;
+        transition: transform 0.3s ease;
+    }
+    
+    .mobile-service-item:active .service-arrow {
+        transform: translateX(3px);
+    }
+    
+    .mobile-detail-view {
+        position: fixed;
+        top: auto;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        max-height: 85vh;
+        background: #fff;
+        z-index: 9999;
+        overflow-y: auto;
+        transform: translateY(100%);
+        transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        display: block;
+        border-radius: 20px 20px 0 0;
+        box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.15);
+    }
+    
+    .mobile-detail-view.active {
+        transform: translateY(0);
+    }
+    
+    .drag-handle {
+        padding: 12px 0 8px;
+        text-align: center;
+        cursor: grab;
+        user-select: none;
+    }
+    
+    .drag-handle:active {
+        cursor: grabbing;
+    }
+    
+    .drag-indicator {
+        width: 40px;
+        height: 4px;
+        background: #ccc;
+        border-radius: 2px;
+        margin: 0 auto;
+    }
+    
+    .mobile-detail-content {
+        padding: 20px;
+        padding-top: 10px;
+    }
+    
+    .mobile-detail-content .service-image {
+        height: 240px;
+        margin-bottom: 20px;
+        border-radius: 12px;
+        overflow: hidden;
+    }
+    
+    .mobile-detail-content .book-btn {
+        position: sticky;
+        bottom: 0;
+        margin-top: 20px;
+        box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.05);
+    }
+}
+
+/* Add backdrop overlay for mobile */
+@media (max-width: 991px) {
+    .mobile-backdrop {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 9998;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+    }
+    
+    .mobile-backdrop.active {
+        opacity: 1;
+        visibility: visible;
+    }
+}
