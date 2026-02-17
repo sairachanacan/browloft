@@ -2468,7 +2468,7 @@ div#mCSB_1_container{
   position: relative;
   display: block;
   overflow: hidden;
-  max-height:300px;
+  max-height:250px;
 }
 
 .service-block-one .inner-box .image-box{
@@ -2479,6 +2479,7 @@ div#mCSB_1_container{
   width: 100%;
   transition: all 500ms ease;
   padding: 4px;
+  border-radius: 10px;
 }
 
 .service-block-one .inner-box:hover .image-box img{
@@ -2488,10 +2489,10 @@ div#mCSB_1_container{
 
 .service-block-one .inner-box .lower-content{
   position: relative;
-  padding: 18px 20px 16px 20px;
+  padding: 12px 15px 10px 15px;
   text-align: center;
   color: #fff;
-  min-height: 92px;
+  min-height: 70px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -2499,13 +2500,13 @@ div#mCSB_1_container{
 
 @media only screen and (max-width: 991px){
   .service-block-one .inner-box .lower-content{
-    min-height: 82px;
+    min-height: 65px;
   }
 }
 
 @media only screen and (max-width: 575px){
   .service-block-one .inner-box .lower-content{
-    min-height: 74px;
+    min-height: 60px;
   }
 }
 
