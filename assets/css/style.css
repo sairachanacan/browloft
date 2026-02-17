@@ -2387,7 +2387,7 @@ div#mCSB_1_container{
 
 .service-section{
   position: relative;
-  padding: 50px 0px 120px 0px;
+  padding: 50px 0px 50px 0px;
   background-image: url(../images/shape/shape-1.png);
   background-repeat: no-repeat;
   background-position: left top;
@@ -2581,8 +2581,25 @@ div#mCSB_1_container{
 
 .service-style-two{
   position: relative;
-  padding: 50px 130px 50px 130px;
+  padding: 80px 130px;
   background: #ffffff;
+}
+
+.service-style-two .pattern-layer{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+
+.service-style-two .auto-container{
+  position: relative;
+  z-index: 1;
 }
 
 .service-style-two .heading{
@@ -2600,18 +2617,28 @@ div#mCSB_1_container{
 
 .beauty-section{
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  /* gap: 40px; */
+  gap: 50px;
 }
 
 .beauty-content{
-  flex: 1 1 30%;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.beauty-content.centred{
+  text-align: center;
 }
 
 .service-style-two .beauty-content h2{
   font-weight: 700;
   text-transform: uppercase;
+  color: #8B6F47;
+  font-size: 32px;
+  letter-spacing: 1px;
+  padding: 0px 245px;
 }
 
 .service-style-two .beauty-content .list{
@@ -2625,23 +2652,72 @@ div#mCSB_1_container{
 }
 
 .beauty-cards{
-  flex: 1 1 48%;
+  width: 100%;
+  max-width: 1100px;
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 20px;
-  text-align: center;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin: 0 auto;
 }
 
 .beauty-cards .single-item{
-  padding: 24px 18px;
-  border-radius: 12px;
-  background: #ffffff;
-  box-shadow: 0 0 0 1px #36312f inset, 0 0 0 1px #efe4c8;
+  padding: 35px 30px;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(198, 145, 94, 0.3);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 20px;
+  text-align: left;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.beauty-cards .single-item:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+  border-color: rgba(198, 145, 94, 0.5);
+}
+
+.beauty-cards .single-item .icon-box{
+  flex-shrink: 0;
+  width: 60px;
+  height: 60px;
   display: flex;
   align-items: center;
-  gap: 16px;
-  text-align: left;
-  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.beauty-cards .single-item .icon-box i{
+  font-size: 40px;
+  color: #C4915E;
+}
+
+.beauty-cards .single-item .icon-box img{
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.beauty-cards .single-item .card-content{
+  flex: 1;
+}
+
+.beauty-cards .single-item .card-content h4{
+  font-size: 20px;
+  font-weight: 600;
+  color: #8B6F47;
+  margin-bottom: 10px;
+  line-height: 1.3;
+}
+
+.beauty-cards .single-item .card-content p{
+  font-size: 15px;
+  color: #666;
+  line-height: 1.6;
+  margin: 0;
 }
 
 .service-style-two .beauty-cards .single-item{
@@ -2831,13 +2907,19 @@ div#mCSB_1_container{
     padding: 50px 30px;
   }
 
+  .service-style-two{
+    padding: 60px 30px;
+  }
+
   .beauty-section{
     flex-direction: column;
-    align-items: stretch;
+    align-items: center;
+    gap:0px;
   }
 
   .beauty-cards{
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: 1fr;
+    max-width: 500px;
   }
 
   .service-style-two .heading p{
@@ -2888,13 +2970,20 @@ div#mCSB_1_container{
     padding: 50px 20px;
   }
 
+  .service-style-two .beauty-content h2{
+    font-size: 24px;
+  }
+
   .service-style-two .beauty-content .content-box{
     padding: 30px;
   }
 
   .beauty-cards{
     grid-template-columns: 1fr;
-    padding: 30px;
+  }
+
+  .beauty-cards .single-item{
+    padding: 25px 20px;
   }
 
   .service-style-two .heading p{

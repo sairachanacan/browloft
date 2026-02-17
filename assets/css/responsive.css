@@ -447,6 +447,7 @@
     font-size: 36px;
     line-height: 45px;
     text-align: center;
+    padding:0px;
   }
 
   .service-style-two #content_block_5 .content-box{
@@ -501,7 +502,7 @@
   }
 
   .appointment-section{
-    padding: 70px 0px;
+    padding: 70px 0px 0px 0px;
     border-bottom: none;
   }
 
