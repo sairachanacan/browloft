@@ -7688,7 +7688,7 @@ div#mCSB_1_container{
 .form-group textarea{
   width: 100%;
   padding: 12px;
-  border: 1px solid #2a2a2a;
+  /* border: 1px solid #2a2a2a; */
   border-radius: 4px;
   background: #1a1a1a;
   color: #f2f2f2;
