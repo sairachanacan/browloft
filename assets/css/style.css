@@ -3613,6 +3613,92 @@ div#mCSB_1_container{
 }
 
 
+/** how-it-works section **/
+
+.how-it-works{
+  background: #35312f;
+  padding: 80px 0;
+}
+
+.how-it-works__steps{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 70px;
+}
+
+.how-it-works__step{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.how-it-works__circle{
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 2px solid #555;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.how-it-works__circle i{
+  font-size: 42px;
+  color: #d4d4d4;
+  transition: color 0.3s ease;
+}
+
+.how-it-works__step:hover .how-it-works__circle{
+  border-color: #D4A574;
+}
+
+.how-it-works__step:hover .how-it-works__circle i{
+  color: #D4A574;
+}
+
+.how-it-works__label{
+  font-size: 18px;
+  font-weight: 500;
+  color: #f2f2f2;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+
+.how-it-works__arrow{
+  font-size: 28px;
+  color: #555;
+  margin-bottom: 50px;
+}
+
+@media (max-width: 768px){
+  .how-it-works__steps{
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .how-it-works__arrow{
+    transform: rotate(90deg);
+    margin-bottom: 0;
+  }
+
+  .how-it-works__circle{
+    width: 110px;
+    height: 110px;
+  }
+
+  .how-it-works__circle i{
+    font-size: 34px;
+  }
+
+  .how-it-works__label{
+    font-size: 16px;
+  }
+}
+
+
 /** appointment-section **/
 
 .appointment-section{
@@ -3798,6 +3884,8 @@ div#mCSB_1_container{
   font-size: 16px;
   font-weight: 500;
   color: #8a8582;
+  border: none;
+  outline: none;
 }
 
 #appointment_block .appointment-form{
@@ -7688,7 +7776,7 @@ div#mCSB_1_container{
 .form-group textarea{
   width: 100%;
   padding: 12px;
-  /* border: 1px solid #2a2a2a; */
+  border: 1px solid #2a2a2a;
   border-radius: 4px;
   background: #1a1a1a;
   color: #f2f2f2;
