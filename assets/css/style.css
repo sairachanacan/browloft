@@ -6875,10 +6875,18 @@ div#mCSB_1_container{
 
 .booking-container details{
   margin-bottom: 30px;
+  overflow: hidden;
 }
 
 .booking-container details:last-of-type{
   margin-bottom: 0;
+}
+
+.booking-container details:not([open]) ul{
+  display: none;
+  visibility: hidden;
+  height: 0;
+  overflow: hidden;
 }
 
 .booking-container summary{
@@ -6891,15 +6899,28 @@ div#mCSB_1_container{
   align-items: center;
   justify-content: space-between;
   padding: 6px 0;
+  gap: 15px;
+  position: relative;
+  z-index: 1;
 }
 
-.booking-container details[open] summary span:last-child{
+.booking-container summary > span:first-child{
+  flex: 1;
+  min-width: 0;
+}
+
+.booking-container details[open] summary > span:last-child{
   transform: rotate(180deg);
 }
 
-.booking-container summary span:last-child{
+.booking-container summary > span:last-child{
   transition: transform 0.2s ease;
-  font-size:10px;
+  font-size: 18px;
+  flex-shrink: 0;
+  display: inline-block;
+  line-height: 1;
+  width: 20px;
+  text-align: center;
 }
 
 .booking-container summary::-webkit-details-marker{
@@ -6910,6 +6931,12 @@ div#mCSB_1_container{
   list-style: none;
   padding-left: 0;
   margin: 12px 0 0;
+}
+
+/* Nested lists styling */
+.booking-container ul ul{
+  margin-top: 8px;
+  padding-left: 0;
 }
 
 .booking-container li{
@@ -6934,6 +6961,10 @@ div#mCSB_1_container{
 }
 
 .booking-container--team{
+  max-width: 800px;
+}
+
+.booking-container--location{
   max-width: 800px;
 }
 
@@ -7079,7 +7110,7 @@ div#mCSB_1_container{
 }
 
 .booking-container li:last-child{
-  border-bottom: 1px solid #5a5147;
+  /* border-bottom: 1px solid #5a5147; */
 }
 
 .booking-container li > div{
@@ -7100,6 +7131,21 @@ div#mCSB_1_container{
 .booking-item-label{
   color: #b08a61;
   font-weight: 700;
+  font-size: 18px;
+}
+
+/* Style for divs that only contain a label (no button) */
+.booking-container li > div:has(.booking-item-label):not(:has(button)){
+  justify-content: flex-start;
+  padding: 8px 0;
+  border: none;
+  background: transparent;
+}
+
+.booking-container li:has(> div > .booking-item-label:only-child){
+  border: none;
+  padding: 12px 0 8px 0;
+  background: transparent;
 }
 
 .booking-item-description{
@@ -7191,7 +7237,7 @@ div#mCSB_1_container{
 .team-grid{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 24px;
+  gap: 50px;
   margin-top: 30px;
 }
 
@@ -7214,6 +7260,9 @@ div#mCSB_1_container{
 
 .team-card.is-selected{
   border-color: #a2895fba;
+}
+
+.team-card.is-selected:not(.location-card){
   box-shadow: 0 12px 24px rgba(162, 137, 95, 0.25);
 }
 
@@ -7244,20 +7293,150 @@ div#mCSB_1_container{
 }
 
 .team-select-btn{
-  background-color: #2b2b2b;
+  background: #35312f;
   color: #fff;
-  border: 1px solid #3a3a3a;
+  border: 1px solid transparent;
   padding: 10px 26px;
   border-radius: 999px;
   cursor: pointer;
+  font-size: 16px;
   font-weight: 600;
   transition: all 0.3s ease;
+  /* box-shadow: 0 2px 8px rgba(196, 145, 94, 0.3); */
 }
 
-.team-card.is-selected .team-select-btn,
-.team-select-btn:hover{
-  background-color: #a2895fba;
+/* Location Selection Styles */
+.location-selection{
+  margin-top: 30px;
+}
+
+.location-cards-wrapper{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.location-card{
+  background: #1f1f1f;
+  border: 2px solid #2a2a2a;
+  border-radius: 16px;
+  padding: 30px 24px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #f2f2f2;
+}
+
+.location-card:hover{
   border-color: #a2895fba;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+  transform: translateY(-4px);
+}
+
+.location-card.is-selected{
+  border-color: #a2895fba;
+  box-shadow: none;
+  background: #1f1f1f;
+}
+
+.location-card-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.location-icon{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #D4A574 0%, #C4915E 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 36px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.location-name{
+  font-size: 22px;
+  font-weight: 600;
+  color: #f5f5f5;
+  margin-bottom: 10px;
+}
+
+.location-details{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  text-align: left;
+  padding: 0 10px;
+}
+
+.location-details p{
+  color: #cfcfcf;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0;
+}
+
+.location-details i{
+  color: #a2895fba;
+  font-size: 16px;
+  min-width: 20px;
+}
+
+.location-select-btn{
+  background: #35312f;
+  color: #fff;
+  border: 1px solid transparent;
+  padding: 10px 26px;
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: none;
+  margin-top: 10px;
+}
+
+.location-select-btn:hover{
+  background: linear-gradient(135deg, #8b643ded 0%, #946f47 100%);
+  transform: translateY(-2px);
+}
+
+.location-card.is-selected .location-select-btn{
+  background: linear-gradient(135deg, #8b643ded 0%, #946f47 100%);
+  box-shadow: none;
+}
+
+.booking-actions{
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  gap: 15px;
+}
+
+.booking-actions button{
+  min-width: 180px;
+}
+
+.booking-actions button:disabled{
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.team-card.is-selected:not(.location-card) .team-select-btn,
+.team-select-btn:hover{
+  background: linear-gradient(135deg, #8b643ded 0%, #946f47 100%);
+  border-color: transparent;
+  transform: translateY(-2px);
+  box-shadow: none;
 }
 
 .team-actions{
@@ -7503,6 +7682,14 @@ div#mCSB_1_container{
   font-size: 14px;
 }
 
+.form-group label input[type="checkbox"] {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 8px;
+  width: auto !important;
+  padding: 0 !important;
+}
+
 .form-group input,
 .form-group textarea{
   width: 100%;
@@ -7570,21 +7757,33 @@ div#mCSB_1_container{
 }
 
 .btn-back{
-  background-color: #f0f0f0;
-  color: #35312f;
+  background: linear-gradient(135deg, #D4A574 0%, #C4915E 100%);
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all 0.3s ease;
 }
 
 .btn-back:hover{
-  background-color: #e0e0e0;
+  background: linear-gradient(135deg, #C4915E 0%, #B8864F 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(196, 145, 94, 0.3);
 }
 
 .btn-confirm{
-  background-color: #a2895fba;
+  background: linear-gradient(135deg, #D4A574 0%, #C4915E 100%);
   color: white;
+  font-size: 18px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(196, 145, 94, 0.3);
 }
 
 .btn-confirm:hover{
-  background-color: #8a6f4f;
+  background: linear-gradient(135deg, #C4915E 0%, #B8864F 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(196, 145, 94, 0.4);
 }
 
 .required{
@@ -7635,7 +7834,7 @@ div#mCSB_1_container{
 
 .booking-header{
   text-align: center;
-  padding: 40px 0;
+  /* padding: 40px 0; */
 }
 
 .booking-header h1{
@@ -7739,7 +7938,7 @@ div#mCSB_1_container{
 }
 
 .booking-summary-button{
-  background: #b08a61;
+  background: linear-gradient(135deg, #D4A574 0%, #C4915E 100%);
   color: #fff;
   border: none;
   padding: 0;
@@ -7753,28 +7952,32 @@ div#mCSB_1_container{
   justify-content: center;
   display: inline-flex;
   flex-shrink: 0;
+  transition: all 0.3s ease;
 }
 
 .booking-summary-button.is-primary,
 .booking-summary-button.is-selected{
-  background: #c7a470;
-  color: #1a1410;
+  background: linear-gradient(135deg, #C4915E 0%, #B8864F 100%);
+  color: #fff;
 }
 
 .booking-summary-button:hover{
-  background: #8a6f4f;
+  background: linear-gradient(135deg, #C4915E 0%, #B8864F 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(196, 145, 94, 0.4);
 }
 
 .services-actions{
-  margin-top: 24px;
-  justify-content: flex-end;
+  margin-top: 30px;
+  justify-content: center;
   display: flex;
 }
 
 .services-actions .btn-confirm:disabled{
-  background-color: #d1c6b6;
+  background: #d1c6b6;
   cursor: not-allowed;
   opacity: 0.7;
+  box-shadow: none;
 }
 
 
@@ -8311,5 +8514,92 @@ div#mCSB_1_container{
     .mobile-backdrop.active {
         opacity: 1;
         visibility: visible;
+    }
+}
+
+/* Location Selection Styles */
+.location-selection {
+    display: flex;
+    gap: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    justify-content: center;
+}
+
+.location-card {
+    background: #000;
+    /* border: 2px solid #C4915E; */
+    border-radius: 12px;
+    padding: 25px 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    flex: 1;
+    /* max-width: 280px; */
+}
+
+.location-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(196, 145, 94, 0.25);
+    border-color: #B8864F;
+}
+
+.location-card-content h3 {
+    font-size: 20px;
+    color: #8B6F47;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.location-card-content p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    min-height: 42px;
+}
+
+.location-card .booking-summary-button {
+    background: linear-gradient(135deg, #D4A574 0%, #C4915E 100%);
+    color: #ffffff;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    letter-spacing: 0.5px;
+    width: 100%;
+    box-shadow: 0 2px 8px rgba(196, 145, 94, 0.3);
+}
+
+.location-card .booking-summary-button:hover {
+    background: linear-gradient(135deg, #C4915E 0%, #B8864F 100%);
+    box-shadow: 0 4px 12px rgba(196, 145, 94, 0.4);
+    transform: translateY(-2px);
+}
+
+@media only screen and (max-width: 767px) {
+    .location-selection {
+        flex-direction: column;
+        gap: 15px;
+        padding: 10px;
+    }
+    
+    .location-card {
+        padding: 20px 15px;
+        max-width: 100%;
+    }
+    
+    .location-card-content h3 {
+        font-size: 18px;
+    }
+    
+    .location-card-content p {
+        font-size: 13px;
+        min-height: auto;
     }
 }

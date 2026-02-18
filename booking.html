@@ -169,12 +169,48 @@
         </section>
         <!--End Page Title-->
 
+        <!-- Location Selection Section -->
+        <section class="sec-pad booking-step booking-step--location is-active" id="booking-location-section">
+            <div class="auto-container">
+                <div class="booking-container booking-container--light booking-container--location">
+
+                    <div class="booking-header booking-header--compact">
+                        <h1>Select Your Location</h1>
+                        <p>Choose which location you'd like to visit.</p>
+                    </div>
+
+                    <div class="team-grid">
+                        <div class="location-card team-card" data-location="langley">
+                            <div class="team-avatar"><i class="fas fa-map-marker-alt" style="font-size: 28px;"></i></div>
+                            <h3 class="team-name location-name">Langley Location</h3>
+                            <p class="team-role">Langley, BC, Canada</p>
+                            <button type="button" class="team-select-btn location-select-btn">Select</button>
+                        </div>
+                        <div class="location-card team-card" data-location="burnaby">
+                            <div class="team-avatar"><i class="fas fa-map-marker-alt" style="font-size: 28px;"></i></div>
+                            <h3 class="team-name location-name">Burnaby Location</h3>
+                            <p class="team-role">Burnaby, BC, Canada</p>
+                            <button type="button" class="team-select-btn location-select-btn">Select</button>
+                        </div>
+                    </div>
+
+                    <div class="button-group services-actions" id="locationActions" style="display: none;">
+                        <button class="btn btn-confirm" id="locationContinueBtn" type="button" disabled>Continue</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--End Location Selection-->
+
         <!-- Booking Section -->
-        <section class="sec-pad booking-step booking-step--services is-active" id="booking-services-section">
+        <section class="sec-pad booking-step booking-step--services" id="booking-services-section">
             <div class="auto-container">
                   <h1 style="text-transform: uppercase; text-align: center; padding-bottom:30px">Schedule Your Beauty Service</h1>
                 <div class="booking-container">
-                    <h2 class="booking-services-heading">Services</h2>
+                    <div class="booking-top-nav">
+                        <button type="button" class="booking-back" data-step="location">← Change Location</button>
+                    </div>
+                    <h2 class="booking-services-heading" id="servicesHeading" style="text-align: center;">Services</h2>
                     <div class="text">
                         <details>
                             <summary>
@@ -708,8 +744,8 @@
                         </details>
                     </div>
 
-                    <div class="button-group services-actions" id="servicesActions">
-                        <button type="button" class="btn btn-confirm" id="servicesContinueBtn">Continue</button>
+                    <div class="button-group services-actions" id="servicesActions" style="display: none;">
+                        <button type="button" class="btn btn-confirm" id="servicesContinueBtn" disabled>Continue</button>
                     </div>
                 </div>
             </div>
@@ -742,8 +778,7 @@
                         </div>
                     </div>
 
-                    <div class="button-group team-actions">
-                        <!-- <button type="button" class="btn btn-back" data-step="services">← Back</button> -->
+                    <div class="button-group services-actions" id="teamActions" style="display: none;">
                         <button type="button" class="btn btn-confirm" id="teamContinueBtn" disabled>Continue</button>
                     </div>
 
@@ -799,8 +834,7 @@
                         </div>
                     </div>
 
-                    <div class="button-group addons-actions">
-                        <button type="button" class="btn btn-back" data-step="team">← Back</button>
+                    <div class="button-group services-actions">
                         <button type="button" class="btn btn-confirm" id="addonsContinueBtn">Continue</button>
                     </div>
                 </div>
@@ -863,9 +897,10 @@
                             <span>Total</span>
                             <span id="servicesSummaryTotal"></span>
                         </div>
-                        <button class="next-btn" id="nextBtn" type="button" disabled onclick="goToDetails()">
-                            Continue
-                        </button>
+                    </div>
+
+                    <div class="button-group services-actions" id="calendarActions" style="display: none;">
+                        <button class="btn btn-confirm" id="nextBtn" type="button" disabled onclick="goToDetails()">Continue</button>
                     </div>
                 </div>
             </div>
@@ -885,6 +920,10 @@
 
                     <div class="booking-summary">
                         <h3>Appointment Summary</h3>
+                        <div class="summary-item">
+                            <label>Location:</label>
+                            <span id="summaryLocation"></span>
+                        </div>
                         <div class="summary-item">
                             <label>Service:</label>
                             <span id="summaryService"></span>
@@ -949,9 +988,8 @@
                             </div>
                         </div>
 
-                        <div class="button-group">
-                            <button type="button" class="btn btn-back" data-step="calendar">← Back</button>
-                            <button type="submit" class="btn btn-confirm">Confirm Booking ✓</button>
+                        <div class="button-group services-actions">
+                            <button type="submit" class="btn btn-confirm">Confirm Booking</button>
                         </div>
 
                         <div class="confirmation-message" id="confirmationMessage">
@@ -1082,6 +1120,124 @@
             '03:00 PM', '03:30 PM', '04:00 PM', '04:30 PM', '05:00 PM', '05:30 PM'
         ];
 
+        const servicePrices = {
+            // Threading
+            'luxe-brows': { name: 'Luxe Brows', langley: '$12', burnaby: '$20' },
+            'teen-brows': { name: 'Teen Brows', langley: '$10', burnaby: '$12.99' },
+            'velvet-touch': { name: 'Velvet Touch', langley: '$8', burnaby: '$12' },
+            'luxe-brows-velvet-touch-1': { name: 'Luxe Brows + 1 Velvet Touch', langley: '$17', burnaby: '$30' },
+            'luxe-brows-velvet-touch-2': { name: 'Luxe Brows + 2 Velvet Touch', langley: '$25', burnaby: '$40' },
+            'luxe-smooth-face': { name: 'The Luxe Smooth Face', langley: '$38', burnaby: '$45' },
+            // Brow & Lash Treatments
+            'luxe-brow-tint': { name: 'Luxe Brow Tint', langley: '$20', burnaby: '$20' },
+            'luxe-lash-tint': { name: 'Luxe Lash Tint', langley: '$25', burnaby: '$25' },
+            'henna-luxe-brows': { name: 'Henna Luxe Brows', langley: '$50', burnaby: '$50' },
+            'luxe-lash-lift': { name: 'Luxe Lash Lift', langley: '$65', burnaby: '$90' },
+            'luxe-brow-lamination': { name: 'Luxe Brow Lamination', langley: '$65', burnaby: '$90' },
+            // Add-On Services
+            'luxe-glow-go': { name: '10-minute Luxe Glow & Go', langley: '$15', burnaby: '$15' },
+            'eye-renewal-mask': { name: 'Eye Renewal Mask', langley: '$5', burnaby: '$5' },
+            'brow-prep-polish': { name: 'Brow Prep & Polish', langley: '$5', burnaby: '$5' },
+            // Package Deals
+            'luxe-brows-tinting-package': { name: 'Luxe Brows & Tinting Package', langley: '$28', burnaby: '$35' },
+            'luxe-brows-tinting-velvet-touch-1': { name: 'Luxe Brows & Tinting + 1 Velvet Touch', langley: '$35', burnaby: '$47' },
+            'luxe-brows-tinting-velvet-touch-2': { name: 'Luxe Brows & Tinting + 2 Velvet Touch', langley: '$45', burnaby: '$75' },
+            'luxe-brows-brow-tinting-lash-tint': { name: 'Luxe Brows + Brow Tinting + Lash Tint Bundle', langley: '$52', burnaby: '$60' },
+            'luxe-lash-lift-lash-tint': { name: 'Luxe Lash Lift + Lash Tint Bundle', langley: '$75', burnaby: '$90' },
+            'luxe-brows-brow-henna': { name: 'Luxe Brows + Brow Henna', langley: '$55', burnaby: '$65' },
+            'brow-lamination-luxe-lash-lift': { name: 'Brow Lamination + Luxe Lash Lift Bundle', langley: '$130', burnaby: '$170' },
+            // Gentlemen's Bar
+            'mens-unibrow': { name: "Men's Unibrow", langley: '$12', burnaby: '$12' },
+            'mens-luxe-brows': { name: "Men's Luxe Brows", langley: '$20', burnaby: '$20' },
+            'mens-cheeks-forehead-ears': { name: "Men's Cheeks + Forehead or Ears", langley: '$15', burnaby: '$15' },
+            // Luxe Facial Bar
+            'luxe-express-facial': { name: 'Luxe Express Facial', langley: '$65', burnaby: '$75' },
+            'purely-yours-facial': { name: 'Purely Yours Facial', langley: '$110', burnaby: '$110' },
+            'coconut-glow-facial': { name: 'Coconut Glow Hydrating Facial', langley: '$110', burnaby: '$110' },
+            'delicate-care-facial': { name: 'Delicate Care Facial', langley: '$110', burnaby: '$110' },
+            // Facial Add-Ons
+            'lip-revival-facial': { name: 'Lip Revival Facial', langley: '$10', burnaby: '$10' },
+            'booster': { name: 'Booster', langley: '$10', burnaby: '$10' },
+            'de-puff-eye-brightening': { name: 'De-Puff & Eye Brightening', langley: '$10', burnaby: '$10' },
+            // Micro-Needling
+            'micro-needling': { name: 'Micro Needling', langley: '$300', burnaby: '$300' },
+            // Luxe Waxing Bar for Women
+            'full-legs': { name: 'Full Legs', langley: '$45', burnaby: '$55' },
+            'upper-legs': { name: 'Upper Legs', langley: '$35', burnaby: '$35' },
+            'lower-legs': { name: 'Lower Legs', langley: '$30', burnaby: '$30' },
+            'full-arms': { name: 'Full Arms', langley: '$35', burnaby: '$35' },
+            'half-arms': { name: 'Half Arms', langley: '$22', burnaby: '$25' },
+            'under-arms': { name: 'Under Arms', langley: '$12', burnaby: '$16' },
+            'stomach': { name: 'Stomach', langley: '$30', burnaby: '$30' },
+            'breast': { name: 'Breast', langley: '$20', burnaby: '$20' },
+            'full-back': { name: 'Full Back', langley: '$35', burnaby: '$35' },
+            'half-back': { name: 'Half Back', langley: '$25', burnaby: '$25' },
+            'bikini-line': { name: 'Bikini Line', langley: '$20', burnaby: '$20' },
+            'french-bikini': { name: 'French Bikini', langley: '$33+', burnaby: '$33+' },
+            'brazilian': { name: 'Brazilian', langley: '$50', burnaby: '$60' },
+            'buttocks': { name: 'Buttocks', langley: '$20+', burnaby: '$20+' },
+            'butt-cheeks': { name: 'Butt Cheeks', langley: '$15', burnaby: '$15' },
+            'fingers-toes': { name: 'Fingers/Toes', langley: '$10', burnaby: '$10' },
+            'full-body-waxing': { name: 'Full Body Waxing', langley: '$170 (neck to toes)', burnaby: null },
+            // Gentlemen's Wax Bar
+            'mens-full-arms': { name: 'Full Arms', langley: '$50', burnaby: '$50' },
+            'mens-full-back': { name: 'Full Back', langley: '$50', burnaby: '$50' },
+            'mens-chest-stomach': { name: 'Chest/Stomach', langley: '$50', burnaby: '$50' },
+            // Makeup and Hairstyle (Langley only)
+            'makeup': { name: 'Makeup', langley: '$100+', burnaby: null },
+            'hair-style': { name: 'Hair Style', langley: '$50+', burnaby: null },
+            'eye-makeup': { name: 'Eye Makeup', langley: '$30+', burnaby: null },
+            'eye-makeup-lashes': { name: 'Eye Makeup with Lashes', langley: '$50+', burnaby: null },
+            'sari-tie': { name: 'Sari Tie', langley: '$30', burnaby: null }
+        };
+
+        function updatePricesForLocation(location) {
+            document.querySelectorAll('#booking-services-section .booking-summary-button').forEach(function(button) {
+                var serviceId = getServiceTypeFromButton(button);
+                if (!serviceId || !servicePrices[serviceId]) return;
+
+                var priceData = servicePrices[serviceId];
+                var price = priceData[location];
+                var span = button.parentElement.querySelector('span');
+                var li = button.closest('li');
+
+                if (price === null) {
+                    if (li) li.style.display = 'none';
+                } else {
+                    if (li) li.style.display = '';
+                    if (span) {
+                        span.textContent = priceData.name + ' \u2013 ' + price;
+                    }
+                }
+            });
+
+            // Hide entire Makeup and Hairstyle section for Burnaby
+            document.querySelectorAll('#booking-services-section details').forEach(function(details) {
+                var summaryText = details.querySelector('summary span');
+                if (summaryText && summaryText.textContent.trim() === 'Makeup and Hairstyle') {
+                    details.style.display = location === 'burnaby' ? 'none' : '';
+                }
+            });
+        }
+
+        function getSelectedLocation() {
+            return sessionStorage.getItem('selectedLocation');
+        }
+
+        function getSelectedLocationName() {
+            return sessionStorage.getItem('selectedLocationName') || '';
+        }
+
+        function setSelectedLocation(locationId, locationName) {
+            if (!locationId) {
+                return;
+            }
+            sessionStorage.setItem('selectedLocation', locationId);
+            if (locationName) {
+                sessionStorage.setItem('selectedLocationName', locationName);
+            }
+        }
+
         function getServiceType() {
             return sessionStorage.getItem('selectedService');
         }
@@ -1150,7 +1306,7 @@
 
             const actions = document.getElementById('servicesActions');
             if (actions) {
-                actions.style.display = 'flex';
+                actions.style.display = selectedServices.length > 0 ? 'flex' : 'none';
             }
             const continueBtn = document.getElementById('servicesContinueBtn');
             if (continueBtn) {
@@ -1187,6 +1343,65 @@
             toggleServiceSelection(serviceType, serviceName);
             setSelectedAddons([]);
             updateServiceSelectionUI();
+        }
+
+        function attachLocationListeners() {
+            const continueBtn = document.getElementById('locationContinueBtn');
+            
+            document.querySelectorAll('.location-card').forEach((card) => {
+                card.addEventListener('click', (event) => {
+                    const locationId = card.dataset.location;
+                    const locationName = card.querySelector('.location-name')?.textContent.trim();
+
+                    // Clear previous service selections when changing location
+                    setSelectedServices([]);
+                    sessionStorage.removeItem('selectedService');
+                    sessionStorage.removeItem('selectedServiceName');
+                    setSelectedAddons([]);
+
+                    document.querySelectorAll('.location-card').forEach((item) => item.classList.remove('is-selected'));
+                    card.classList.add('is-selected');
+                    setSelectedLocation(locationId, locationName);
+
+                    const actions = document.getElementById('locationActions');
+                    if (actions) {
+                        actions.style.display = 'flex';
+                    }
+                    if (continueBtn) {
+                        continueBtn.disabled = false;
+                    }
+                });
+            });
+
+            if (continueBtn) {
+                continueBtn.addEventListener('click', () => {
+                    if (getSelectedLocation()) {
+                        showStep('services');
+                    }
+                });
+            }
+        }
+
+        function initLocationStep() {
+            const selectedLocation = getSelectedLocation();
+            const continueBtn = document.getElementById('locationContinueBtn');
+            let hasSelection = false;
+
+            document.querySelectorAll('.location-card').forEach((card) => {
+                const isMatch = selectedLocation && card.dataset.location === selectedLocation;
+                card.classList.toggle('is-selected', isMatch);
+                if (isMatch) {
+                    hasSelection = true;
+                }
+            });
+
+            const actions = document.getElementById('locationActions');
+            if (actions) {
+                actions.style.display = hasSelection ? 'flex' : 'none';
+            }
+            if (continueBtn) {
+                continueBtn.disabled = !hasSelection;
+            }
         }
 
         function attachServiceListeners() {
@@ -1244,6 +1459,10 @@
                     document.querySelectorAll('.team-card').forEach((item) => item.classList.remove('is-selected'));
                     card.classList.add('is-selected');
                     setSelectedTeam(teamId, teamName);
+                    const teamActions = document.getElementById('teamActions');
+                    if (teamActions) {
+                        teamActions.style.display = 'flex';
+                    }
                     if (continueBtn) {
                         continueBtn.disabled = false;
                     }
@@ -1264,6 +1483,10 @@
                 }
             });
 
+            const teamActions = document.getElementById('teamActions');
+            if (teamActions) {
+                teamActions.style.display = hasSelection ? 'flex' : 'none';
+            }
             if (continueBtn) {
                 continueBtn.disabled = !hasSelection;
             }
@@ -1278,15 +1501,25 @@
         }
 
         function showStep(step) {
+            const hasLocation = !!getSelectedLocation();
             const hasService = !!getServiceType();
             const hasTeam = !!getTeamName();
 
+            // Enforce location selection first
+            if (step !== 'location' && !hasLocation) {
+                step = 'location';
+            }
+
+            if (step === 'services' && !hasLocation) {
+                step = 'location';
+            }
+
             if (step === 'team' && !hasService) {
-                step = 'services';
+                step = hasLocation ? 'services' : 'location';
             }
 
             if (step === 'calendar' && (!hasService || !hasTeam)) {
-                step = hasService ? 'team' : 'services';
+                step = hasService ? 'team' : (hasLocation ? 'services' : 'location');
             }
 
             document.querySelectorAll('.booking-step').forEach((section) => {
@@ -1299,6 +1532,10 @@
                 target.scrollIntoView({ behavior: 'smooth', block: 'start' });
             }
 
+            if (step === 'location') {
+                initLocationStep();
+            }
+
             if (step === 'calendar') {
                 initCalendar();
             }
@@ -1308,7 +1545,22 @@
             }
 
             if (step === 'services') {
+                const currentLocation = getSelectedLocation();
+                if (currentLocation) {
+                    updatePricesForLocation(currentLocation);
+                }
                 updateServiceSelectionUI();
+                const servicesHeading = document.getElementById('servicesHeading');
+                if (servicesHeading) {
+                    const locationName = getSelectedLocation();
+                    if (locationName === 'langley') {
+                        servicesHeading.textContent = 'Langley Services';
+                    } else if (locationName === 'burnaby') {
+                        servicesHeading.textContent = 'Burnaby Services';
+                    } else {
+                        servicesHeading.textContent = 'Services';
+                    }
+                }
             }
 
             if (step === 'details') {
@@ -1445,6 +1697,10 @@
             renderTimeSlots();
             initCalendar();
             const nextBtn = document.getElementById('nextBtn');
+            const calendarActions = document.getElementById('calendarActions');
+            if (calendarActions) {
+                calendarActions.style.display = 'none';
+            }
             if (nextBtn) {
                 nextBtn.disabled = true;
             }
@@ -1475,6 +1731,10 @@
         function selectTime(time) {
             selectedTime = time;
             renderTimeSlots();
+            const calendarActions = document.getElementById('calendarActions');
+            if (calendarActions) {
+                calendarActions.style.display = 'flex';
+            }
             const nextBtn = document.getElementById('nextBtn');
             if (nextBtn) {
                 nextBtn.disabled = false;
@@ -1494,6 +1754,8 @@
         function goToDetails() {
             if (selectedDate && selectedTime) {
                 const bookingData = {
+                    location: getSelectedLocation(),
+                    locationName: getSelectedLocationName(),
                     service: getServiceType(),
                     serviceName: getServiceName(),
                     team: sessionStorage.getItem('selectedTeam'),
@@ -1516,6 +1778,11 @@
             }
 
             const selectedDateDisplay = new Date(bookingData.date);
+            const locationName = getSelectedLocationName();
+            
+            if (locationName) {
+                document.getElementById('summaryLocation').textContent = locationName;
+            }
             document.getElementById('summaryService').textContent = bookingData.serviceName || bookingData.service;
             document.getElementById('summaryTeam').textContent = bookingData.teamName || bookingData.team || 'Team member not selected';
             document.getElementById('summaryDate').textContent = selectedDateDisplay.toLocaleString('default', {
@@ -1563,16 +1830,21 @@
         }
 
         document.addEventListener('DOMContentLoaded', () => {
+            sessionStorage.removeItem('selectedLocation');
+            sessionStorage.removeItem('selectedLocationName');
             sessionStorage.removeItem('selectedService');
             sessionStorage.removeItem('selectedServiceName');
             sessionStorage.removeItem('selectedAddons');
             sessionStorage.removeItem('selectedServices');
+            sessionStorage.removeItem('selectedTeam');
+            sessionStorage.removeItem('selectedTeamName');
+            attachLocationListeners();
             attachServiceListeners();
             attachServicesActions();
             attachTeamListeners();
             attachBreadcrumbListeners();
             initBookingForm();
-            showStep('services');
+            showStep('location');
         });
     </script>
 
