@@ -2,9 +2,9 @@
 
 
 @media only screen and (max-width: 5000px){
-  
+
   .boxed_wrapper{
-    overflow: hidden;
+    overflow: visible;
   }
 
 }
@@ -355,7 +355,7 @@
 @media only screen and (max-width: 767px){
 
   .sec-pad{
-    padding: 50px 40px !important;
+    padding: 50px 0px !important;
   }
 
   .banner-carousel .slide-item{
