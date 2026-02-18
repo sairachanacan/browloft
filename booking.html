@@ -169,10 +169,14 @@
         </section>
         <!--End Page Title-->
 
+        <!-- Booking Layout: Main + Sidebar -->
+        <div class="booking-layout">
+            <div class="booking-layout__main">
+
         <!-- Location Selection Section -->
         <section class="sec-pad booking-step booking-step--location is-active" id="booking-location-section">
             <div class="auto-container">
-                <div class="booking-container booking-container--light booking-container--location">
+                <div class="booking-container booking-container--location">
 
                     <div class="booking-header booking-header--compact">
                         <h1>Select Your Location</h1>
@@ -205,12 +209,15 @@
         <!-- Booking Section -->
         <section class="sec-pad booking-step booking-step--services" id="booking-services-section">
             <div class="auto-container">
-                  <h1 style="text-transform: uppercase; text-align: center; padding-bottom:30px">Schedule Your Beauty Service</h1>
-                <div class="booking-container">
+                  <!-- <h1 style="text-transform: uppercase; text-align: center; padding-bottom:30px">Schedule Your Beauty Service</h1> -->
+                <div class="booking-container booking-container--services">
                     <div class="booking-top-nav">
                         <button type="button" class="booking-back" data-step="location">← Change Location</button>
                     </div>
-                    <h2 class="booking-services-heading" id="servicesHeading" style="text-align: center;">Services</h2>
+                    <div class="booking-header booking-header--compact">
+                        <h1 class="booking-services-heading" id="servicesHeading">Services</h1>
+                        <p id="servicesCaption">Select the services you'd like to book.</p>
+                    </div>
                     <div class="text">
                         <details>
                             <summary>
@@ -753,7 +760,7 @@
 
         <section class="sec-pad booking-step booking-step--team" id="booking-team-section">
             <div class="auto-container">
-                <div class="booking-container booking-container--light booking-container--team">
+                <div class="booking-container booking-container--team">
                     <div class="booking-top-nav">
                         <button type="button" class="booking-back" data-step="services">← Back</button>
                     </div>
@@ -843,7 +850,7 @@
 
         <section class="sec-pad booking-step booking-step--calendar" id="booking-calendar-section">
             <div class="auto-container">
-                <div class="booking-container booking-container--light booking-container--calendar">
+                <div class="booking-container booking-container--calendar">
                     <div class="booking-top-nav">
                         <button type="button" class="booking-back" data-step="team">← Back</button>
                     </div>
@@ -882,22 +889,6 @@
                         </div>
                     </div>
 
-                    <div class="services-summary-card" id="servicesSummaryCard">
-                        <h4>Summary</h4>
-                        <div class="services-summary-meta">
-                            <span>Team Member</span>
-                            <span id="servicesSummaryTeam"></span>
-                        </div>
-                        <div class="services-summary-meta">
-                            <span>Date</span>
-                            <span id="servicesSummaryDate"></span>
-                        </div>
-                        <div class="services-summary-list" id="servicesSummaryList"></div>
-                        <div class="services-summary-total">
-                            <span>Total</span>
-                            <span id="servicesSummaryTotal"></span>
-                        </div>
-                    </div>
 
                     <div class="button-group services-actions" id="calendarActions" style="display: none;">
                         <button class="btn btn-confirm" id="nextBtn" type="button" disabled onclick="goToDetails()">Continue</button>
@@ -908,7 +899,7 @@
 
         <section class="sec-pad booking-step booking-step--details" id="booking-details-section">
             <div class="auto-container">
-                <div class="booking-container booking-container--light booking-container--details">
+                <div class="booking-container booking-container--details">
                     <div class="booking-top-nav">
                         <button type="button" class="booking-back" data-step="calendar">← Back</button>
                     </div>
@@ -918,33 +909,6 @@
                         <p>Complete your booking information</p>
                     </div>
 
-                    <div class="booking-summary">
-                        <h3>Appointment Summary</h3>
-                        <div class="summary-item">
-                            <label>Location:</label>
-                            <span id="summaryLocation"></span>
-                        </div>
-                        <div class="summary-item">
-                            <label>Service:</label>
-                            <span id="summaryService"></span>
-                        </div>
-                        <div class="summary-item">
-                            <label>Team Member:</label>
-                            <span id="summaryTeam"></span>
-                        </div>
-                        <div class="summary-item">
-                            <label>Date:</label>
-                            <span id="summaryDate"></span>
-                        </div>
-                        <div class="summary-item">
-                            <label>Time:</label>
-                            <span id="summaryTime"></span>
-                        </div>
-                        <div class="summary-item">
-                            <label>Additional Services:</label>
-                            <span id="summaryAddons"></span>
-                        </div>
-                    </div>
 
                     <form id="bookingForm">
                         <div class="form-section">
@@ -999,6 +963,99 @@
                 </div>
             </div>
         </section>
+
+            </div><!-- end booking-layout__main -->
+
+            <!-- Sticky Sidebar -->
+            <div class="booking-layout__sidebar">
+                <div class="sidebar-card" id="sidebarCard">
+                    <!-- Mobile Toggle Bar -->
+                    <div class="sidebar-mobile-bar" id="sidebarMobileBar">
+                        <div class="sidebar-mobile-bar__left">
+                            <i class="fas fa-shopping-bag sidebar-mobile-bar__icon"></i>
+                            <span class="sidebar-mobile-bar__text" id="sidebarMobileText">Booking Summary</span>
+                        </div>
+                        <span class="sidebar-mobile-bar__total" id="sidebarMobileTotal">$0.00</span>
+                        <i class="fas fa-chevron-up sidebar-mobile-bar__chevron"></i>
+                    </div>
+                    <!-- Business Info -->
+                    <div class="sidebar-card__business">
+                        <h3 class="sidebar-card__business-name">Brow Loft</h3>
+                        <p class="sidebar-card__business-tagline">The Brow & Beauty Bar</p>
+                    </div>
+
+                    <div class="sidebar-card__divider"></div>
+
+                    <!-- Hours -->
+                    <div class="sidebar-card__hours">
+                        <h4 class="sidebar-card__hours-title"><i class="fas fa-clock"></i> Opening Hours</h4>
+                        <div class="sidebar-card__hours-row">
+                            <span>Monday - Friday</span>
+                            <span>10:00 AM - 7:00 PM</span>
+                        </div>
+                        <div class="sidebar-card__hours-row">
+                            <span>Saturday</span>
+                            <span>10:00 AM - 6:00 PM</span>
+                        </div>
+                        <div class="sidebar-card__hours-row">
+                            <span>Sunday</span>
+                            <span>Closed</span>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-card__divider"></div>
+
+                    <!-- Trust Badges -->
+                    <div class="sidebar-card__trust">
+                        <div class="sidebar-card__rating">
+                            <div class="sidebar-card__stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span class="sidebar-card__score">4.9/5</span>
+                            <span class="sidebar-card__count">from 500+ clients</span>
+                        </div>
+                        <!-- <div class="sidebar-card__testimonial">
+                            <i class="fas fa-quote-left sidebar-card__quote-icon"></i>
+                            <p class="sidebar-card__quote-text">"The best brow experience I've ever had. Professional, clean, and the results are always perfect!"</p>
+                            <span class="sidebar-card__quote-author">- Sarah M.</span>
+                        </div> -->
+                    </div>
+
+                    <!-- Summary Cart -->
+                    <div class="sidebar-card__divider"></div>
+                    <div class="sidebar-card__summary" id="sidebarSummary">
+                        <h4 class="sidebar-card__summary-title"><i class="fas fa-shopping-bag"></i> Booking Summary</h4>
+                        <div class="sidebar-card__detail-row" id="sidebarLocationRow">
+                            <span class="sidebar-card__detail-label">Location</span>
+                            <span class="sidebar-card__detail-value" id="sidebarLocationValue">--</span>
+                        </div>
+                        <div class="sidebar-card__detail-row" id="sidebarServicesSection">
+                            <span class="sidebar-card__detail-label">Services</span>
+                            <div class="sidebar-card__services-list" id="sidebarServicesList">
+                                <span class="sidebar-card__empty">No services selected</span>
+                            </div>
+                        </div>
+                        <div class="sidebar-card__detail-row" id="sidebarTeamRow" style="display:none;">
+                            <span class="sidebar-card__detail-label">Team</span>
+                            <span class="sidebar-card__detail-value" id="sidebarTeamValue">--</span>
+                        </div>
+                        <div class="sidebar-card__detail-row" id="sidebarAddonsRow" style="display:none;">
+                            <span class="sidebar-card__detail-label">Add-ons</span>
+                            <div class="sidebar-card__addons-list" id="sidebarAddonsList"></div>
+                        </div>
+                        <div class="sidebar-card__detail-row sidebar-card__detail-total">
+                            <span class="sidebar-card__detail-label">Total</span>
+                            <span class="sidebar-card__detail-value" id="sidebarTotalValue">$0.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- end booking-layout__sidebar -->
+
+        </div><!-- end booking-layout -->
 
         <!-- main footer -->
         <footer class="main-footer">
@@ -1312,6 +1369,7 @@
             if (continueBtn) {
                 continueBtn.disabled = selectedServices.length === 0;
             }
+            updateFloatingCart();
         }
 
         function toggleServiceSelection(serviceType, serviceName) {
@@ -1438,6 +1496,41 @@
             }
         }
 
+        function attachAddonListeners() {
+            document.querySelectorAll('.addon-card').forEach((card) => {
+                card.addEventListener('click', () => {
+                    const addonName = card.dataset.addon;
+                    const addonDuration = card.dataset.addonDuration;
+                    const addonPrice = card.dataset.addonPrice;
+
+                    const addons = getSelectedAddons();
+                    const existingIndex = addons.findIndex((a) => a.name === addonName);
+
+                    if (existingIndex > -1) {
+                        addons.splice(existingIndex, 1);
+                        card.classList.remove('is-selected');
+                        const toggle = card.querySelector('.addon-toggle');
+                        if (toggle) toggle.textContent = '+';
+                    } else {
+                        addons.push({ name: addonName, duration: addonDuration, price: addonPrice });
+                        card.classList.add('is-selected');
+                        const toggle = card.querySelector('.addon-toggle');
+                        if (toggle) toggle.textContent = '-';
+                    }
+
+                    setSelectedAddons(addons);
+                    updateFloatingCart();
+                });
+            });
+
+            const addonsContinueBtn = document.getElementById('addonsContinueBtn');
+            if (addonsContinueBtn) {
+                addonsContinueBtn.addEventListener('click', () => {
+                    showStep('calendar');
+                });
+            }
+        }
+
         function attachTeamListeners() {
             const continueBtn = document.getElementById('teamContinueBtn');
             if (continueBtn) {
@@ -1466,6 +1559,7 @@
                     if (continueBtn) {
                         continueBtn.disabled = false;
                     }
+                    updateFloatingCart();
                 });
             });
         }
@@ -1551,21 +1645,37 @@
                 }
                 updateServiceSelectionUI();
                 const servicesHeading = document.getElementById('servicesHeading');
+                const servicesCaption = document.getElementById('servicesCaption');
                 if (servicesHeading) {
                     const locationName = getSelectedLocation();
                     if (locationName === 'langley') {
                         servicesHeading.textContent = 'Langley Services';
+                        if (servicesCaption) servicesCaption.textContent = 'Select the services you\'d like to book at Langley.';
                     } else if (locationName === 'burnaby') {
                         servicesHeading.textContent = 'Burnaby Services';
+                        if (servicesCaption) servicesCaption.textContent = 'Select the services you\'d like to book at Burnaby.';
                     } else {
                         servicesHeading.textContent = 'Services';
+                        if (servicesCaption) servicesCaption.textContent = 'Select the services you\'d like to book.';
                     }
                 }
+            }
+
+            if (step === 'addons') {
+                const savedAddons = getSelectedAddons();
+                document.querySelectorAll('.addon-card').forEach((card) => {
+                    const isSelected = savedAddons.some((a) => a.name === card.dataset.addon);
+                    card.classList.toggle('is-selected', isSelected);
+                    const toggle = card.querySelector('.addon-toggle');
+                    if (toggle) toggle.textContent = isSelected ? '-' : '+';
+                });
             }
 
             if (step === 'details') {
                 initDetailsSummary();
             }
+
+            updateFloatingCart();
         }
 
         function initCalendar() {
@@ -1829,6 +1939,111 @@
             });
         }
 
+        // ============================================
+        // Sidebar Summary Cart
+        // ============================================
+        function updateFloatingCart() {
+            const locationName = getSelectedLocationName();
+            const selectedServices = getSelectedServices();
+            const teamName = getTeamName();
+            const addons = getSelectedAddons();
+
+            // Update location
+            const locationValueEl = document.getElementById('sidebarLocationValue');
+            if (locationValueEl) {
+                locationValueEl.textContent = locationName || '--';
+            }
+
+            // Update services list
+            const servicesList = document.getElementById('sidebarServicesList');
+            let totalAmount = 0;
+
+            if (servicesList) {
+                servicesList.innerHTML = '';
+                if (selectedServices.length === 0) {
+                    servicesList.innerHTML = '<span class="sidebar-card__empty">No services selected</span>';
+                } else {
+                    selectedServices.forEach((service) => {
+                        const priceMatch = service.name.match(/\$([0-9]+(?:\.[0-9]+)?)/);
+                        const priceValue = priceMatch ? parseFloat(priceMatch[1]) : 0;
+                        totalAmount += priceValue;
+
+                        const displayName = service.name.replace(/\s*[–-]\s*\$[0-9]+(?:\.[0-9]+)?\+?/, '').trim();
+
+                        const row = document.createElement('div');
+                        row.className = 'sidebar-card__service-item';
+
+                        const nameSpan = document.createElement('span');
+                        nameSpan.textContent = displayName;
+
+                        const priceSpan = document.createElement('span');
+                        priceSpan.textContent = priceMatch ? '$' + priceMatch[1] : '';
+
+                        row.appendChild(nameSpan);
+                        row.appendChild(priceSpan);
+                        servicesList.appendChild(row);
+                    });
+                }
+            }
+
+            // Update add-ons
+            const addonsRow = document.getElementById('sidebarAddonsRow');
+            const addonsList = document.getElementById('sidebarAddonsList');
+            if (addonsRow && addonsList) {
+                if (addons.length > 0) {
+                    addonsRow.style.display = '';
+                    addonsList.innerHTML = '';
+                    addons.forEach((addon) => {
+                        const addonPriceMatch = addon.price ? addon.price.match(/\$([0-9]+(?:\.[0-9]+)?)/) : null;
+                        if (addonPriceMatch) {
+                            totalAmount += parseFloat(addonPriceMatch[1]);
+                        }
+
+                        const row = document.createElement('div');
+                        row.className = 'sidebar-card__addon-item';
+
+                        const nameSpan = document.createElement('span');
+                        nameSpan.textContent = addon.name;
+
+                        const priceSpan = document.createElement('span');
+                        priceSpan.textContent = addon.price || '';
+
+                        row.appendChild(nameSpan);
+                        row.appendChild(priceSpan);
+                        addonsList.appendChild(row);
+                    });
+                } else {
+                    addonsRow.style.display = 'none';
+                }
+            }
+
+            // Update team member
+            const teamRow = document.getElementById('sidebarTeamRow');
+            const teamValue = document.getElementById('sidebarTeamValue');
+            if (teamRow && teamValue) {
+                if (teamName) {
+                    teamRow.style.display = '';
+                    teamValue.textContent = teamName;
+                } else {
+                    teamRow.style.display = 'none';
+                }
+            }
+
+            // Update total
+            const totalFormatted = '$' + totalAmount.toFixed(2);
+            const totalEl = document.getElementById('sidebarTotalValue');
+            if (totalEl) totalEl.textContent = totalFormatted;
+
+            // Sync mobile floating bar
+            const mobileTotal = document.getElementById('sidebarMobileTotal');
+            if (mobileTotal) mobileTotal.textContent = totalFormatted;
+            const mobileText = document.getElementById('sidebarMobileText');
+            if (mobileText) {
+                const count = selectedServices.length;
+                mobileText.textContent = count > 0 ? count + ' service' + (count > 1 ? 's' : '') + ' selected' : 'Booking Summary';
+            }
+        }
+
         document.addEventListener('DOMContentLoaded', () => {
             sessionStorage.removeItem('selectedLocation');
             sessionStorage.removeItem('selectedLocationName');
@@ -1842,9 +2057,18 @@
             attachServiceListeners();
             attachServicesActions();
             attachTeamListeners();
+            attachAddonListeners();
             attachBreadcrumbListeners();
             initBookingForm();
             showStep('location');
+
+            // Mobile sidebar toggle
+            const mobileBar = document.getElementById('sidebarMobileBar');
+            if (mobileBar) {
+                mobileBar.addEventListener('click', function() {
+                    document.querySelector('.booking-layout__sidebar').classList.toggle('is-expanded');
+                });
+            }
         });
     </script>
 
