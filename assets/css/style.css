@@ -3699,6 +3699,148 @@ div#mCSB_1_container{
 }
 
 
+/** info-accordions section **/
+
+.info-accordions{
+  background: #302c2a;
+  padding: 80px 0;
+}
+
+.info-accordions__grid{
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.info-accordion{
+  background: #3d3835;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #4a4440;
+  transition: border-color 0.3s ease;
+}
+
+.info-accordion[open]{
+  border-color: #b08a61;
+}
+
+.info-accordion__header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 22px 28px;
+  cursor: pointer;
+  list-style: none;
+  user-select: none;
+}
+
+.info-accordion__header::-webkit-details-marker{
+  display: none;
+}
+
+.info-accordion__header span{
+  font-size: 20px;
+  font-weight: 600;
+  color: #f2f2f2;
+  letter-spacing: 0.5px;
+}
+
+.info-accordion__icon{
+  font-size: 14px;
+  color: #b08a61;
+  transition: transform 0.3s ease;
+}
+
+.info-accordion[open] .info-accordion__icon{
+  transform: rotate(180deg);
+}
+
+.info-accordion__body{
+  padding: 0 28px 24px;
+  color: #bdb7ab;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.info-accordion__body p{
+  margin-bottom: 12px;
+}
+
+.info-accordion__body p:last-child{
+  margin-bottom: 0;
+}
+
+.info-accordion__body strong{
+  color: #D4A574;
+}
+
+.info-accordion__body ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.info-accordion__body ul li{
+  position: relative;
+  padding-left: 20px;
+  line-height: 1.6;
+}
+
+.info-accordion__body ul li::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #b08a61;
+}
+
+.info-faq{
+  margin-bottom: 18px;
+}
+
+.info-faq:last-child{
+  margin-bottom: 0;
+}
+
+.info-faq h4{
+  font-size: 16px;
+  font-weight: 600;
+  color: #f2f2f2;
+  margin-bottom: 6px;
+}
+
+.info-faq p{
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px){
+  .info-accordions{
+    padding: 50px 0;
+  }
+
+  .info-accordion__header{
+    padding: 18px 20px;
+  }
+
+  .info-accordion__header span{
+    font-size: 17px;
+  }
+
+  .info-accordion__body{
+    padding: 0 20px 20px;
+    font-size: 14px;
+  }
+}
+
+
 /** appointment-section **/
 
 .appointment-section{
