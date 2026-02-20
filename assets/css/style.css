@@ -3821,6 +3821,346 @@ div#mCSB_1_container{
   margin-bottom: 0;
 }
 
+/** policies page **/
+
+.aftercare-intro{
+  text-align: center;
+  color: #333;
+  font-size: 16px;
+  line-height: 1.8;
+  max-width: 90%;
+  margin: -20px auto 40px;
+}
+
+.policies-page__grid{
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding:0px 30px;
+}
+
+.policies-page__grid .policy-card{
+  color: #333;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.policies-page__grid .policy-card p{
+  margin-bottom: 12px;
+}
+
+.policies-page__grid .policy-card p:last-child{
+  margin-bottom: 0;
+}
+
+.policies-page__grid .policy-card strong{
+  color: #b08a61;
+}
+
+.policies-page__grid .policy-card ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.policies-page__grid .policy-card ul li{
+  position: relative;
+  padding-left: 20px;
+  line-height: 1.6;
+}
+
+.policies-page__grid .policy-card ul li::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #b08a61;
+}
+
+.policies-page__grid .policy-card ul li{
+  color: #333;
+}
+
+/** policy cards **/
+
+.policy-card{
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 32px;
+  box-shadow: 0 2px 10px rgb(0 0 0 / 8%);
+}
+
+.policy-card:last-child{
+  margin-bottom: 0;
+}
+
+.policy-card__header{
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 22px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.policy-card__icon{
+  font-size: 20px;
+  color: #b08a61;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(176, 138, 97, 0.1);
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.policy-card__header h4{
+  font-size: 26px;
+  font-weight: 600;
+  color: #1e1e1e;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.policy-highlight{
+  background: #f9f9f9;
+  border-left: 3px solid #b08a61;
+  border-radius: 0 8px 8px 0;
+  padding: 20px 24px;
+  margin: 22px 0;
+}
+
+.policy-highlight h5,
+.policy-subsection h5{
+  font-size: 20px;
+  font-weight: 600;
+  color: #b08a61;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.policy-highlight p{
+  margin-bottom: 8px;
+}
+
+.policy-highlight ul{
+  margin-top: 8px !important;
+}
+
+.policy-note{
+  font-style: italic;
+  color: #666;
+  font-size: 14.5px;
+  margin-top: 10px;
+}
+
+.policy-subsection{
+  margin-bottom: 26px;
+}
+
+.policy-subsection:last-child{
+  margin-bottom: 0;
+}
+
+.policy-location{
+  background: #f9f9f9;
+  border-radius: 8px;
+  padding: 14px 18px;
+  margin-bottom: 10px;
+}
+
+.policy-location strong{
+  display: block;
+  margin-bottom: 4px;
+  color: #1e1e1e;
+}
+
+.policy-location p{
+  margin-bottom: 0;
+}
+
+.payment-methods{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 12px 0;
+}
+
+.payment-chip{
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #f9f9f9;
+  border: 1px solid #e0e0e0;
+  border-radius: 20px;
+  padding: 8px 16px;
+  font-size: 14px;
+  color: #1e1e1e;
+}
+
+.payment-chip i{
+  color: #b08a61;
+  font-size: 13px;
+}
+
+
+/** FAQ section **/
+
+.faq-grid{
+  max-width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.faq-item{
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 0;
+  color: #333;
+  font-size: 16px;
+  line-height: 1.8;
+  box-shadow: 0 2px 10px rgb(0 0 0 / 8%);
+  overflow: hidden;
+}
+
+.faq-question{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 32px;
+  cursor: pointer;
+  margin: 0;
+  transition: background 0.2s ease;
+}
+
+.faq-question:hover{
+  background: #f9f9f9;
+}
+
+.faq-question h4{
+  font-size: 20px;
+  font-weight: 600;
+  color: #1e1e1e;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.faq-toggle{
+  color: #b08a61;
+  font-size: 14px;
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
+  margin-left: 16px;
+}
+
+.faq-item.open .faq-toggle{
+  transform: rotate(180deg);
+}
+
+.faq-answer{
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease, padding 0.35s ease;
+  padding: 0 32px;
+}
+
+.faq-item.open .faq-answer{
+  max-height: 600px;
+  padding: 0 32px 24px;
+}
+
+.faq-item p{
+  margin-bottom: 10px;
+}
+
+.faq-item p:last-child{
+  margin-bottom: 0;
+}
+
+.faq-item strong{
+  color: #b08a61;
+}
+
+.faq-item ul{
+  list-style: none;
+  padding: 0;
+  margin: 0 0 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.faq-item ul:last-child{
+  margin-bottom: 0;
+}
+
+.faq-item ul li{
+  position: relative;
+  padding-left: 20px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.faq-item ul li::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #b08a61;
+}
+
+.faq-link{
+  color: #b08a61;
+  text-decoration: underline;
+}
+
+.faq-link:hover{
+  color: #8a6b4a;
+}
+
+@media (max-width: 768px){
+  .faq-question{
+    padding: 20px 20px;
+  }
+
+  .faq-question h4{
+    font-size: 17px;
+  }
+
+  .faq-answer{
+    padding: 0 20px;
+  }
+
+  .faq-item.open .faq-answer{
+    padding: 0 20px 20px;
+  }
+
+  .faq-grid{
+    max-width: 100%;
+    padding: 0px 30px;
+  }
+}
+
 @media (max-width: 768px){
   .info-accordions{
     padding: 50px 0;
@@ -3837,6 +4177,23 @@ div#mCSB_1_container{
   .info-accordion__body{
     padding: 0 20px 20px;
     font-size: 14px;
+  }
+
+  .policy-card{
+    padding: 18px;
+  }
+
+  .policy-highlight{
+    padding: 14px 16px;
+  }
+
+  .payment-methods{
+    gap: 8px;
+  }
+
+  .payment-chip{
+    padding: 6px 12px;
+    font-size: 13px;
   }
 }
 
@@ -7071,6 +7428,19 @@ div#mCSB_1_container{
 
 .news-block-one .inner-box .lower-content p{
   margin-bottom: 20px;
+}
+
+/* Policies page banner */
+.page-title--policies .title-box h1{
+  font-size: 42px;
+  font-weight: 600;
+  text-transform: none;
+}
+
+.page-title__subtitle{
+  color: #bdb7ab;
+  font-size: 16px;
+  margin-top: 12px;
 }
 
 /* Booking Langley page updates */

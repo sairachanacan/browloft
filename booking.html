@@ -96,10 +96,10 @@
                                         </li>
                                         <li class="dropdown"><a>About</a>
                                             <ul>
-                                                <li><a href="about.html#about-us">About Us</a></li>
-                                                <li><a href="about.html#policies">Policies</a></li>
-                                                <li><a href="about.html#faq">FAQ</a></li>
-                                                <li><a href="about.html#after-care">After Care</a></li>
+                                                <li><a href="about.html">About Us</a></li>
+                                                <li><a href="policies.html">Policies</a></li>
+                                                <li><a href="faq.html">FAQ</a></li>
+                                                <li><a href="after-care.html">After Care</a></li>
                                             </ul>
                                         </li>
                                         <li><a href="index.html#enquiry">Contact</a></li>
@@ -252,8 +252,8 @@
                                 </li>
                                 <li>
                                     <div>
-                                        <span>Velvet Touch – $8</span>
-                                        <button class="booking-summary-button" type="button" onclick="goToBooking('velvet-touch')">Book Now</button>
+                                        <span>Signature Area Threading – $8</span>
+                                        <button class="booking-summary-button" type="button" onclick="goToBooking('signature-area-threading')">Book Now</button>
                                     </div>
                                     <!-- <div class="booking-item-description">
                                         Choose one area for targeted threading: upper lip, chin, cheeks, sideburns, forehead, or neck.
@@ -261,8 +261,8 @@
                                 </li>
                                 <li>
                                     <div>
-                                        <span>Luxe Brows + 1 Velvet Touch – $17</span>
-                                        <button class="booking-summary-button" type="button" onclick="goToBooking('luxe-brows-velvet-touch-1')">Book Now</button>
+                                        <span>Luxe Brows & Signature One Area Threading – $17</span>
+                                        <button class="booking-summary-button" type="button" onclick="goToBooking('luxe-brows-signature-1')">Book Now</button>
                                     </div>
                                     <!-- <div class="booking-item-description">
                                         Combine Luxe Brows threading with threading of one additional area of your choice (upper lip, chin, cheeks, sideburns, forehead, or neck).
@@ -270,8 +270,8 @@
                                 </li>
                                 <li>
                                     <div>
-                                        <span>Luxe Brows + 2 Velvet Touch – $25</span>
-                                        <button class="booking-summary-button" type="button" onclick="goToBooking('luxe-brows-velvet-touch-2')">Book Now</button>
+                                        <span>Luxe Brows & Signature Two Area's Threading – $25</span>
+                                        <button class="booking-summary-button" type="button" onclick="goToBooking('luxe-brows-signature-2')">Book Now</button>
                                     </div>
                                     <!-- <div class="booking-item-description">
                                         Combine Luxe Brows threading with threading of any two additional areas of your choice (upper lip, chin, cheeks, sideburns, forehead, or neck).
@@ -390,20 +390,20 @@
                                         </li>
                                         <li>
                                             <div>
-                                                <span>Luxe Brows &amp; Tinting + 1 Velvet Touch – $35</span>
-                                                <button class="booking-summary-button" type="button" onclick="goToBooking('luxe-brows-tinting-velvet-touch-1')">Book Now</button>
+                                                <span>Luxe Brows &amp; Tinting + 1 Signature Area Threading – $35</span>
+                                                <button class="booking-summary-button" type="button" onclick="goToBooking('luxe-brows-tinting-signature-1')">Book Now</button>
                                             </div>
                                             <!-- <div class="booking-item-description">
-                                                Save with this combination of luxe brow threading, tinting, and one velvet touch area.
+                                                Save with this combination of luxe brow threading, tinting, and one signature threading area.
                                             </div> -->
                                         </li>
                                         <li>
                                             <div>
-                                                <span>Luxe Brows &amp; Tinting + 2 Velvet Touch – $45</span>
-                                                <button class="booking-summary-button" type="button" onclick="goToBooking('luxe-brows-tinting-velvet-touch-2')">Book Now</button>
+                                                <span>Luxe Brows &amp; Tinting + 2 Signature Area Threading – $45</span>
+                                                <button class="booking-summary-button" type="button" onclick="goToBooking('luxe-brows-tinting-signature-2')">Book Now</button>
                                             </div>
                                             <!-- <div class="booking-item-description">
-                                                Save with a package that includes luxe brow threading, tinting, and two velvet touch areas.
+                                                Save with a package that includes luxe brow threading, tinting, and two signature threading areas.
                                             </div> -->
                                         </li>
                                         <li>
@@ -1188,9 +1188,9 @@
             // Threading
             'luxe-brows': { name: 'Luxe Brows', langley: '$12', burnaby: '$20' },
             'teen-brows': { name: 'Teen Brows', langley: '$10', burnaby: '$12.99' },
-            'velvet-touch': { name: 'Velvet Touch', langley: '$8', burnaby: '$12' },
-            'luxe-brows-velvet-touch-1': { name: 'Luxe Brows + 1 Velvet Touch', langley: '$17', burnaby: '$30' },
-            'luxe-brows-velvet-touch-2': { name: 'Luxe Brows + 2 Velvet Touch', langley: '$25', burnaby: '$40' },
+            'signature-area-threading': { name: 'Signature Area Threading', langley: '$8', burnaby: '$12' },
+            'luxe-brows-signature-1': { name: 'Luxe Brows & Signature One Area Threading', langley: '$17', burnaby: '$30' },
+            'luxe-brows-signature-2': { name: 'Luxe Brows & Signature Two Area\'s Threading', langley: '$25', burnaby: '$40' },
             'luxe-smooth-face': { name: 'The Luxe Smooth Face', langley: '$38', burnaby: '$45' },
             // Brow & Lash Treatments
             'luxe-brow-tint': { name: 'Luxe Brow Tint', langley: '$20', burnaby: '$20' },
@@ -1204,8 +1204,8 @@
             'brow-prep-polish': { name: 'Brow Prep & Polish', langley: '$5', burnaby: '$5' },
             // Package Deals
             'luxe-brows-tinting-package': { name: 'Luxe Brows & Tinting Package', langley: '$28', burnaby: '$35' },
-            'luxe-brows-tinting-velvet-touch-1': { name: 'Luxe Brows & Tinting + 1 Velvet Touch', langley: '$35', burnaby: '$47' },
-            'luxe-brows-tinting-velvet-touch-2': { name: 'Luxe Brows & Tinting + 2 Velvet Touch', langley: '$45', burnaby: '$75' },
+            'luxe-brows-tinting-signature-1': { name: 'Luxe Brows & Tinting + 1 Signature Area Threading', langley: '$35', burnaby: '$47' },
+            'luxe-brows-tinting-signature-2': { name: 'Luxe Brows & Tinting + 2 Signature Area Threading', langley: '$45', burnaby: '$75' },
             'luxe-brows-brow-tinting-lash-tint': { name: 'Luxe Brows + Brow Tinting + Lash Tint Bundle', langley: '$52', burnaby: '$60' },
             'luxe-lash-lift-lash-tint': { name: 'Luxe Lash Lift + Lash Tint Bundle', langley: '$75', burnaby: '$90' },
             'luxe-brows-brow-henna': { name: 'Luxe Brows + Brow Henna', langley: '$55', burnaby: '$65' },
