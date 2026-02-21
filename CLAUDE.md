@@ -34,6 +34,7 @@ All pages must have the same nav structure:
     <li class="dropdown"><a>About</a>
         <ul>
             <li><a href="about.html">About Us</a></li>
+            <li><a href="before-your-appointment.html">Before Your Appointment</a></li>
             <li><a href="policies.html">Policies</a></li>
             <li><a href="faq.html">FAQ</a></li>
             <li><a href="after-care.html">After Care</a></li>
@@ -42,14 +43,15 @@ All pages must have the same nav structure:
     <li><a href="index.html#enquiry">Contact</a></li>
 </ul>
 ```
-- Add `class="current dropdown"` to the About `<li>` on about, policies, faq, and after-care pages
-- Nav changes must be applied to ALL pages: index.html, about.html, policies.html, faq.html, after-care.html, langley-location.html, burnaby-location.html, booking.html
+- Add `class="current dropdown"` to the About `<li>` on about, policies, faq, before-your-appointment, and after-care pages
+- Nav changes must be applied to ALL pages: index.html, about.html, policies.html, faq.html, before-your-appointment.html, after-care.html, langley-location.html, burnaby-location.html, booking.html
 
 ## Active Pages
 - `index.html` — Homepage
 - `about.html` — About Us page (content TBD)
 - `policies.html` — Policies page (cancellation, parking/payment, service safety)
 - `faq.html` — FAQ page (threading, tinting, lash lift questions)
+- `before-your-appointment.html` — Before Your Appointment (benefits of threading, pre-wax checklist, helpful tips)
 - `after-care.html` — After Care page (threading, tint, lash lift, facial aftercare)
 - `langley-location.html` — Langley services with desktop + mobile dual layouts
 - `burnaby-location.html` — Burnaby services with desktop + mobile dual layouts
@@ -94,7 +96,7 @@ All pages must have the same nav structure:
 
 ## Important Conventions
 - Each About sub-section is a SEPARATE page (not sections on one page)
-- Service rename: "Velvet Touch" is now "Signature Area Threading"
-- "Luxe Brows & Velvet Touch" is now "Luxe Brows & Signature One Area Threading"
-- Added: "Luxe Brows & Signature Two Area's Threading"
+- Service rename: "Signature Area Threading" is now "Luxe Facial Touch-Up Threading/Waxing"
+- "Luxe Brows & Signature One Area Threading" is now "Luxe Brows & One Area Facial Touch-Up Threading/Waxing"
+- "Luxe Brows & Signature Two Area's Threading" is now "Luxe Brows & Two Area Facial Touch-Up Threading/Waxing"
 - Add-ons, packages, and facial add-ons show durations (not prices)

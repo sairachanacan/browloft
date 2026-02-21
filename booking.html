@@ -24,7 +24,7 @@
 <link href="assets/css/nice-select.css" rel="stylesheet">
 <link href="assets/css/imagebg.css" rel="stylesheet">
 <link href="assets/css/color.css" rel="stylesheet">
-<link href="assets/css/style.css" rel="stylesheet">
+<link href="assets/css/style.css?v=4.2" rel="stylesheet">
 <link href="assets/css/responsive.css" rel="stylesheet">
 
 </head>
@@ -97,6 +97,7 @@
                                         <li class="dropdown"><a>About</a>
                                             <ul>
                                                 <li><a href="about.html">About Us</a></li>
+                                                <li><a href="before-your-appointment.html">Before Your Appointment</a></li>
                                                 <li><a href="policies.html">Policies</a></li>
                                                 <li><a href="faq.html">FAQ</a></li>
                                                 <li><a href="after-care.html">After Care</a></li>
@@ -252,7 +253,7 @@
                                 </li>
                                 <li>
                                     <div>
-                                        <span>Signature Area Threading – $8</span>
+                                        <span>Luxe Facial Touch-Up Threading/Waxing – $8</span>
                                         <button class="booking-summary-button" type="button" onclick="goToBooking('signature-area-threading')">Book Now</button>
                                     </div>
                                     <!-- <div class="booking-item-description">
@@ -261,7 +262,7 @@
                                 </li>
                                 <li>
                                     <div>
-                                        <span>Luxe Brows & Signature One Area Threading – $17</span>
+                                        <span>Luxe Brows & One Area Facial Touch-Up Threading/Waxing – $17</span>
                                         <button class="booking-summary-button" type="button" onclick="goToBooking('luxe-brows-signature-1')">Book Now</button>
                                     </div>
                                     <!-- <div class="booking-item-description">
@@ -270,7 +271,7 @@
                                 </li>
                                 <li>
                                     <div>
-                                        <span>Luxe Brows & Signature Two Area's Threading – $25</span>
+                                        <span>Luxe Brows & Two Area Facial Touch-Up Threading/Waxing – $25</span>
                                         <button class="booking-summary-button" type="button" onclick="goToBooking('luxe-brows-signature-2')">Book Now</button>
                                     </div>
                                     <!-- <div class="booking-item-description">
@@ -390,7 +391,7 @@
                                         </li>
                                         <li>
                                             <div>
-                                                <span>Luxe Brows &amp; Tinting + 1 Signature Area Threading – $35</span>
+                                                <span>Luxe Brows &amp; Tinting + 1 Luxe Facial Touch-Up Threading/Waxing – $35</span>
                                                 <button class="booking-summary-button" type="button" onclick="goToBooking('luxe-brows-tinting-signature-1')">Book Now</button>
                                             </div>
                                             <!-- <div class="booking-item-description">
@@ -399,7 +400,7 @@
                                         </li>
                                         <li>
                                             <div>
-                                                <span>Luxe Brows &amp; Tinting + 2 Signature Area Threading – $45</span>
+                                                <span>Luxe Brows &amp; Tinting + 2 Luxe Facial Touch-Up Threading/Waxing – $45</span>
                                                 <button class="booking-summary-button" type="button" onclick="goToBooking('luxe-brows-tinting-signature-2')">Book Now</button>
                                             </div>
                                             <!-- <div class="booking-item-description">
@@ -521,9 +522,18 @@
                                         <span>Delicate Care Facial – $110</span>
                                         <button class="booking-summary-button" type="button" onclick="goToBooking('delicate-care-facial')">Book Now</button>
                                     </div>
-                                    <!-- <div class="booking-item-description">
-                                        A gentle, restorative treatment designed to calm, comfort, and strengthen sensitive skin with soothing botanicals and hydrating ingredients. Reduces redness and leaves your complexion soft, balanced, and refreshed. Extractions are included.
-                                    </div> -->
+                                </li>
+                                <li>
+                                    <div>
+                                        <span>Organic Pregnancy Facial – $110</span>
+                                        <button class="booking-summary-button" type="button" onclick="goToBooking('organic-pregnancy-facial')">Book Now</button>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <span>Éminence Ashwagandha Facial – $110</span>
+                                        <button class="booking-summary-button" type="button" onclick="goToBooking('eminence-ashwagandha-facial')">Book Now</button>
+                                    </div>
                                 </li>
                                 <li>
                                     <div>
@@ -1186,11 +1196,11 @@
 
         const servicePrices = {
             // Threading
-            'luxe-brows': { name: 'Luxe Brows', langley: '$12', burnaby: '$20' },
+            'luxe-brows': { name: 'Luxe Brows', langley: '$12', burnaby: '$15' },
             'teen-brows': { name: 'Teen Brows', langley: '$10', burnaby: '$12.99' },
-            'signature-area-threading': { name: 'Signature Area Threading', langley: '$8', burnaby: '$12' },
-            'luxe-brows-signature-1': { name: 'Luxe Brows & Signature One Area Threading', langley: '$17', burnaby: '$30' },
-            'luxe-brows-signature-2': { name: 'Luxe Brows & Signature Two Area\'s Threading', langley: '$25', burnaby: '$40' },
+            'signature-area-threading': { name: 'Luxe Facial Touch-Up Threading/Waxing', langley: '$8', burnaby: '$12' },
+            'luxe-brows-signature-1': { name: 'Luxe Brows & One Area Facial Touch-Up Threading/Waxing', langley: '$17', burnaby: '$30' },
+            'luxe-brows-signature-2': { name: 'Luxe Brows & Two Area Facial Touch-Up Threading/Waxing', langley: '$25', burnaby: '$40' },
             'luxe-smooth-face': { name: 'The Luxe Smooth Face', langley: '$38', burnaby: '$45' },
             // Brow & Lash Treatments
             'luxe-brow-tint': { name: 'Luxe Brow Tint', langley: '$20', burnaby: '$20' },
@@ -1204,8 +1214,8 @@
             'brow-prep-polish': { name: 'Brow Prep & Polish', langley: '$5', burnaby: '$5' },
             // Package Deals
             'luxe-brows-tinting-package': { name: 'Luxe Brows & Tinting Package', langley: '$28', burnaby: '$35' },
-            'luxe-brows-tinting-signature-1': { name: 'Luxe Brows & Tinting + 1 Signature Area Threading', langley: '$35', burnaby: '$47' },
-            'luxe-brows-tinting-signature-2': { name: 'Luxe Brows & Tinting + 2 Signature Area Threading', langley: '$45', burnaby: '$75' },
+            'luxe-brows-tinting-signature-1': { name: 'Luxe Brows & Tinting + 1 Luxe Facial Touch-Up Threading/Waxing', langley: '$35', burnaby: '$47' },
+            'luxe-brows-tinting-signature-2': { name: 'Luxe Brows & Tinting + 2 Luxe Facial Touch-Up Threading/Waxing', langley: '$45', burnaby: '$75' },
             'luxe-brows-brow-tinting-lash-tint': { name: 'Luxe Brows + Brow Tinting + Lash Tint Bundle', langley: '$52', burnaby: '$60' },
             'luxe-lash-lift-lash-tint': { name: 'Luxe Lash Lift + Lash Tint Bundle', langley: '$75', burnaby: '$90' },
             'luxe-brows-brow-henna': { name: 'Luxe Brows + Brow Henna', langley: '$55', burnaby: '$65' },
@@ -1219,6 +1229,8 @@
             'purely-yours-facial': { name: 'Purely Yours Facial', langley: '$110', burnaby: '$110' },
             'coconut-glow-facial': { name: 'Coconut Glow Hydrating Facial', langley: '$110', burnaby: '$110' },
             'delicate-care-facial': { name: 'Delicate Care Facial', langley: '$110', burnaby: '$110' },
+            'organic-pregnancy-facial': { name: 'Organic Pregnancy Facial', langley: '$110', burnaby: '$110' },
+            'eminence-ashwagandha-facial': { name: 'Éminence Ashwagandha Facial', langley: '$110', burnaby: '$110' },
             // Facial Add-Ons
             'lip-revival-facial': { name: 'Lip Revival Facial', langley: '$10', burnaby: '$10' },
             'booster': { name: 'Booster', langley: '$10', burnaby: '$10' },
