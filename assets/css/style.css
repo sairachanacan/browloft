@@ -2858,6 +2858,39 @@ div#mCSB_1_container{
   font-weight: 600;
 }
 
+.beauty-hero-stats{
+  display: flex;
+  gap: 16px;
+  margin-bottom: 10px;
+}
+
+.beauty-hero-stat-card{
+  background: rgba(176, 138, 97, 0.1);
+  border: 1px solid rgba(176, 138, 97, 0.3);
+  border-radius: 12px;
+  padding: 18px 24px;
+  text-align: center;
+  flex: 1;
+}
+
+.beauty-hero-stat-number{
+  display: block;
+  font-family: 'Mrs Saint Delafield', cursive;
+  font-size: 42px;
+  color: #b08a61;
+  line-height: 1.1;
+}
+
+.beauty-hero-stat-label{
+  display: block;
+  font-size: 13px;
+  color: #9a7b58;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-top: 4px;
+}
+
 .beauty-hero-btn{
   padding: 12px 28px;
   border-radius: 8px;
@@ -2953,6 +2986,18 @@ div#mCSB_1_container{
     top: 0;
     margin-right: 8px;
     display: inline-block;
+  }
+
+  .beauty-hero-stats{
+    justify-content: center;
+  }
+
+  .beauty-hero-stat-card{
+    padding: 14px 18px;
+  }
+
+  .beauty-hero-stat-number{
+    font-size: 36px;
   }
 
   .beauty-hero-media{
@@ -3845,6 +3890,213 @@ div#mCSB_1_container{
 .before-your-appointment-page{
   background: url(../images/image25.png) no-repeat center center;
   background-size: cover;
+}
+
+/* About Us Page */
+.about-us-page{
+  background: url(../images/image28.png) no-repeat center center;
+  background-size: cover;
+}
+
+.about-us-content{
+  max-width: 100%;
+  padding: 0 30px;
+}
+
+.about-founders{
+  margin-bottom: 50px;
+}
+
+.about-founders-images{
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.founder-card{
+  text-align: center;
+}
+
+.founder-image-placeholder{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: #f5f0eb;
+  border: 3px solid #b08a61;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 16px;
+}
+
+.founder-image-placeholder i{
+  font-size: 60px;
+  color: #c9a87a;
+}
+
+.founder-image-placeholder img{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.founder-card h4{
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 4px;
+  font-weight: 600;
+}
+
+.founder-card span{
+  font-size: 14px;
+  color: #9a7b58;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.about-story{
+  margin-bottom: 50px;
+}
+
+.about-story-title{
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: 600;
+  position: relative;
+  padding-bottom: 12px;
+}
+
+.about-story-title::after{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background: #b08a61;
+}
+
+.about-story p{
+  font-size: 16px;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 16px;
+}
+
+.about-values-grid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.about-value-card{
+  background: #fff;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  border: 1px solid #ece6df;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-value-card:hover{
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+}
+
+.about-value-icon{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #f5f0eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.about-value-icon i{
+  font-size: 20px;
+  color: #b08a61;
+}
+
+.about-value-card h4{
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.about-value-card p{
+  font-size: 15px;
+  line-height: 1.7;
+  color: #666;
+}
+
+.about-why-us{
+  background: #fff;
+  border-radius: 12px;
+  padding: 35px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  border: 1px solid #ece6df;
+}
+
+.about-why-list{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.about-why-list li{
+  position: relative;
+  padding-left: 28px;
+  margin-bottom: 14px;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #555;
+}
+
+.about-why-list li::before{
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: #b08a61;
+  font-weight: 600;
+}
+
+.about-why-list li strong{
+  color: #333;
+}
+
+@media only screen and (max-width: 767px){
+  .about-founders-images{
+    gap: 24px;
+  }
+
+  .founder-image-placeholder{
+    width: 150px;
+    height: 150px;
+  }
+
+  .founder-image-placeholder i{
+    font-size: 44px;
+  }
+
+  .about-values-grid{
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .about-us-content{
+    padding: 0 10px;
+  }
+
+  .about-why-us{
+    padding: 24px;
+  }
 }
 
 .policies-page__grid{
