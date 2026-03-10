@@ -18,6 +18,19 @@
       { "number": "25+", "label": "Services Offered" }
     ]
   },
+  "services_section": {
+    "heading": "Our Services",
+    "cards": [
+      { "title": "Eye Brow Threading",       "image": "assets/images/image3.png",  "link": "langley-location.html#eyebrow-threading" },
+      { "title": "Brow & Lash Bar",           "image": "assets/images/image4.png",  "link": "langley-location.html#brow-lash-treatments" },
+      { "title": "Gentlemen's Bar",           "image": "assets/images/image5.png",  "link": "langley-location.html#gentlemens-bar" },
+      { "title": "Luxe Facial Bar",           "image": "assets/images/image6.png",  "link": "langley-location.html#luxe-facial-bar" },
+      { "title": "Micro-Needling",            "image": "assets/images/image7.png",  "link": "langley-location.html#micro-needling" },
+      { "title": "Women's Wax Bar",           "image": "assets/images/image8.png",  "link": "langley-location.html#womens-wax-bar" },
+      { "title": "Gentlemen's Wax Bar",       "image": "assets/images/image9.png",  "link": "langley-location.html#gentlemens-wax-bar" },
+      { "title": "Makeup and Hairstyle",      "image": "assets/images/image10.png", "link": "langley-location.html#makeup-hairstyle" }
+    ]
+  },
   "why_choose": {
     "heading": "Refining your natural beauty with care and precision.",
     "cards": [
@@ -39,5 +52,12 @@
       }
     ]
   },
-  "enquiry_heading": "Do you NEED TO MAKE AN ENQUIRY?"
+  "how_it_works": {
+    "steps": [
+      { "label": "Select Your Service" },
+      { "label": "Make Appointment" },
+      { "label": "Enjoy Our Services" }
+    ]
+  },
+  "enquiry_heading": "DO YOU NEED TO MAKE AN ENQUIRY?"
 }

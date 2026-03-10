@@ -38,6 +38,18 @@ collections:
                 fields:
                   - { label: "Number", name: "number", widget: "string" }
                   - { label: "Label", name: "label", widget: "string" }
+          - label: "Our Services Section"
+            name: "services_section"
+            widget: "object"
+            fields:
+              - { label: "Section Heading", name: "heading", widget: "string" }
+              - label: "Service Cards"
+                name: "cards"
+                widget: "list"
+                fields:
+                  - { label: "Service Title", name: "title", widget: "string" }
+                  - { label: "Image", name: "image", widget: "image" }
+                  - { label: "Link (page#section)", name: "link", widget: "string" }
           - label: "Why Choose Us Section"
             name: "why_choose"
             widget: "object"
@@ -49,6 +61,15 @@ collections:
                 fields:
                   - { label: "Title", name: "title", widget: "string" }
                   - { label: "Description", name: "description", widget: "text" }
+          - label: "How It Works Section"
+            name: "how_it_works"
+            widget: "object"
+            fields:
+              - label: "Steps"
+                name: "steps"
+                widget: "list"
+                fields:
+                  - { label: "Step Label", name: "label", widget: "string" }
           - { label: "Enquiry Section Heading", name: "enquiry_heading", widget: "string" }
 
   # ── About Us ──────────────────────────────────────────────
