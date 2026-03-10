@@ -63,5 +63,10 @@
       { "label": "Enjoy Our Services" }
     ]
   },
-  "enquiry_heading": "DO YOU NEED TO MAKE AN ENQUIRY?"
+  "enquiry": {
+    "heading": "DO YOU NEED TO MAKE AN ENQUIRY?",
+    "phone": "666 888 0000",
+    "email": "browloft@hotmail.com",
+    "address": "Langley & Burnaby — Vancouver, Canada"
+  }
 }

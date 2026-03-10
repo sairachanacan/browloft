@@ -3,6 +3,14 @@
   "email": "browloft@hotmail.com",
   "address": "Langley, Burnaby - Vancouver, Canada",
   "copyright": "2026 Brow Loft. All rights reserved.",
+  "footer_services": [
+    { "name": "Eye Brow Threading",   "link": "langley-location.html#eyebrow-threading" },
+    { "name": "Brow & Lash Bar",       "link": "langley-location.html#brow-lash-treatments" },
+    { "name": "Luxe Facial Bar",       "link": "langley-location.html#luxe-facial-bar" },
+    { "name": "Micro-Needling",        "link": "langley-location.html#micro-needling" },
+    { "name": "Womens/Mens Wax Bar",   "link": "langley-location.html#womens-wax-bar" },
+    { "name": "Makeup and Hairstyle",  "link": "langley-location.html#makeup-hairstyle" }
+  ],
   "social": {
     "instagram": "",
     "facebook": "",
