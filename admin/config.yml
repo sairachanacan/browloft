@@ -79,7 +79,11 @@ collections:
             widget: "object"
             fields:
               - { label: "Section Heading", name: "heading", widget: "string" }
-              - { label: "Form Button Text", name: "button_text", widget: "string", hint: "Text on the submit button, e.g. Book Now" }
+              - { label: "Name Field Placeholder", name: "placeholder_name", widget: "string", hint: "Placeholder text inside the Name field" }
+              - { label: "Email Field Placeholder", name: "placeholder_email", widget: "string", hint: "Placeholder text inside the Email field" }
+              - { label: "Phone Field Placeholder", name: "placeholder_phone", widget: "string", hint: "Placeholder text inside the Phone field" }
+              - { label: "Message Field Placeholder", name: "placeholder_message", widget: "string", hint: "Placeholder text inside the Message box" }
+              - { label: "Form Button Text", name: "button_text", widget: "string", hint: "Text on the submit button" }
               - label: "Service Dropdown Options"
                 name: "services"
                 widget: "list"

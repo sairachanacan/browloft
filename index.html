@@ -1226,6 +1226,25 @@
                 if (d.enquiry) {
                     var eqH = document.querySelector('.appointment-section .upper-inner h2');
                     if (eqH && d.enquiry.heading) eqH.textContent = d.enquiry.heading;
+                    var form = document.querySelector('.appointment-form');
+                    if (form) {
+                        if (d.enquiry.placeholder_name) {
+                            var nameInput = form.querySelector('input[name="name"]');
+                            if (nameInput) nameInput.placeholder = d.enquiry.placeholder_name;
+                        }
+                        if (d.enquiry.placeholder_email) {
+                            var emailInput = form.querySelector('input[name="email"]');
+                            if (emailInput) emailInput.placeholder = d.enquiry.placeholder_email;
+                        }
+                        if (d.enquiry.placeholder_phone) {
+                            var phoneInput = form.querySelector('input[name="phone"]');
+                            if (phoneInput) phoneInput.placeholder = d.enquiry.placeholder_phone;
+                        }
+                        if (d.enquiry.placeholder_message) {
+                            var msgInput = form.querySelector('textarea[name="message"]');
+                            if (msgInput) msgInput.placeholder = d.enquiry.placeholder_message;
+                        }
+                    }
                     if (d.enquiry.button_text) {
                         var eqBtn = document.querySelector('.enquiry-submit-btn');
                         if (eqBtn) eqBtn.textContent = d.enquiry.button_text;
