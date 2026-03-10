@@ -27,19 +27,6 @@
 <link href="assets/css/style.css?v=4.4" rel="stylesheet">
 <link href="assets/css/responsive.css" rel="stylesheet">
 
-<!-- Netlify Identity Widget — handles invite/password-reset tokens -->
-<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-<script>
-  if (window.netlifyIdentity) {
-    window.netlifyIdentity.on("init", function(user) {
-      if (!user) {
-        window.netlifyIdentity.on("login", function() {
-          document.location.href = "/admin/";
-        });
-      }
-    });
-  }
-</script>
 
 </head>
 
@@ -917,8 +904,12 @@
                     <div class="col-lg-6 col-md-12 col-sm-12 content-column">
                         <div class="content-box">
                             <div class="upper-inner">
-                                <h2>Do you NEED TO MAKE AN ENQUIRY?</h2>
-                                <!-- <p>Lorem ipsum dolor sit amet, conse ctetur adipisicing elit sed do eiusm od tempor ut labore. sit amet scelerisque eros. Phasellus hendrerit neque a augue.</p> -->
+                                <h2>DO YOU NEED TO MAKE AN ENQUIRY?</h2>
+                                <ul class="enquiry-contact-list">
+                                    <li><i class="flaticon-phone-call"></i> <a href="tel:6668880000">666 888 0000</a></li>
+                                    <li><i class="flaticon-email-2"></i> <a href="mailto:browloft@hotmail.com">browloft@hotmail.com</a></li>
+                                    <li><i class="flaticon-maps-and-flags"></i> Langley &amp; Burnaby — Vancouver, Canada</li>
+                                </ul>
                             </div>
                             <!-- <div class="lower-inner">
                                 <figure class="image-box"><img src="assets/images/resource/appointment-1.jpg" alt=""></figure>
@@ -1133,6 +1124,22 @@
 
     <!-- main-js -->
     <script src="assets/js/script.js"></script>
+
+    <!-- Netlify Identity Widget — handles invite/password-reset tokens (async so it never blocks rendering) -->
+    <script async src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        if (window.netlifyIdentity) {
+          window.netlifyIdentity.on("init", function(user) {
+            if (!user) {
+              window.netlifyIdentity.on("login", function() {
+                document.location.href = "/admin/";
+              });
+            }
+          });
+        }
+      });
+    </script>
 
     <!-- CMS Content Loader -->
     <script>
