@@ -905,11 +905,6 @@
                         <div class="content-box">
                             <div class="upper-inner">
                                 <h2>DO YOU NEED TO MAKE AN ENQUIRY?</h2>
-                                <ul class="enquiry-contact-list">
-                                    <li><i class="flaticon-phone-call"></i> <a href="tel:6668880000">666 888 0000</a></li>
-                                    <li><i class="flaticon-email-2"></i> <a href="mailto:browloft@hotmail.com">browloft@hotmail.com</a></li>
-                                    <li><i class="flaticon-maps-and-flags"></i> <span class="enquiry-addr">Langley &amp; Burnaby — Vancouver, Canada</span></li>
-                                </ul>
                             </div>
                             <!-- <div class="lower-inner">
                                 <figure class="image-box"><img src="assets/images/resource/appointment-1.jpg" alt=""></figure>
@@ -1246,14 +1241,6 @@
         fetch('_data/site-settings.json')
             .then(function(r) { return r.json(); })
             .then(function(s) {
-                // Enquiry section contact list
-                var phoneLinks = document.querySelectorAll('.enquiry-contact-list a[href^="tel:"]');
-                phoneLinks.forEach(function(el) { el.textContent = s.phone; el.href = 'tel:' + s.phone.replace(/\s/g,''); });
-                var emailLinks = document.querySelectorAll('.enquiry-contact-list a[href^="mailto:"]');
-                emailLinks.forEach(function(el) { el.textContent = s.email; el.href = 'mailto:' + s.email; });
-                var addrEls = document.querySelectorAll('.enquiry-addr');
-                addrEls.forEach(function(el) { el.textContent = s.address; });
-
                 // Footer contact
                 var ftPhone = document.querySelector('.footer-widget .info-list a[href^="tel:"]');
                 if (ftPhone) { ftPhone.textContent = s.phone; ftPhone.href = 'tel:' + s.phone.replace(/\s/g,''); }

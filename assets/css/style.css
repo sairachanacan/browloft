@@ -4536,32 +4536,6 @@ div#mCSB_1_container{
   /* margin-bottom: 208px; */
 }
 
-.enquiry-contact-list{
-  list-style: none;
-  padding: 0;
-  margin: 24px 0 0;
-}
-.enquiry-contact-list li{
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  font-size: 16px;
-  color: #fff;
-  margin-bottom: 14px;
-}
-.enquiry-contact-list li i{
-  font-size: 20px;
-  color: #b08a61;
-  min-width: 22px;
-}
-.enquiry-contact-list li a{
-  color: #fff;
-  text-decoration: none;
-}
-.enquiry-contact-list li a:hover{
-  color: #b08a61;
-}
-
 .appointment-section .content-box .lower-inner{
   position: relative;
   padding-left: 270px;
