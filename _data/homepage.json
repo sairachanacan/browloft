@@ -65,9 +65,6 @@
   },
   "enquiry": {
     "heading": "DO YOU NEED TO MAKE AN ENQUIRY?",
-    "phone": "666 888 0000",
-    "email": "browloft@hotmail.com",
-    "address": "Langley & Burnaby — Vancouver, Canada",
     "button_text": "Book Now",
     "services": ["Threading", "Brow & Lash", "Waxing", "Facial"]
   }

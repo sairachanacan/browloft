@@ -905,11 +905,6 @@
                         <div class="content-box">
                             <div class="upper-inner">
                                 <h2>DO YOU NEED TO MAKE AN ENQUIRY?</h2>
-                                <div class="enquiry-info">
-                                    <p class="enquiry-info__item"><i class="flaticon-phone-call"></i> <a href="tel:6668880000" class="enquiry-phone">666 888 0000</a></p>
-                                    <p class="enquiry-info__item"><i class="flaticon-email-2"></i> <a href="mailto:browloft@hotmail.com" class="enquiry-email">browloft@hotmail.com</a></p>
-                                    <p class="enquiry-info__item"><i class="flaticon-maps-and-flags"></i> <span class="enquiry-address">Langley &amp; Burnaby — Vancouver, Canada</span></p>
-                                </div>
                             </div>
                             <!-- <div class="lower-inner">
                                 <figure class="image-box"><img src="assets/images/resource/appointment-1.jpg" alt=""></figure>
@@ -1231,18 +1226,6 @@
                 if (d.enquiry) {
                     var eqH = document.querySelector('.appointment-section .upper-inner h2');
                     if (eqH && d.enquiry.heading) eqH.textContent = d.enquiry.heading;
-                    if (d.enquiry.phone) {
-                        var eqPhone = document.querySelector('.enquiry-phone');
-                        if (eqPhone) { eqPhone.textContent = d.enquiry.phone; eqPhone.href = 'tel:' + d.enquiry.phone.replace(/\s/g,''); }
-                    }
-                    if (d.enquiry.email) {
-                        var eqEmail = document.querySelector('.enquiry-email');
-                        if (eqEmail) { eqEmail.textContent = d.enquiry.email; eqEmail.href = 'mailto:' + d.enquiry.email; }
-                    }
-                    if (d.enquiry.address) {
-                        var eqAddr = document.querySelector('.enquiry-address');
-                        if (eqAddr) eqAddr.textContent = d.enquiry.address;
-                    }
                     if (d.enquiry.button_text) {
                         var eqBtn = document.querySelector('.enquiry-submit-btn');
                         if (eqBtn) eqBtn.textContent = d.enquiry.button_text;
