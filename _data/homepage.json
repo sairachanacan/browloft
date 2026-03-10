@@ -65,6 +65,10 @@
   },
   "enquiry": {
     "heading": "DO YOU NEED TO MAKE AN ENQUIRY?",
+    "placeholder_name": "Your name",
+    "placeholder_email": "Email address",
+    "placeholder_phone": "Phone",
+    "placeholder_message": "Write message",
     "button_text": "Book Now",
     "services": ["Threading", "Brow & Lash", "Waxing", "Facial"]
   }
