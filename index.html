@@ -1149,12 +1149,22 @@
             .then(function(r) { return r.json(); })
             .then(function(d) {
                 // Hero
-                var titleEl = document.querySelector('.banner-section .title-text');
-                if (titleEl && d.hero) titleEl.innerHTML = d.hero.title.replace('\n','<br>');
-                var subEl = document.querySelector('.banner-section .sub-title');
-                if (subEl && d.hero) subEl.textContent = d.hero.subtitle;
-                var btnEl = document.querySelector('.banner-section .theme-btn-one');
-                if (btnEl && d.hero) btnEl.textContent = d.hero.button_text;
+                if (d.hero) {
+                    var titleEl = document.querySelector('.banner-section .title-text');
+                    if (titleEl) titleEl.innerHTML = d.hero.title.replace('\n','<br>');
+                    var subEl = document.querySelector('.banner-section .sub-title');
+                    if (subEl) subEl.textContent = d.hero.subtitle;
+                    var btnEl = document.querySelector('.banner-section .theme-btn-one');
+                    if (btnEl) btnEl.textContent = d.hero.button_text;
+                    if (d.hero.desktop_image) {
+                        var desktopLayer = document.querySelector('.banner-section .desktop-image-layer');
+                        if (desktopLayer) desktopLayer.style.backgroundImage = 'url(' + d.hero.desktop_image + ')';
+                    }
+                    if (d.hero.mobile_image) {
+                        var mobileLayer = document.querySelector('.banner-section .mobile-image-layer');
+                        if (mobileLayer) mobileLayer.style.backgroundImage = 'url(' + d.hero.mobile_image + ')';
+                    }
+                }
 
                 // About/stats section
                 if (d.about_section) {

@@ -22,6 +22,8 @@ collections:
               - { label: "Main Title", name: "title", widget: "string" }
               - { label: "Subtitle", name: "subtitle", widget: "string" }
               - { label: "Button Text", name: "button_text", widget: "string" }
+              - { label: "Desktop Banner Image", name: "desktop_image", widget: "image", hint: "Large background image shown on desktop" }
+              - { label: "Mobile Banner Image", name: "mobile_image", widget: "image", hint: "Background image shown on mobile devices" }
           - label: "About / Stats Section"
             name: "about_section"
             widget: "object"
