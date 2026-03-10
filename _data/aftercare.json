@@ -1,0 +1,60 @@
+{
+  "page_heading": "AFTER CARE",
+  "intro": "Proper aftercare helps protect your skin and maintain your results. Please follow the guidelines below for the best outcome after your treatment.",
+  "cards": [
+    {
+      "title": "Threading Aftercare",
+      "intro": "Your skin may feel slightly sensitive immediately after threading. To protect and soothe the area:",
+      "highlight_heading": "Post-Treatment Care",
+      "highlight_items": [
+        "Avoid direct sun exposure for at least 2 hours after your appointment. If outdoors, apply sunscreen.",
+        "Stay away from heat sources such as saunas, tanning beds, hot baths, or steam for the rest of the day.",
+        "Avoid touching the treated area to prevent transferring oils or bacteria to freshly opened pores.",
+        "Use a gentle cleanser a few hours after treatment.",
+        "Avoid exfoliating products for 24 hours."
+      ],
+      "closing_note": "Most clients schedule touch-up appointments every 2-4 weeks to maintain clean, defined brows."
+    },
+    {
+      "title": "Brow & Lash Tint Aftercare",
+      "intro": "To ensure long-lasting colour and comfort:",
+      "highlight_heading": "Post-Treatment Care",
+      "highlight_items": [
+        "Avoid touching or rubbing the treated area immediately after your appointment.",
+        "Refrain from using hot water, steam, or saunas on the face for 24 hours.",
+        "Avoid oil-based makeup removers, serums, or conditioners on brows or lashes.",
+        "If mild redness occurs, apply a cool compress to soothe the area.",
+        "If irritation continues beyond 24 hours, consult a healthcare professional."
+      ],
+      "closing_note": "Tint results will gradually fade over several weeks depending on skin type and aftercare routine."
+    },
+    {
+      "title": "Lash Lift Aftercare",
+      "intro": "For best results during the first 24-48 hours:",
+      "highlight_heading": "First 24 Hours",
+      "highlight_items": [
+        "Keep lashes completely dry for the first 24 hours.",
+        "Avoid swimming, steam, or excessive moisture.",
+        "Do not rub or pull on lashes.",
+        "Avoid eye makeup for 24 hours.",
+        "Do not use waterproof mascara."
+      ],
+      "closing_note": "After 24 hours, you may resume normal activities, though excessive steam can reduce longevity."
+    },
+    {
+      "title": "Facial Aftercare",
+      "intro": "To maintain your glow and protect your skin:",
+      "highlight_heading": "Post-Treatment Care",
+      "highlight_items": [
+        "Avoid applying makeup immediately after your facial.",
+        "Cleanse gently and keep skin hydrated with moisturizer.",
+        "Drink plenty of water to support skin recovery.",
+        "Avoid direct sun exposure and heat (sauna, tanning beds, hot showers) for 24-48 hours.",
+        "Do not use exfoliating products or active treatments for 72 hours.",
+        "Avoid additional facial treatments within 48 hours.",
+        "Do not apply perfume or fragranced products to treated areas for 48 hours."
+      ],
+      "closing_note": "If you experience unusual irritation or have questions about your aftercare routine, please contact us. We're happy to guide you."
+    }
+  ]
+}

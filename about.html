@@ -379,5 +379,21 @@
     <script src="assets/js/text_animation.js"></script>
     <script src="assets/js/script.js"></script>
 
+    <!-- CMS Content Loader -->
+    <script>
+    (function() {
+        fetch("_data/about.json")
+            .then(function(r){return r.json();})
+            .then(function(d){
+                var h=document.querySelector(".section-heading");
+                if(h&&d.page_heading)h.textContent=d.page_heading;
+                if(d.founders){var fc=document.querySelectorAll(".founder-card");d.founders.forEach(function(f,i){if(!fc[i])return;var n=fc[i].querySelector("h4");var r=fc[i].querySelector("span");if(n)n.textContent=f.name;if(r)r.textContent=f.role;});}
+                if(d.story){var sH=document.querySelector(".about-story-title");if(sH)sH.textContent=d.story.heading;var sP=document.querySelectorAll(".about-story p");if(d.story.paragraphs)d.story.paragraphs.forEach(function(t,i){if(sP[i])sP[i].textContent=t;});}
+                if(d.values){var vc=document.querySelectorAll(".about-value-card");d.values.forEach(function(v,i){if(!vc[i])return;var t=vc[i].querySelector("h4");var p=vc[i].querySelector("p");if(t)t.textContent=v.title;if(p)p.textContent=v.description;});}
+                if(d.why_choose){var wt=document.querySelectorAll(".about-story-title");if(wt[1])wt[1].textContent=d.why_choose.heading;var wl=document.querySelector(".about-why-list");if(wl&&d.why_choose.items)wl.innerHTML=d.why_choose.items.map(function(i){return "<li>"+i+"</li>";}).join("");}
+            }).catch(function(){});
+    })();
+    <\/script>
+
 </body>
 </html>

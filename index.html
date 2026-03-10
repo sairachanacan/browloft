@@ -1134,5 +1134,54 @@
     <!-- main-js -->
     <script src="assets/js/script.js"></script>
 
+    <!-- CMS Content Loader -->
+    <script>
+    (function() {
+        fetch('_data/homepage.json')
+            .then(function(r) { return r.json(); })
+            .then(function(d) {
+                // Hero
+                var titleEl = document.querySelector('.banner-section .title-text');
+                if (titleEl && d.hero) titleEl.innerHTML = d.hero.title.replace('\n','<br>');
+                var subEl = document.querySelector('.banner-section .sub-title');
+                if (subEl && d.hero) subEl.textContent = d.hero.subtitle;
+                var btnEl = document.querySelector('.banner-section .theme-btn-one');
+                if (btnEl && d.hero) btnEl.textContent = d.hero.button_text;
+                // About/stats section
+                if (d.about_section) {
+                    var scriptEl = document.querySelector('.beauty-hero-script');
+                    if (scriptEl) scriptEl.innerHTML = d.about_section.heading;
+                    var heroText = document.querySelector('.beauty-hero-text');
+                    if (heroText) heroText.textContent = d.about_section.description;
+                    var heroList = document.querySelector('.beauty-hero-list');
+                    if (heroList && d.about_section.features)
+                        heroList.innerHTML = d.about_section.features.map(function(f){return '<li>'+f+'</li>';}).join('');
+                    var statCards = document.querySelectorAll('.beauty-hero-stat-card');
+                    if (d.about_section.stats) d.about_section.stats.forEach(function(s,i){
+                        if (!statCards[i]) return;
+                        var n = statCards[i].querySelector('.beauty-hero-stat-number');
+                        var l = statCards[i].querySelector('.beauty-hero-stat-label');
+                        if (n) n.textContent = s.number;
+                        if (l) l.textContent = s.label;
+                    });
+                }
+                // Why Choose section
+                if (d.why_choose) {
+                    var whyH = document.querySelector('.beauty-section .content-box h2');
+                    if (whyH) whyH.textContent = d.why_choose.heading;
+                    var cards = document.querySelectorAll('.beauty-cards .single-item');
+                    if (d.why_choose.cards) d.why_choose.cards.forEach(function(c,i){
+                        if (!cards[i]) return;
+                        var h4 = cards[i].querySelector('h4');
+                        var p  = cards[i].querySelector('p');
+                        if (h4) h4.textContent = c.title;
+                        if (p)  p.textContent  = c.description;
+                    });
+                }
+            })
+            .catch(function(){});
+    })();
+    </script>
+
 </body><!-- End of .page_wrapper -->
 </html>

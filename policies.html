@@ -400,5 +400,45 @@
     <script src="assets/js/text_animation.js"></script>
     <script src="assets/js/script.js"></script>
 
+    <!-- CMS Content Loader -->
+    <script>
+    (function() {
+        fetch("_data/policies.json")
+            .then(function(r){return r.json();})
+            .then(function(d){
+                var h=document.querySelector(".section-heading");
+                if(h&&d.page_heading)h.textContent=d.page_heading;
+                var cards=document.querySelectorAll(".policy-card");
+                if(cards[0]&&d.cancellation){
+                    var c=d.cancellation;
+                    var ch=cards[0].querySelector("h4");if(ch)ch.textContent=c.title;
+                    var cp=cards[0].querySelector("p:not(.policy-note)");if(cp)cp.textContent=c.intro;
+                    var hiL=cards[0].querySelectorAll(".policy-highlight");
+                    if(hiL[0]){var hh=hiL[0].querySelector("h5");if(hh)hh.textContent=c.long_appointments_heading;var ul=hiL[0].querySelector("ul");if(ul&&c.long_appointments_items)ul.innerHTML=c.long_appointments_items.map(function(i){return"<li>"+i+"</li>";}).join("");}
+                    if(hiL[1]){var hh2=hiL[1].querySelector("h5");if(hh2)hh2.textContent=c.short_appointments_heading;var ul2=hiL[1].querySelector("ul");if(ul2&&c.short_appointments_items)ul2.innerHTML=c.short_appointments_items.map(function(i){return"<li>"+i+"</li>";}).join("");}
+                    var cn=cards[0].querySelector(".policy-note");if(cn)cn.textContent=c.closing_note;
+                }
+                if(cards[1]&&d.parking_payment){
+                    var pp=d.parking_payment;
+                    var pph=cards[1].querySelector("h4");if(pph)pph.textContent=pp.title;
+                    var plocs=cards[1].querySelectorAll(".policy-location h5");
+                    if(plocs[0])plocs[0].textContent=pp.langley_parking_heading;
+                    if(plocs[1])plocs[1].textContent=pp.burnaby_parking_heading;
+                    var lps=cards[1].querySelectorAll(".policy-location p");
+                    if(lps[0])lps[0].textContent=pp.langley_parking;
+                    if(lps[1])lps[1].textContent=pp.burnaby_parking;
+                }
+                if(cards[2]&&d.safety){
+                    var s=d.safety;
+                    var sh=cards[2].querySelector("h4");if(sh)sh.textContent=s.title;
+                    var sp=cards[2].querySelector("p:not(.policy-note)");if(sp)sp.textContent=s.intro;
+                    var shiL=cards[2].querySelectorAll(".policy-highlight");
+                    if(shiL[0]){var shh=shiL[0].querySelector("h5");if(shh)shh.textContent=s.lash_lift_heading;var sul=shiL[0].querySelector("ul");if(sul&&s.lash_lift_items)sul.innerHTML=s.lash_lift_items.map(function(i){return"<li>"+i+"</li>";}).join("");}
+                    if(shiL[1]){var shh2=shiL[1].querySelector("h5");if(shh2)shh2.textContent=s.brow_tint_heading;var sul2=shiL[1].querySelector("ul");if(sul2&&s.brow_tint_items)sul2.innerHTML=s.brow_tint_items.map(function(i){return"<li>"+i+"</li>";}).join("");}
+                }
+            }).catch(function(){});
+    })();
+    <\/script>
+
 </body>
 </html>
