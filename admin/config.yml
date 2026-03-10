@@ -42,6 +42,8 @@ collections:
             fields:
               - { label: "Heading", name: "heading", widget: "string" }
               - { label: "Description", name: "description", widget: "text" }
+              - { label: "Top Photo", name: "image_top", widget: "image", hint: "Right-side top frame image" }
+              - { label: "Bottom Photo", name: "image_bottom", widget: "image", hint: "Right-side bottom frame image" }
               - label: "Feature List"
                 name: "features"
                 widget: "list"

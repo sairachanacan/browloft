@@ -1172,6 +1172,14 @@
                     if (scriptEl) scriptEl.innerHTML = d.about_section.heading;
                     var heroText = document.querySelector('.beauty-hero-text');
                     if (heroText) heroText.textContent = d.about_section.description;
+                    if (d.about_section.image_top) {
+                        var imgTop = document.querySelector('.beauty-hero-frame--top img');
+                        if (imgTop) imgTop.src = d.about_section.image_top;
+                    }
+                    if (d.about_section.image_bottom) {
+                        var imgBottom = document.querySelector('.beauty-hero-frame--bottom img');
+                        if (imgBottom) imgBottom.src = d.about_section.image_bottom;
+                    }
                     var heroList = document.querySelector('.beauty-hero-list');
                     if (heroList && d.about_section.features)
                         heroList.innerHTML = d.about_section.features.map(function(f){return '<li>'+f+'</li>';}).join('');
