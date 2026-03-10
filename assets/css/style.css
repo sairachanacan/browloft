@@ -4536,29 +4536,6 @@ div#mCSB_1_container{
   /* margin-bottom: 208px; */
 }
 
-.enquiry-info{
-  margin-top: 20px;
-}
-.enquiry-info__item{
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  color: #fff;
-  font-size: 15px;
-  margin-bottom: 12px;
-}
-.enquiry-info__item i{
-  color: #b08a61;
-  font-size: 18px;
-  min-width: 20px;
-}
-.enquiry-info__item a{
-  color: #fff;
-  text-decoration: none;
-}
-.enquiry-info__item a:hover{
-  color: #b08a61;
-}
 
 .appointment-section .content-box .lower-inner{
   position: relative;
