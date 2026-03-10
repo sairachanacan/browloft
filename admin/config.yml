@@ -74,7 +74,14 @@ collections:
                 widget: "list"
                 fields:
                   - { label: "Step Label", name: "label", widget: "string" }
-          - { label: "Enquiry Section Heading", name: "enquiry_heading", widget: "string" }
+          - label: "Enquiry Section"
+            name: "enquiry"
+            widget: "object"
+            fields:
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Phone Number", name: "phone", widget: "string" }
+              - { label: "Email Address", name: "email", widget: "string" }
+              - { label: "Address", name: "address", widget: "string" }
 
   # ── About Us ──────────────────────────────────────────────
   - name: "about"
@@ -319,13 +326,20 @@ collections:
     label: "Site Settings"
     files:
       - name: "site_settings"
-        label: "Contact Info & Social Links"
+        label: "Footer & Contact Info"
         file: "_data/site-settings.json"
         fields:
           - { label: "Phone Number", name: "phone", widget: "string" }
           - { label: "Email Address", name: "email", widget: "string" }
           - { label: "Address", name: "address", widget: "string" }
           - { label: "Copyright Text", name: "copyright", widget: "string" }
+          - label: "Footer Services List"
+            name: "footer_services"
+            widget: "list"
+            hint: "Services shown in the footer column"
+            fields:
+              - { label: "Service Name", name: "name", widget: "string" }
+              - { label: "Link", name: "link", widget: "string", hint: "e.g. langley-location.html#eyebrow-threading" }
           - label: "Social Links"
             name: "social"
             widget: "object"
