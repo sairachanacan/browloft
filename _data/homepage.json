@@ -2,7 +2,9 @@
   "hero": {
     "title": "Your Complete\nBrow Care",
     "subtitle": "Gracefully sculpted brows, designed for you.",
-    "button_text": "Book Now"
+    "button_text": "Book Now",
+    "desktop_image": "assets/images/image111.png",
+    "mobile_image": "assets/images/image222.png"
   },
   "about_section": {
     "heading": "Discover Beauty with Brow Loft",
