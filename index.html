@@ -908,7 +908,7 @@
                                 <ul class="enquiry-contact-list">
                                     <li><i class="flaticon-phone-call"></i> <a href="tel:6668880000">666 888 0000</a></li>
                                     <li><i class="flaticon-email-2"></i> <a href="mailto:browloft@hotmail.com">browloft@hotmail.com</a></li>
-                                    <li><i class="flaticon-maps-and-flags"></i> Langley &amp; Burnaby — Vancouver, Canada</li>
+                                    <li><i class="flaticon-maps-and-flags"></i> <span class="enquiry-addr">Langley &amp; Burnaby — Vancouver, Canada</span></li>
                                 </ul>
                             </div>
                             <!-- <div class="lower-inner">
@@ -1144,6 +1144,7 @@
     <!-- CMS Content Loader -->
     <script>
     (function() {
+        // Load homepage content
         fetch('_data/homepage.json')
             .then(function(r) { return r.json(); })
             .then(function(d) {
@@ -1154,6 +1155,7 @@
                 if (subEl && d.hero) subEl.textContent = d.hero.subtitle;
                 var btnEl = document.querySelector('.banner-section .theme-btn-one');
                 if (btnEl && d.hero) btnEl.textContent = d.hero.button_text;
+
                 // About/stats section
                 if (d.about_section) {
                     var scriptEl = document.querySelector('.beauty-hero-script');
@@ -1172,6 +1174,26 @@
                         if (l) l.textContent = s.label;
                     });
                 }
+
+                // Our Services section
+                if (d.services_section) {
+                    var svcHeading = document.querySelector('.service-section .sec-title span');
+                    if (svcHeading) svcHeading.textContent = d.services_section.heading;
+                    if (d.services_section.cards) {
+                        var grid = document.querySelector('.service-section .service-grid');
+                        if (grid) {
+                            grid.innerHTML = d.services_section.cards.map(function(c) {
+                                return '<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6">'
+                                    + '<div class="service-block-one" onclick="location.href=\'' + c.link + '\'" style="cursor:pointer;">'
+                                    + '<div class="inner-box">'
+                                    + '<figure class="image-box"><a href="' + c.link + '"><img src="' + c.image + '" alt="' + c.title + '"></a></figure>'
+                                    + '<div class="lower-content"><h1><a href="' + c.link + '">' + c.title + '</a></h1></div>'
+                                    + '</div></div></div>';
+                            }).join('');
+                        }
+                    }
+                }
+
                 // Why Choose section
                 if (d.why_choose) {
                     var whyH = document.querySelector('.beauty-section .content-box h2');
@@ -1183,6 +1205,59 @@
                         var p  = cards[i].querySelector('p');
                         if (h4) h4.textContent = c.title;
                         if (p)  p.textContent  = c.description;
+                    });
+                }
+
+                // How It Works steps
+                if (d.how_it_works && d.how_it_works.steps) {
+                    var labels = document.querySelectorAll('.how-it-works__label');
+                    d.how_it_works.steps.forEach(function(s, i) {
+                        if (labels[i]) labels[i].textContent = s.label;
+                    });
+                }
+
+                // Enquiry heading
+                if (d.enquiry_heading) {
+                    var eqH = document.querySelector('.appointment-section .upper-inner h2');
+                    if (eqH) eqH.textContent = d.enquiry_heading;
+                }
+            })
+            .catch(function(){});
+
+        // Load site settings → populate enquiry contact + footer
+        fetch('_data/site-settings.json')
+            .then(function(r) { return r.json(); })
+            .then(function(s) {
+                // Enquiry section contact list
+                var phoneLinks = document.querySelectorAll('.enquiry-contact-list a[href^="tel:"]');
+                phoneLinks.forEach(function(el) { el.textContent = s.phone; el.href = 'tel:' + s.phone.replace(/\s/g,''); });
+                var emailLinks = document.querySelectorAll('.enquiry-contact-list a[href^="mailto:"]');
+                emailLinks.forEach(function(el) { el.textContent = s.email; el.href = 'mailto:' + s.email; });
+                var addrEls = document.querySelectorAll('.enquiry-addr');
+                addrEls.forEach(function(el) { el.textContent = s.address; });
+
+                // Footer contact
+                var ftPhone = document.querySelector('.footer-widget .info-list a[href^="tel:"]');
+                if (ftPhone) { ftPhone.textContent = s.phone; ftPhone.href = 'tel:' + s.phone.replace(/\s/g,''); }
+                var ftEmail = document.querySelector('.footer-widget .info-list a[href^="mailto:"]');
+                if (ftEmail) { ftEmail.textContent = s.email; ftEmail.href = 'mailto:' + s.email; }
+                var ftAddr = document.querySelector('.footer-widget .info-list li:last-child p');
+                if (ftAddr) ftAddr.textContent = s.address;
+
+                // Copyright
+                if (s.copyright) {
+                    var copy = document.querySelector('.footer-botton .copyright p');
+                    if (copy) copy.textContent = '\u00a9 ' + s.copyright;
+                }
+
+                // Social links
+                if (s.social) {
+                    var sMap = { instagram: '.fa-instagram', facebook: '.fa-facebook-square', twitter: '.fa-twitter', pinterest: '.fa-pinterest-p' };
+                    Object.keys(sMap).forEach(function(key) {
+                        if (!s.social[key]) return;
+                        document.querySelectorAll('.footer-social ' + sMap[key]).forEach(function(icon) {
+                            icon.parentElement.href = s.social[key];
+                        });
                     });
                 }
             })
