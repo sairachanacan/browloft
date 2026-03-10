@@ -380,5 +380,31 @@
     <script src="assets/js/text_animation.js"></script>
     <script src="assets/js/script.js"></script>
 
+    <!-- CMS Content Loader -->
+    <script>
+    (function() {
+        fetch("_data/aftercare.json")
+            .then(function(r){return r.json();})
+            .then(function(d){
+                var h=document.querySelector(".section-heading");
+                if(h&&d.page_heading)h.textContent=d.page_heading;
+                var intro=document.querySelector(".aftercare-intro, .page-intro");
+                if(intro&&d.intro)intro.textContent=d.intro;
+                if(d.cards){
+                    var cards=document.querySelectorAll(".policy-card, .aftercare-card");
+                    d.cards.forEach(function(c,i){
+                        if(!cards[i])return;
+                        var t=cards[i].querySelector("h4");if(t)t.textContent=c.title;
+                        var p=cards[i].querySelector("p:not(.policy-note)");if(p)p.textContent=c.intro;
+                        var hiL=cards[i].querySelectorAll(".policy-highlight");
+                        if(c.highlight_heading&&hiL[0]){var hh=hiL[0].querySelector("h5");if(hh)hh.textContent=c.highlight_heading;}
+                        if(c.highlight_items&&hiL[0]){var ul=hiL[0].querySelector("ul");if(ul)ul.innerHTML=c.highlight_items.map(function(i){return"<li>"+i+"</li>";}).join("");}
+                        var note=cards[i].querySelector(".policy-note");if(note&&c.closing_note)note.textContent=c.closing_note;
+                    });
+                }
+            }).catch(function(){});
+    })();
+    <\/script>
+
 </body>
 </html>

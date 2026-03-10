@@ -1,0 +1,43 @@
+{
+  "hero": {
+    "title": "Your Complete\nBrow Care",
+    "subtitle": "Gracefully sculpted brows, designed for you.",
+    "button_text": "Book Now"
+  },
+  "about_section": {
+    "heading": "Discover Beauty with Brow Loft",
+    "description": "Experience the art of refined beauty in our salon, where every detail is tailored to enhance your natural glow. From perfectly sculpted brows to luminous, glowing skin, we ensure each visit leaves you looking and feeling effortlessly beautiful.",
+    "features": [
+      "Stylish brow & lash enhancements",
+      "Luxurious, glow-enhancing facials",
+      "Experienced beauty professionals",
+      "Relaxing, elegant salon experience"
+    ],
+    "stats": [
+      { "number": "27+", "label": "Years of Experience" },
+      { "number": "25+", "label": "Services Offered" }
+    ]
+  },
+  "why_choose": {
+    "heading": "Refining your natural beauty with care and precision.",
+    "cards": [
+      {
+        "title": "Brow & Lash Specialists",
+        "description": "Precision-crafted brows and lashes designed to enhance your natural beauty with flawless definition and balance."
+      },
+      {
+        "title": "Premium Beauty Products.",
+        "description": "We use high-quality, skin-safe products to ensure long-lasting results, comfort, and visible radiance."
+      },
+      {
+        "title": "Luxury Salon Experience",
+        "description": "A calm, elegant space where every detail is designed to help you relax, unwind, and feel cared for."
+      },
+      {
+        "title": "Tailored Beauty Treatments",
+        "description": "Every face is unique. Our services are customized to your features, skin type, and personal style."
+      }
+    ]
+  },
+  "enquiry_heading": "Do you NEED TO MAKE AN ENQUIRY?"
+}

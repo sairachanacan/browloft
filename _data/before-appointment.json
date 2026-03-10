@@ -1,0 +1,44 @@
+{
+  "page_heading": "BEFORE YOUR APPOINTMENT",
+  "intro": "Everything you need to know to prepare for your hair removal service and get the best results.",
+  "cards": [
+    {
+      "title": "Benefits of Threading",
+      "intro": "Eyebrow threading is a centuries-old technique cherished throughout Asia and the Middle East.",
+      "highlight_1_heading": "Why Choose Threading?",
+      "highlight_1_text": "Known for its gentle and precise approach, threading is ideal for sensitive skin and serves as a safe alternative to waxing or tweezing. It removes hair without stripping the skin, minimizing irritation and protecting your complexion while delivering beautifully shaped brows.",
+      "highlight_2_heading": "Key Benefits",
+      "highlight_2_items": [
+        "Gentle on sensitive skin — no chemicals or hot wax applied",
+        "Precise shaping for clean, defined brows",
+        "No risk of burns or allergic reactions",
+        "Removes hair from the root for longer-lasting results",
+        "Safe for all skin types, including acne-prone skin",
+        "Quick and efficient — ideal for touch-ups between appointments"
+      ]
+    },
+    {
+      "title": "Before Your Wax",
+      "intro": "Before you get stripped, be sure to tick off all of the items on our checklist:",
+      "highlight_heading": "Pre-Wax Checklist",
+      "highlight_items": [
+        "Your hair is at least 1/4\" long",
+        "It has been at least 4 weeks since your last wax or 3 weeks since you last shaved",
+        "You are not on any medication that causes the skin to be sensitive (Accutane, Retin-A, Hydroxy Acids)",
+        "You have not engaged in heavy exercise, swimming or suntanning 24 hours prior to service"
+      ]
+    },
+    {
+      "title": "Helpful Tips",
+      "intro": "Follow these tips for the smoothest experience and best results:",
+      "highlight_heading": "Preparation Tips",
+      "highlight_items": [
+        "Take an Ibuprofen 30-45 mins prior to service to reduce pain",
+        "Take a warm shower and lightly exfoliate the skin. This will provide an easier exit of the hair follicles and ensure a smooth wax.",
+        "Do not apply any creams, gels or oils that may prevent the wax from adhering to the hair",
+        "Keep the service area clean and dry",
+        "Do not drink alcohol before service. Stimulants in the system can cause the skin to be extra sensitive."
+      ]
+    }
+  ]
+}

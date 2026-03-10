@@ -471,5 +471,35 @@
     });
     </script>
 
+    <!-- CMS Content Loader: re-renders FAQ from _data/faq.json -->
+    <script>
+    (function() {
+        fetch('_data/faq.json')
+            .then(function(r) { return r.json(); })
+            .then(function(d) {
+                var h = document.querySelector('.section-heading');
+                if (h && d.page_heading) h.textContent = d.page_heading;
+                var grid = document.querySelector('.faq-grid');
+                if (!grid || !d.items) return;
+                grid.innerHTML = d.items.map(function(item) {
+                    return '<div class="faq-item">'
+                        + '<div class="faq-question"><h4>' + item.question + '</h4>'
+                        + '<span class="faq-toggle"><i class="fas fa-chevron-down"></i></span></div>'
+                        + '<div class="faq-answer"><p>' + item.answer + '</p></div>'
+                        + '</div>';
+                }).join('');
+                grid.querySelectorAll('.faq-question').forEach(function(q) {
+                    q.addEventListener('click', function() {
+                        var item = q.parentElement;
+                        var isOpen = item.classList.contains('open');
+                        grid.querySelectorAll('.faq-item').forEach(function(i){ i.classList.remove('open'); });
+                        if (!isOpen) item.classList.add('open');
+                    });
+                });
+            })
+            .catch(function(){});
+    })();
+    </script>
+
 </body>
 </html>
