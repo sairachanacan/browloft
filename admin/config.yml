@@ -74,14 +74,20 @@ collections:
                 widget: "list"
                 fields:
                   - { label: "Step Label", name: "label", widget: "string" }
-          - label: "Enquiry Section"
+          - label: "Enquiry / Contact Form Section"
             name: "enquiry"
             widget: "object"
             fields:
-              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Section Heading", name: "heading", widget: "string" }
               - { label: "Phone Number", name: "phone", widget: "string" }
               - { label: "Email Address", name: "email", widget: "string" }
               - { label: "Address", name: "address", widget: "string" }
+              - { label: "Form Button Text", name: "button_text", widget: "string", hint: "Text on the submit button, e.g. Book Now" }
+              - label: "Service Dropdown Options"
+                name: "services"
+                widget: "list"
+                hint: "Options shown in the Service dropdown on the form"
+                field: { label: "Service Name", name: "item", widget: "string" }
 
   # ── About Us ──────────────────────────────────────────────
   - name: "about"
@@ -321,19 +327,19 @@ collections:
                   - { label: "Burnaby Price", name: "burnaby_price", widget: "string" }
                   - { label: "Duration", name: "duration", widget: "string" }
 
-  # ── Site Settings ─────────────────────────────────────────
-  - name: "settings"
-    label: "Site Settings"
+  # ── Footer ────────────────────────────────────────────────
+  - name: "footer"
+    label: "Footer"
     files:
-      - name: "site_settings"
-        label: "Footer & Contact Info"
+      - name: "footer"
+        label: "Footer Content"
         file: "_data/site-settings.json"
         fields:
           - { label: "Phone Number", name: "phone", widget: "string" }
           - { label: "Email Address", name: "email", widget: "string" }
           - { label: "Address", name: "address", widget: "string" }
           - { label: "Copyright Text", name: "copyright", widget: "string" }
-          - label: "Footer Services List"
+          - label: "Services List"
             name: "footer_services"
             widget: "list"
             hint: "Services shown in the footer column"

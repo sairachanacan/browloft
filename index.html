@@ -948,12 +948,12 @@
                                         </div>
                                         <div class="col-lg-6 col-md-6 col-sm-12 form-group">
                                             <div class="select-box">
-                                                <select class="wide">
+                                                <select class="wide enquiry-service-select">
                                                    <option data-display="Service">Service</option>
-                                                   <option value="1">Threading</option>
-                                                   <option value="1">Brow & Lash</option>
-                                                   <option value="2">Waxing</option>
-                                                   <option value="3">Facial</option>
+                                                   <option>Threading</option>
+                                                   <option>Brow &amp; Lash</option>
+                                                   <option>Waxing</option>
+                                                   <option>Facial</option>
                                                 </select>
                                             </div>
                                         </div>
@@ -961,7 +961,7 @@
                                             <textarea name="message" placeholder="Write message"></textarea>
                                         </div>
                                         <div class="col-lg-12 col-md-12 col-sm-12 form-group message-btn">
-                                            <button type="submit" class="theme-btn-one">Book Now</button>
+                                            <button type="submit" class="theme-btn-one enquiry-submit-btn">Book Now</button>
                                         </div>
                                     </div>
                                 </form>
@@ -1242,6 +1242,19 @@
                     if (d.enquiry.address) {
                         var eqAddr = document.querySelector('.enquiry-address');
                         if (eqAddr) eqAddr.textContent = d.enquiry.address;
+                    }
+                    if (d.enquiry.button_text) {
+                        var eqBtn = document.querySelector('.enquiry-submit-btn');
+                        if (eqBtn) eqBtn.textContent = d.enquiry.button_text;
+                    }
+                    if (d.enquiry.services && d.enquiry.services.length) {
+                        var sel = document.querySelector('.enquiry-service-select');
+                        if (sel) {
+                            sel.innerHTML = '<option data-display="Service">Service</option>'
+                                + d.enquiry.services.map(function(sv) {
+                                    return '<option>' + sv + '</option>';
+                                }).join('');
+                        }
                     }
                 }
             })
