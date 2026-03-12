@@ -61,14 +61,65 @@
       "name": "Luxe Facial Bar",
       "services": [
         { "id": "luxe-express-facial", "name": "Luxe Express Facial", "langley_price": "$65", "burnaby_price": "$65", "duration": "30 min" },
-        { "id": "purely-yours-facial", "name": "Purely Yours Facial", "langley_price": "$90", "burnaby_price": "$90", "duration": "60 min" },
-        { "id": "coconut-glow-facial", "name": "Coconut Glow Hydrating Facial", "langley_price": "$95", "burnaby_price": "$95", "duration": "60 min" },
-        { "id": "delicate-care-facial", "name": "Delicate Care Facial", "langley_price": "$95", "burnaby_price": "$95", "duration": "60 min" },
-        { "id": "organic-pregnancy-facial", "name": "Organic Pregnancy Facial", "langley_price": "$95", "burnaby_price": "$95", "duration": "60 min" },
-        { "id": "eminence-ashwagandha-facial", "name": "Éminence Ashwagandha Facial", "langley_price": "$100", "burnaby_price": "$100", "duration": "60 min" },
-        { "id": "lip-revival-facial", "name": "Lip Revival Facial", "langley_price": "$25", "burnaby_price": "$25", "duration": "15 min" },
-        { "id": "booster", "name": "Booster", "langley_price": "$20", "burnaby_price": "$20", "duration": "15 min" },
-        { "id": "depuff-eye-brightening", "name": "De-Puff & Eye Brightening", "langley_price": "$20", "burnaby_price": "$20", "duration": "15 min" }
+        { "id": "purely-yours-facial", "name": "Purely Yours Facial", "langley_price": "$110", "burnaby_price": "$110", "duration": "60 min" },
+        { "id": "coconut-glow-facial", "name": "Coconut Glow Hydrating Facial", "langley_price": "$110", "burnaby_price": "$110", "duration": "60 min" },
+        { "id": "delicate-care-facial", "name": "Delicate Care Facial", "langley_price": "$110", "burnaby_price": "$110", "duration": "60 min" },
+        { "id": "organic-pregnancy-facial", "name": "Organic Pregnancy Facial", "langley_price": "$110", "burnaby_price": "$110", "duration": "60 min" },
+        { "id": "eminence-ashwagandha-facial", "name": "Éminence Ashwagandha Facial", "langley_price": "$110", "burnaby_price": "$110", "duration": "60 min" }
+      ]
+    },
+    {
+      "name": "Facial Add-Ons",
+      "services": [
+        { "id": "lip-revival-facial", "name": "Lip Revival Facial", "langley_price": "$10", "burnaby_price": "$10", "duration": "15 min" },
+        { "id": "booster", "name": "Booster", "langley_price": "$10", "burnaby_price": "$10", "duration": "15 min" },
+        { "id": "depuff-eye-brightening", "name": "De-Puff & Eye Brightening", "langley_price": "$10", "burnaby_price": "$10", "duration": "15 min" }
+      ]
+    },
+    {
+      "name": "Micro-Needling",
+      "services": [
+        { "id": "microneedling", "name": "Micro-Needling", "langley_price": "$300", "burnaby_price": "$300", "duration": "60 min" }
+      ]
+    },
+    {
+      "name": "Luxe Waxing Bar for Women",
+      "services": [
+        { "id": "full-legs", "name": "Full Legs", "langley_price": "$45", "burnaby_price": "$45", "duration": "45 min" },
+        { "id": "upper-legs", "name": "Upper Legs", "langley_price": "$35", "burnaby_price": "$35", "duration": "25 min" },
+        { "id": "lower-legs", "name": "Lower Legs", "langley_price": "$30", "burnaby_price": "$30", "duration": "25 min" },
+        { "id": "full-arms", "name": "Full Arms", "langley_price": "$35", "burnaby_price": "$35", "duration": "30 min" },
+        { "id": "half-arms", "name": "Half Arms", "langley_price": "$22", "burnaby_price": "$22", "duration": "20 min" },
+        { "id": "under-arms", "name": "Under Arms", "langley_price": "$12", "burnaby_price": "$12", "duration": "15 min" },
+        { "id": "stomach", "name": "Stomach", "langley_price": "$30", "burnaby_price": "$30", "duration": "20 min" },
+        { "id": "breast", "name": "Breast", "langley_price": "$20", "burnaby_price": "$20", "duration": "15 min" },
+        { "id": "full-back", "name": "Full Back", "langley_price": "$35", "burnaby_price": "$35", "duration": "30 min" },
+        { "id": "half-back", "name": "Half Back", "langley_price": "$25", "burnaby_price": "$25", "duration": "20 min" },
+        { "id": "bikini-line", "name": "Bikini Line", "langley_price": "$20", "burnaby_price": "$20", "duration": "20 min" },
+        { "id": "french-bikini", "name": "French Bikini", "langley_price": "$33+", "burnaby_price": "$33+", "duration": "25 min" },
+        { "id": "brazilian", "name": "Brazilian", "langley_price": "$50", "burnaby_price": "$50", "duration": "30 min" },
+        { "id": "buttocks", "name": "Buttocks", "langley_price": "$20+", "burnaby_price": "$20+", "duration": "20 min" },
+        { "id": "butt-cheeks", "name": "Butt Cheeks", "langley_price": "$15", "burnaby_price": "$15", "duration": "15 min" },
+        { "id": "fingers-toes", "name": "Fingers/Toes", "langley_price": "$10", "burnaby_price": "$10", "duration": "10 min" },
+        { "id": "full-body-waxing", "name": "Full Body Waxing", "langley_price": "$170", "burnaby_price": "$170", "duration": "120 min" }
+      ]
+    },
+    {
+      "name": "Gentlemen's Wax Bar",
+      "services": [
+        { "id": "mens-full-arms", "name": "Full Arms", "langley_price": "$50", "burnaby_price": "$50", "duration": "30 min" },
+        { "id": "mens-full-back", "name": "Full Back", "langley_price": "$50", "burnaby_price": "$50", "duration": "30 min" },
+        { "id": "mens-chest-stomach", "name": "Chest/Stomach", "langley_price": "$50", "burnaby_price": "$50", "duration": "30 min" }
+      ]
+    },
+    {
+      "name": "Makeup and Hairstyle",
+      "services": [
+        { "id": "makeup", "name": "Makeup", "langley_price": "$100+", "burnaby_price": "$100+", "duration": "45 min" },
+        { "id": "hairstyle", "name": "Hair Style", "langley_price": "$50+", "burnaby_price": "$50+", "duration": "60 min" },
+        { "id": "eye-makeup", "name": "Eye Makeup", "langley_price": "$30+", "burnaby_price": "$30+", "duration": "30 min" },
+        { "id": "eye-makeup-lashes", "name": "Eye Makeup with Lashes", "langley_price": "$50+", "burnaby_price": "$50+", "duration": "45 min" },
+        { "id": "saree-tie", "name": "Sari Tie", "langley_price": "$30", "burnaby_price": "$30", "duration": "15 min" }
       ]
     }
   ]
