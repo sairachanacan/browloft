@@ -16,36 +16,40 @@
     "closing_note": "We understand that unexpected situations can arise. If you experience an emergency or special circumstance, please contact us directly and we will do our best to assist you."
   },
   "parking_payment": {
-    "title": "Parking & Payment Information",
-    "langley_parking_heading": "Langley Location",
-    "langley_parking": "Complimentary street parking is available nearby. Guests may park directly back of the building or along surrounding streets, subject to local parking guidelines and time limits.",
-    "burnaby_parking_heading": "Burnaby Location",
     "burnaby_parking": "In our Burnaby location, while there is no dedicated parking on-site, public and paid parking options are available nearby. We recommend checking surrounding streets and local parking lots for availability.",
-    "parking_note": "We recommend allowing a few extra minutes to find parking during busy hours.",
+    "burnaby_parking_heading": "Burnaby Location",
+    "langley_parking": "Complimentary street parking is available nearby. Guests may park directly back of the building or along surrounding streets, subject to local parking guidelines and time limits.",
+    "langley_parking_heading": "Langley Location",
     "payment_intro": "For your convenience, we accept:",
-    "payment_methods": ["Debit", "Credit Cards", "Cash"],
+    "title": "Parking & Payment Information",
+    "parking_note": "We recommend allowing a few extra minutes to find parking during busy hours.",
+    "payment_methods": [
+      "Debit",
+      "Credit Cards",
+      "Cash"
+    ],
     "payment_closing": "All major payment methods are welcomed in-salon."
   },
   "safety": {
-    "title": "Service Considerations & Safety",
-    "intro": "Your comfort and safety are important to us. If you are unsure whether a service is appropriate for you, we encourage you to contact us before booking. Complimentary patch testing is available prior to your appointment to help identify any potential sensitivities or allergic reactions.",
-    "lash_lift_heading": "Lash Lift & Tint",
-    "lash_lift_intro": "This service may not be suitable for clients who:",
     "lash_lift_items": [
       "Have active eye infections, irritation, or skin conditions around the eye area",
       "Are pregnant or currently breastfeeding",
       "Are taking medications such as blood thinners",
       "Have recently undergone eye procedures"
     ],
-    "lash_lift_note": "If you have any concerns, please consult with us before scheduling your appointment.",
-    "brow_tint_heading": "Brow Tint",
-    "brow_tint_intro": "This service may not be recommended for clients who:",
+    "lash_lift_heading": "Lash Lift & Tint",
     "brow_tint_items": [
       "Have active eye or skin conditions",
       "Are pregnant or breastfeeding",
       "Are taking medications including blood thinners"
     ],
-    "brow_tint_note": "Brow tint enhances the colour of existing brow hairs and does not permanently stain the skin to fill sparse areas. Tint results typically last up to approximately five weeks, gradually fading over time. Results may vary slightly depending on individual factors such as skin type, hair texture, and aftercare routine.",
-    "closing": "If you require additional clarification regarding any of our services, our team will be happy to assist you."
+    "brow_tint_heading": "Brow Tint",
+    "intro": "Your comfort and safety are important to us. If you are unsure whether a service is appropriate for you, we encourage you to contact us before booking. Complimentary patch testing is available prior to your appointment to help identify any potential sensitivities or allergic reactions.",
+    "lash_lift_intro": "This service may not be suitable for clients who:",
+    "brow_tint_intro": "This service may not be recommended for clients who:",
+    "brow_tint_note": "Please Note: Brow tint enhances the colour of existing brow hairs and does not permanently stain the skin to fill sparse areas. Tint results typically last up to approximately five weeks, gradually fading over time. Results may vary slightly depending on individual factors such as skin type, hair texture, and aftercare routine.",
+    "lash_lift_note": "If you have any concerns, please consult with us before scheduling your appointment.",
+    "closing": "If you require additional clarification regarding any of our services, our team will be happy to assist you.",
+    "title": "Service Considerations & Safety"
   }
 }
