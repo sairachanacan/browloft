@@ -226,8 +226,16 @@ collections:
             fields:
               - { label: "Card Title", name: "title", widget: "string" }
               - { label: "Intro Paragraph", name: "intro", widget: "text" }
-              - { label: "Highlight Heading", name: "highlight_heading", widget: "string", required: false }
-              - { label: "Highlight Text", name: "highlight_1_text", widget: "text", required: false }
+              - { label: "Highlight 1 Heading", name: "highlight_1_heading", widget: "string", required: false, hint: "e.g. Why Choose Threading?" }
+              - { label: "Highlight 1 Text", name: "highlight_1_text", widget: "text", required: false }
+              - { label: "Highlight 2 Heading", name: "highlight_2_heading", widget: "string", required: false, hint: "e.g. Key Benefits" }
+              - label: "Highlight 2 List Items"
+                name: "highlight_2_items"
+                widget: "list"
+                required: false
+                hint: "Used for Key Benefits bullet points"
+                field: { label: "Item", name: "item", widget: "string" }
+              - { label: "Highlight Heading", name: "highlight_heading", widget: "string", required: false, hint: "Used by Before Your Wax and Helpful Tips cards" }
               - label: "Highlight List Items"
                 name: "highlight_items"
                 widget: "list"
