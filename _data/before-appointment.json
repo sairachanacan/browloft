@@ -15,15 +15,13 @@
         "Removes hair from the root for longer-lasting results",
         "Safe for all skin types, including acne-prone skin",
         "Quick and efficient — ideal for touch-ups between appointments"
-      ],
-      "highlight_heading": "",
-      "highlight_items": []
+      ]
     },
     {
       "title": "Before Your Wax",
       "intro": "Before you get stripped, be sure to tick off all of the items on our checklist:",
-      "highlight_heading": "Pre-Wax Checklist",
-      "highlight_items": [
+      "highlight_1_items_heading": "Pre-Wax Checklist",
+      "highlight_1_items": [
         "Your hair is at least 1/4\" long",
         "It has been at least 4 weeks since your last wax or 3 weeks since you last shaved",
         "You are not on any medication that causes the skin to be sensitive (Accutane, Retin-A, Hydroxy Acids)",
@@ -33,8 +31,8 @@
     {
       "title": "Helpful Tips",
       "intro": "Follow these tips for the smoothest experience and best results:",
-      "highlight_heading": "Preparation Tips",
-      "highlight_items": [
+      "highlight_1_items_heading": "Preparation Tips",
+      "highlight_1_items": [
         "Take an Ibuprofen 30-45 mins prior to service to reduce pain",
         "Take a warm shower and lightly exfoliate the skin. This will provide an easier exit of the hair follicles and ensure a smooth wax.",
         "Do not apply any creams, gels or oils that may prevent the wax from adhering to the hair",
