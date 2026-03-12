@@ -372,8 +372,8 @@
                         var t=cards[i].querySelector("h4");if(t)t.textContent=c.title;
                         var p=cards[i].querySelector("p:not(.policy-note)");if(p)p.textContent=c.intro;
                         var hiL=cards[i].querySelectorAll(".policy-highlight");
-                        if(c.highlight_heading&&hiL[0]){var hh=hiL[0].querySelector("h5");if(hh)hh.textContent=c.highlight_heading;}
-                        var items=c.highlight_items||c.highlight_2_items;
+                        if(c.highlight_1_items_heading&&hiL[0]){var hh=hiL[0].querySelector("h5");if(hh)hh.textContent=c.highlight_1_items_heading;}
+                        var items=c.highlight_1_items||c.highlight_2_items;
                         if(items&&hiL[0]){var ul=hiL[0].querySelector("ul");if(ul)ul.innerHTML=items.map(function(i){return"<li>"+i+"</li>";}).join("");}
                     });
                 }

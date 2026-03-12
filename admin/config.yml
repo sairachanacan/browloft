@@ -233,11 +233,10 @@ collections:
                 name: "highlight_2_items"
                 widget: "list"
                 required: false
-                hint: "Used for Key Benefits bullet points"
                 field: { label: "Item", name: "item", widget: "string" }
-              - { label: "Highlight Heading", name: "highlight_heading", widget: "string", required: false, hint: "Used by Before Your Wax and Helpful Tips cards" }
-              - label: "Highlight List Items"
-                name: "highlight_items"
+              - { label: "Highlight 1 Items Heading", name: "highlight_1_items_heading", widget: "string", required: false, hint: "e.g. Pre-Wax Checklist, Preparation Tips" }
+              - label: "Highlight 1 List Items"
+                name: "highlight_1_items"
                 widget: "list"
                 required: false
                 field: { label: "Item", name: "item", widget: "string" }
