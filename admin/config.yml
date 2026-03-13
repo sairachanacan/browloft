@@ -275,6 +275,7 @@ collections:
           - label: "Services"
             name: "services"
             widget: "list"
+            summary: "{{fields.name}} — {{fields.meta}}"
             fields:
               - { label: "Service ID", name: "id", widget: "hidden" }
               - { label: "Service Name", name: "name", widget: "string" }
@@ -293,6 +294,7 @@ collections:
           - label: "Services"
             name: "services"
             widget: "list"
+            summary: "{{fields.name}} — {{fields.meta}}"
             fields:
               - { label: "Service ID", name: "id", widget: "hidden" }
               - { label: "Service Name", name: "name", widget: "string" }
@@ -321,11 +323,13 @@ collections:
           - label: "Service Categories"
             name: "categories"
             widget: "list"
+            summary: "{{fields.name}}"
             fields:
               - { label: "Category Name", name: "name", widget: "string" }
               - label: "Services"
                 name: "services"
                 widget: "list"
+                summary: "{{fields.name}} — {{fields.duration}}"
                 fields:
                   - { label: "Service ID", name: "id", widget: "hidden" }
                   - { label: "Service Name", name: "name", widget: "string" }
