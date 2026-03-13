@@ -272,16 +272,22 @@ collections:
         label: "Langley Services & Prices"
         file: "_data/langley-services.json"
         fields:
-          - label: "Services"
-            name: "services"
+          - label: "Service Categories"
+            name: "categories"
             widget: "list"
-            summary: "{{fields.name}} — {{fields.meta}}"
+            summary: "{{fields.name}}"
             fields:
-              - { label: "Service ID", name: "id", widget: "hidden" }
-              - { label: "Service Name", name: "name", widget: "string" }
-              - { label: "Duration", name: "meta", widget: "string", hint: "e.g. 20 min" }
-              - { label: "Description", name: "description", widget: "text" }
-              - { label: "Image", name: "image", widget: "image", required: false }
+              - { label: "Category Name", name: "name", widget: "string" }
+              - label: "Services"
+                name: "services"
+                widget: "list"
+                summary: "{{fields.name}} — {{fields.meta}}"
+                fields:
+                  - { label: "Service ID", name: "id", widget: "hidden" }
+                  - { label: "Service Name", name: "name", widget: "string" }
+                  - { label: "Duration", name: "meta", widget: "string", hint: "e.g. 20 min" }
+                  - { label: "Description", name: "description", widget: "text" }
+                  - { label: "Image", name: "image", widget: "image", required: false }
 
   # ── Burnaby Services ──────────────────────────────────────
   - name: "burnaby"
@@ -291,16 +297,22 @@ collections:
         label: "Burnaby Services & Prices"
         file: "_data/burnaby-services.json"
         fields:
-          - label: "Services"
-            name: "services"
+          - label: "Service Categories"
+            name: "categories"
             widget: "list"
-            summary: "{{fields.name}} — {{fields.meta}}"
+            summary: "{{fields.name}}"
             fields:
-              - { label: "Service ID", name: "id", widget: "hidden" }
-              - { label: "Service Name", name: "name", widget: "string" }
-              - { label: "Duration", name: "meta", widget: "string", hint: "e.g. 20 min" }
-              - { label: "Description", name: "description", widget: "text" }
-              - { label: "Image", name: "image", widget: "image", required: false }
+              - { label: "Category Name", name: "name", widget: "string" }
+              - label: "Services"
+                name: "services"
+                widget: "list"
+                summary: "{{fields.name}} — {{fields.meta}}"
+                fields:
+                  - { label: "Service ID", name: "id", widget: "hidden" }
+                  - { label: "Service Name", name: "name", widget: "string" }
+                  - { label: "Duration", name: "meta", widget: "string", hint: "e.g. 20 min" }
+                  - { label: "Description", name: "description", widget: "text" }
+                  - { label: "Image", name: "image", widget: "image", required: false }
 
   # ── Booking Page ──────────────────────────────────────────
   - name: "booking"
