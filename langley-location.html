@@ -2491,6 +2491,10 @@
                             imgEl.alt = svc.name;
                         }
 
+                        var btnEl = panel.querySelector('.add-on-btn');
+                        if (btnEl && svc.button_text) btnEl.textContent = svc.button_text;
+                        if (btnEl && svc.button_link) btnEl.href = svc.button_link;
+
                         var listItems = document.querySelectorAll('[data-service="' + svc.id + '"] .service-name');
                         listItems.forEach(function(el) {
                             if (svc.name) el.textContent = svc.name;

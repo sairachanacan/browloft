@@ -288,6 +288,8 @@ collections:
                   - { label: "Duration", name: "meta", widget: "string", hint: "e.g. 20 min" }
                   - { label: "Description", name: "description", widget: "text" }
                   - { label: "Image", name: "image", widget: "image", required: false }
+                  - { label: "Button Text", name: "button_text", widget: "string", default: "Book Now" }
+                  - { label: "Button Link", name: "button_link", widget: "string", default: "booking.html" }
 
   # ── Burnaby Services ──────────────────────────────────────
   - name: "burnaby"
@@ -313,6 +315,8 @@ collections:
                   - { label: "Duration", name: "meta", widget: "string", hint: "e.g. 20 min" }
                   - { label: "Description", name: "description", widget: "text" }
                   - { label: "Image", name: "image", widget: "image", required: false }
+                  - { label: "Button Text", name: "button_text", widget: "string", default: "Book Now" }
+                  - { label: "Button Link", name: "button_link", widget: "string", default: "booking.html" }
 
   # ── Booking Page ──────────────────────────────────────────
   - name: "booking"
