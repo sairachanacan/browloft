@@ -8913,6 +8913,89 @@ div#mCSB_1_container{
   font-weight: 400;
 }
 
+/* Business Logo */
+.sidebar-card__logo{
+  margin: 0 auto 12px;
+  width: 80px;
+}
+
+.sidebar-card__logo img{
+  width: 100%;
+  height: auto;
+}
+
+/* Location Card Logo */
+.location-card__logo{
+  width: 44px;
+  height: auto;
+  border-radius: 0;
+}
+
+/* Contact Info */
+.sidebar-card__contact-title{
+  font-size: 14px;
+  font-weight: 600;
+  color: #f2f2f2;
+  margin: 0 0 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.sidebar-card__contact-title i{
+  color: #D4A574;
+  font-size: 13px;
+}
+
+.sidebar-card__contact-list{
+  list-style: none;
+  padding: 0;
+  margin: 0 0 14px;
+}
+
+.sidebar-card__contact-list li{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px 0;
+  font-size: 13px;
+  color: #cfcfcf;
+}
+
+.sidebar-card__contact-list li i{
+  color: #D4A574;
+  font-size: 14px;
+  width: 16px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.sidebar-card__contact-list li a{
+  color: #cfcfcf;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.sidebar-card__contact-list li a:hover{
+  color: #D4A574;
+}
+
+.sidebar-card__social{
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.sidebar-card__social a{
+  color: #999;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.sidebar-card__social a:hover{
+  color: #D4A574;
+}
+
 /* Hours */
 .sidebar-card__hours-title{
   font-size: 14px;
@@ -9198,6 +9281,7 @@ div#mCSB_1_container{
 
   /* Collapsed: show only the toggle bar */
   .sidebar-card__business,
+  .sidebar-card__contact,
   .sidebar-card__hours,
   .sidebar-card__trust,
   .sidebar-card__divider,
@@ -9251,6 +9335,7 @@ div#mCSB_1_container{
   }
 
   .booking-layout__sidebar.is-expanded .sidebar-card__business,
+  .booking-layout__sidebar.is-expanded .sidebar-card__contact,
   .booking-layout__sidebar.is-expanded .sidebar-card__hours,
   .booking-layout__sidebar.is-expanded .sidebar-card__trust,
   .booking-layout__sidebar.is-expanded .sidebar-card__divider,
