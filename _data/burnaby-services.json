@@ -3,98 +3,410 @@
     {
       "name": "Eyebrow Threading",
       "services": [
-        { "id": "luxe-brows", "name": "Luxe Brows", "meta": "20 min", "description": "Enjoy expert brow threading and shaping designed to enhance your natural features.", "image": "assets/images/image.png" },
-        { "id": "teen-brows", "name": "Teen Brows", "meta": "15 min", "description": "Receive the same professional threading and shaping as our Luxe Brows, specifically tailored for teens.", "image": "assets/images/image.png" },
-        { "id": "signature-area-threading", "name": "Luxe Facial Touch-Up Threading/Waxing", "meta": "10 min", "description": "Choose one area for targeted threading/waxing: upper lip, chin, cheeks, sideburns, forehead, or neck.", "image": "assets/images/image.png" },
-        { "id": "luxe-brows-signature-1", "name": "Luxe Brows & One Area Facial Touch-Up Threading/Waxing", "meta": "25 min", "description": "Combine Luxe Brows with threading/waxing of one additional area of your choice (upper lip, chin, cheeks, sideburns, forehead, or neck).", "image": "assets/images/image.png" },
-        { "id": "luxe-brows-signature-2", "name": "Luxe Brows & Two Area Facial Touch-Up Threading/Waxing", "meta": "25 min", "description": "Combine Luxe Brows with threading/waxing of any two additional areas of your choice (upper lip, chin, cheeks, sideburns, forehead, or neck).", "image": "assets/images/image.png" },
-        { "id": "luxe-smooth-face", "name": "The Luxe Smooth Face", "meta": "30 min", "description": "Indulge in a complete facial de-fuzzing from the neck upward for a silky, flawless finish. Brows are refined with our signature luxe technique, and the treatment concludes with a complimentary smoothing facial massage.", "image": "assets/images/image.png" }
+        {
+          "id": "luxe-brows",
+          "name": "Luxe Brows",
+          "meta": "20 min",
+          "description": "Enjoy expert brow threading and shaping designed to enhance your natural features.\n\n• Complimentary consultation\n• Precise trimming\n• Personalized brow design",
+          "image": "assets/images/image.png"
+        },
+        {
+          "id": "teen-brows",
+          "name": "Teen Brows",
+          "meta": "15 min",
+          "description": "Receive the same professional threading and shaping as our Luxe Brows, specifically tailored for teens.",
+          "image": "assets/images/image.png"
+        },
+        {
+          "id": "signature-area-threading",
+          "name": "Luxe Facial Touch-Up Threading/Waxing",
+          "meta": "10 min",
+          "description": "Choose one area for targeted threading/waxing: upper lip, chin, cheeks, sideburns, forehead, or neck.",
+          "image": "assets/images/image.png"
+        },
+        {
+          "id": "luxe-brows-signature-1",
+          "name": "Luxe Brows & One Area Facial Touch-Up Threading/Waxing",
+          "meta": "25 min",
+          "description": "Combine Luxe Brows with threading/waxing of one additional area of your choice (upper lip, chin, cheeks, sideburns, forehead, or neck).",
+          "image": "assets/images/image.png"
+        },
+        {
+          "id": "luxe-brows-signature-2",
+          "name": "Luxe Brows & Two Area Facial Touch-Up Threading/Waxing",
+          "meta": "25 min",
+          "description": "Combine Luxe Brows with threading/waxing of any two additional areas of your choice (upper lip, chin, cheeks, sideburns, forehead, or neck).",
+          "image": "assets/images/image.png"
+        },
+        {
+          "id": "luxe-smooth-face",
+          "name": "The Luxe Smooth Face",
+          "meta": "30 min",
+          "description": "Indulge in a complete facial de-fuzzing from the neck upward for a silky, flawless finish. Brows are refined with our signature luxe technique, and the treatment concludes with a complimentary smoothing facial massage.",
+          "image": "assets/images/image.png"
+        }
       ]
     },
     {
       "name": "Brow & Lash Treatments",
       "services": [
-        { "id": "brow-tint", "name": "Luxe Brow Tint", "meta": "15 min", "description": "A semi-permanent tint accentuates natural brow hairs, giving a fuller, more defined look that lasts up to 4–6 weeks.", "image": "assets/images/image17.png" },
-        { "id": "lash-tint", "name": "Luxe Lash Tint", "meta": "20 min", "description": "This waterproof, smudge-proof, and clump-free formula lasts up to 6 weeks—ideal for vacations, workouts, and contact lens wearers.", "image": "assets/images/image17.png" },
-        { "id": "henna-brows", "name": "Henna Luxe Brows", "meta": "30 min", "description": "A gentle, long-lasting tint enhances your natural brows by colouring both hair and skin for a fuller, defined look. Results last 4–6 weeks on brow hairs and 1–2 weeks on the skin.", "image": "assets/images/image17.png" },
-        { "id": "lash-lift", "name": "Luxe Lash Lift", "meta": "45 min", "description": "Lift and curl your natural lashes—no extensions, falsies, or mascara required. Results last up to 6–8 weeks with no maintenance or removal needed.", "image": "assets/images/image17.png" },
-        { "id": "brow-lamination", "name": "Luxe Brow Lamination", "meta": "60 min", "description": "The ultimate brow service, combining shaping, 3D tint, and lamination for a lifted, full, and sleek appearance that remains flawless for up to 6–8 weeks.", "image": "assets/images/image17.png" }
+        {
+          "id": "brow-tint",
+          "name": "Luxe Brow Tint",
+          "meta": "15 min",
+          "description": "A semi-permanent tint accentuates natural brow hairs, giving a fuller, more defined look that lasts up to 4–6 weeks.",
+          "image": "assets/images/image17.png"
+        },
+        {
+          "id": "lash-tint",
+          "name": "Luxe Lash Tint",
+          "meta": "20 min",
+          "description": "This waterproof, smudge-proof, and clump-free formula lasts up to 6 weeks—ideal for vacations, workouts, and contact lens wearers.",
+          "image": "assets/images/image17.png"
+        },
+        {
+          "id": "henna-brows",
+          "name": "Henna Luxe Brows",
+          "meta": "30 min",
+          "description": "A gentle, long-lasting tint enhances your natural brows by colouring both hair and skin for a fuller, defined look. Results last 4–6 weeks on brow hairs and 1–2 weeks on the skin.",
+          "image": "assets/images/image17.png"
+        },
+        {
+          "id": "lash-lift",
+          "name": "Luxe Lash Lift",
+          "meta": "45 min",
+          "description": "Lift and curl your natural lashes—no extensions, falsies, or mascara required. Results last up to 6–8 weeks with no maintenance or removal needed.",
+          "image": "assets/images/image17.png"
+        },
+        {
+          "id": "brow-lamination",
+          "name": "Luxe Brow Lamination",
+          "meta": "60 min",
+          "description": "The ultimate brow service, combining shaping, 3D tint, and lamination for a lifted, full, and sleek appearance that remains flawless for up to 6–8 weeks.",
+          "image": "assets/images/image17.png"
+        }
       ]
     },
     {
       "name": "Add-On Services",
       "services": [
-        { "id": "glow-go", "name": "10-minute Luxe Glow & Go", "meta": "10 min", "description": "Experience a gold-finished massage wand and organic facial oil to boost circulation, restore radiance, and create a calming ritual for your skin and soul.", "image": "assets/images/image17.png" },
-        { "id": "eye-renewal", "name": "Eye Renewal Mask", "meta": "5 min", "description": "Nourishing botanicals refresh and restore, delivering deep hydration, visible plumping, and a youthful glow while easing puffiness and fatigue.", "image": "assets/images/image17.png" },
-        { "id": "brow-prep", "name": "Brow Prep & Polish", "meta": "5 min", "description": "Refresh your brows and skin for an enhanced glow and improved results from your favourite brow treatments.", "image": "assets/images/image17.png" }
+        {
+          "id": "glow-go",
+          "name": "10-minute Luxe Glow & Go",
+          "meta": "10 min",
+          "description": "Experience a gold-finished massage wand and organic facial oil to boost circulation, restore radiance, and create a calming ritual for your skin and soul.",
+          "image": "assets/images/image17.png"
+        },
+        {
+          "id": "eye-renewal",
+          "name": "Eye Renewal Mask",
+          "meta": "5 min",
+          "description": "Nourishing botanicals refresh and restore, delivering deep hydration, visible plumping, and a youthful glow while easing puffiness and fatigue.",
+          "image": "assets/images/image17.png"
+        },
+        {
+          "id": "brow-prep",
+          "name": "Brow Prep & Polish",
+          "meta": "5 min",
+          "description": "Refresh your brows and skin for an enhanced glow and improved results from your favourite brow treatments.",
+          "image": "assets/images/image17.png"
+        }
       ]
     },
     {
       "name": "Package Deals",
       "services": [
-        { "id": "package-brows-tinting", "name": "Luxe Brows & Tinting Package", "meta": "35 min", "description": "Save with this bundle of luxe brow threading and brow tinting.", "image": "assets/images/image17.png" },
-        { "id": "package-brows-tinting-1velvet", "name": "Luxe Brows & Tinting + 1 Luxe Facial Touch-Up Threading/Waxing", "meta": "45 min", "description": "Save with this combination of luxe brow threading, tinting, and one signature threading area.", "image": "assets/images/image17.png" },
-        { "id": "package-brows-tinting-2velvet", "name": "Luxe Brows & Tinting + 2 Luxe Facial Touch-Up Threading/Waxing", "meta": "55 min", "description": "Save with a package that includes luxe brow threading, tinting, and two signature threading areas.", "image": "assets/images/image17.png" },
-        { "id": "package-brows-brow-lash-tint", "name": "Luxe Brows + Brow Tinting + Lash Tint Bundle", "meta": "55 min", "description": "Enjoy luxe brow threading, brow tinting, and lash tinting together in this value package.", "image": "assets/images/image17.png" },
-        { "id": "package-lash-lift-tint", "name": "Luxe Lash Lift + Lash Tint Bundle", "meta": "65 min", "description": "Combine lash lift and lash tinting for long-lasting, beautiful lashes.", "image": "assets/images/image17.png" },
-        { "id": "package-brows-henna", "name": "Luxe Brows + Brow Henna", "meta": "50 min", "description": "Bundle luxe brow threading and brow henna for enhanced, defined brows.", "image": "assets/images/image17.png" },
-        { "id": "package-brow-lash-lamination", "name": "Brow Lamination + Luxe Lash Lift Bundle", "meta": "105 min", "description": "Get both brow lamination and a luxe lash lift for a complete eye enhancement experience.", "image": "assets/images/image17.png" }
+        {
+          "id": "package-brows-tinting",
+          "name": "Luxe Brows & Tinting Package",
+          "meta": "35 min",
+          "description": "Save with this bundle of luxe brow threading and brow tinting.",
+          "image": "assets/images/image17.png"
+        },
+        {
+          "id": "package-brows-tinting-1velvet",
+          "name": "Luxe Brows & Tinting + 1 Luxe Facial Touch-Up Threading/Waxing",
+          "meta": "45 min",
+          "description": "Save with this combination of luxe brow threading, tinting, and one signature threading area.",
+          "image": "assets/images/image17.png"
+        },
+        {
+          "id": "package-brows-tinting-2velvet",
+          "name": "Luxe Brows & Tinting + 2 Luxe Facial Touch-Up Threading/Waxing",
+          "meta": "55 min",
+          "description": "Save with a package that includes luxe brow threading, tinting, and two signature threading areas.",
+          "image": "assets/images/image17.png"
+        },
+        {
+          "id": "package-brows-brow-lash-tint",
+          "name": "Luxe Brows + Brow Tinting + Lash Tint Bundle",
+          "meta": "55 min",
+          "description": "Enjoy luxe brow threading, brow tinting, and lash tinting together in this value package.",
+          "image": "assets/images/image17.png"
+        },
+        {
+          "id": "package-lash-lift-tint",
+          "name": "Luxe Lash Lift + Lash Tint Bundle",
+          "meta": "65 min",
+          "description": "Combine lash lift and lash tinting for long-lasting, beautiful lashes.",
+          "image": "assets/images/image17.png"
+        },
+        {
+          "id": "package-brows-henna",
+          "name": "Luxe Brows + Brow Henna",
+          "meta": "50 min",
+          "description": "Bundle luxe brow threading and brow henna for enhanced, defined brows.",
+          "image": "assets/images/image17.png"
+        },
+        {
+          "id": "package-brow-lash-lamination",
+          "name": "Brow Lamination + Luxe Lash Lift Bundle",
+          "meta": "105 min",
+          "description": "Get both brow lamination and a luxe lash lift for a complete eye enhancement experience.",
+          "image": "assets/images/image17.png"
+        }
       ]
     },
     {
       "name": "Gentlemen's Bar",
       "services": [
-        { "id": "mens-unibrow", "name": "Men's Unibrow", "meta": "10 min", "description": "Threading and clean-up between the brows for a polished look.", "image": "assets/images/image18.png" },
-        { "id": "mens-luxe-brows", "name": "Men's Luxe Brows", "meta": "20 min", "description": "A comprehensive brow service for men, including trimming, shaping, threading, a soothing brow massage, and a personalized consultation.", "image": "assets/images/image18.png" },
-        { "id": "mens-cheeks-forehead", "name": "Men's Cheeks + Forehead or Ears", "meta": "15 min", "description": "Threading and clean-up for both cheeks, plus your choice of either the forehead or the area around the ears.", "image": "assets/images/image18.png" }
+        {
+          "id": "mens-unibrow",
+          "name": "Men's Unibrow",
+          "meta": "10 min",
+          "description": "Threading and clean-up between the brows for a polished look.",
+          "image": "assets/images/image18.png"
+        },
+        {
+          "id": "mens-luxe-brows",
+          "name": "Men's Luxe Brows",
+          "meta": "20 min",
+          "description": "A comprehensive brow service for men, including trimming, shaping, threading, a soothing brow massage, and a personalized consultation.",
+          "image": "assets/images/image18.png"
+        },
+        {
+          "id": "mens-cheeks-forehead",
+          "name": "Men's Cheeks + Forehead or Ears",
+          "meta": "15 min",
+          "description": "Threading and clean-up for both cheeks, plus your choice of either the forehead or the area around the ears.",
+          "image": "assets/images/image18.png"
+        }
       ]
     },
     {
       "name": "Luxe Facial Bar",
       "services": [
-        { "id": "luxe-express-facial", "name": "Luxe Express Facial", "meta": "30 min", "description": "A quick, 30-minute facial that cleanses, exfoliates, and revitalizes your skin, finished with a soothing mask and complimentary facial massage. Extractions are not included.", "image": "assets/images/image19.png" },
-        { "id": "purely-yours-facial", "name": "Purely Yours Facial", "meta": "60 min", "description": "Enjoy a custom facial tailored to your skin's unique needs. Your specialist selects the perfect combination of cleansers, exfoliators, toners, masks, and moisturizers. Includes extractions for a total refresh.", "image": "assets/images/image19.png" },
-        { "id": "coconut-glow-facial", "name": "Coconut Glow Hydrating Facial", "meta": "60 min", "description": "This antioxidant-rich, organic facial uses coconut to nourish and firm the skin, restoring a youthful texture and a glowing complexion. Extractions are included.", "image": "assets/images/image19.png" },
-        { "id": "delicate-care-facial", "name": "Delicate Care Facial", "meta": "60 min", "description": "A gentle, restorative treatment designed to calm, comfort, and strengthen sensitive skin with soothing botanicals and hydrating ingredients. Reduces redness and leaves your complexion soft, balanced, and refreshed. Extractions are included.", "image": "assets/images/image19.png" },
-        { "id": "organic-pregnancy-facial", "name": "Organic Pregnancy Facial", "meta": "60 min", "description": "Our Organic Pregnancy Facial is a calming, customized treatment created to support the unique skincare needs of pregnancy. Using only organic, toxin-free, and pregnancy-safe products, this facial helps relieve dryness, sensitivity, and hormonal breakouts while restoring a healthy glow. The treatment is performed with gentle techniques to ensure complete comfort and safety for both mother and baby.", "image": "assets/images/image19.png" },
-        { "id": "eminence-ashwagandha-facial", "name": "Éminence Ashwagandha Facial", "meta": "60 min", "description": "The Éminence Ashwagandha Facial is a deeply restorative treatment designed to combat the visible effects of stress, fatigue, and environmental damage. Powered by Éminence's Adaptogenic Herbal Complex—including ashwagandha, reishi mushroom, and rhodiola—this facial helps strengthen the skin barrier, improve resilience, and restore a healthy, radiant glow. Ideal for stressed, dull, or prematurely aging skin.", "image": "assets/images/image19.png" }
+        {
+          "id": "luxe-express-facial",
+          "name": "Luxe Express Facial",
+          "meta": "30 min",
+          "description": "A quick, 30-minute facial that cleanses, exfoliates, and revitalizes your skin, finished with a soothing mask and complimentary facial massage. Extractions are not included.",
+          "image": "assets/images/image19.png"
+        },
+        {
+          "id": "purely-yours-facial",
+          "name": "Purely Yours Facial",
+          "meta": "60 min",
+          "description": "Enjoy a custom facial tailored to your skin's unique needs. Your specialist selects the perfect combination of cleansers, exfoliators, toners, masks, and moisturizers. Includes extractions for a total refresh.",
+          "image": "assets/images/image19.png"
+        },
+        {
+          "id": "coconut-glow-facial",
+          "name": "Coconut Glow Hydrating Facial",
+          "meta": "60 min",
+          "description": "This antioxidant-rich, organic facial uses coconut to nourish and firm the skin, restoring a youthful texture and a glowing complexion. Extractions are included.",
+          "image": "assets/images/image19.png"
+        },
+        {
+          "id": "delicate-care-facial",
+          "name": "Delicate Care Facial",
+          "meta": "60 min",
+          "description": "A gentle, restorative treatment designed to calm, comfort, and strengthen sensitive skin with soothing botanicals and hydrating ingredients. Reduces redness and leaves your complexion soft, balanced, and refreshed. Extractions are included.",
+          "image": "assets/images/image19.png"
+        },
+        {
+          "id": "organic-pregnancy-facial",
+          "name": "Organic Pregnancy Facial",
+          "meta": "60 min",
+          "description": "Our Organic Pregnancy Facial is a calming, customized treatment created to support the unique skincare needs of pregnancy. Using only organic, toxin-free, and pregnancy-safe products, this facial helps relieve dryness, sensitivity, and hormonal breakouts while restoring a healthy glow. The treatment is performed with gentle techniques to ensure complete comfort and safety for both mother and baby.",
+          "image": "assets/images/image19.png"
+        },
+        {
+          "id": "eminence-ashwagandha-facial",
+          "name": "Éminence Ashwagandha Facial",
+          "meta": "60 min",
+          "description": "The Éminence Ashwagandha Facial is a deeply restorative treatment designed to combat the visible effects of stress, fatigue, and environmental damage. Powered by Éminence's Adaptogenic Herbal Complex—including ashwagandha, reishi mushroom, and rhodiola—this facial helps strengthen the skin barrier, improve resilience, and restore a healthy, radiant glow. Ideal for stressed, dull, or prematurely aging skin.",
+          "image": "assets/images/image19.png"
+        }
       ]
     },
     {
       "name": "Facial Add-Ons",
       "services": [
-        { "id": "lip-revival-facial", "name": "Lip Revival Facial", "meta": "15 min", "description": "Enriched with citrus and pineapple enzymes, this treatment smooths dryness, softens fine lines, deeply hydrates, and helps boost collagen for fuller, healthier-looking lips.", "image": "assets/images/image19.png" },
-        { "id": "booster", "name": "Booster", "meta": "15 min", "description": "Let our estheticians select booster serums, concentrates, and oils to penetrate deeply and deliver optimal skin results.", "image": "assets/images/image19.png" },
-        { "id": "depuff-eye-brightening", "name": "De-Puff & Eye Brightening", "meta": "15 min", "description": "Hydrating ingredients soothe and revitalize tired eyes, reducing puffiness, dark circles, and fatigue while supporting circulation and lymphatic drainage for a refreshed look.", "image": "assets/images/image19.png" }
+        {
+          "id": "lip-revival-facial",
+          "name": "Lip Revival Facial",
+          "meta": "15 min",
+          "description": "Enriched with citrus and pineapple enzymes, this treatment smooths dryness, softens fine lines, deeply hydrates, and helps boost collagen for fuller, healthier-looking lips.",
+          "image": "assets/images/image19.png"
+        },
+        {
+          "id": "booster",
+          "name": "Booster",
+          "meta": "15 min",
+          "description": "Let our estheticians select booster serums, concentrates, and oils to penetrate deeply and deliver optimal skin results.",
+          "image": "assets/images/image19.png"
+        },
+        {
+          "id": "depuff-eye-brightening",
+          "name": "De-Puff & Eye Brightening",
+          "meta": "15 min",
+          "description": "Hydrating ingredients soothe and revitalize tired eyes, reducing puffiness, dark circles, and fatigue while supporting circulation and lymphatic drainage for a refreshed look.",
+          "image": "assets/images/image19.png"
+        }
       ]
     },
     {
       "name": "Luxe Waxing Services",
       "services": [
-        { "id": "full-legs", "name": "Full Legs", "meta": "45 min", "description": "Professional waxing service for full legs, providing smooth, long-lasting results.", "image": "assets/images/image21.png" },
-        { "id": "upper-legs", "name": "Upper Legs", "meta": "25 min", "description": "Waxing service for upper legs only, perfect for targeted hair removal.", "image": "assets/images/image21.png" },
-        { "id": "lower-legs", "name": "Lower Legs", "meta": "25 min", "description": "Waxing service for lower legs, from knees to ankles.", "image": "assets/images/image21.png" },
-        { "id": "full-arms", "name": "Full Arms", "meta": "30 min", "description": "Complete arm waxing from shoulders to wrists for smooth, hair-free arms.", "image": "assets/images/image21.png" },
-        { "id": "half-arms", "name": "Half Arms", "meta": "20 min", "description": "Waxing service for lower arms, from elbows to wrists.", "image": "assets/images/image21.png" },
-        { "id": "under-arms", "name": "Under Arms", "meta": "15 min", "description": "Gentle underarm waxing for a clean, smooth finish.", "image": "assets/images/image21.png" },
-        { "id": "stomach", "name": "Stomach", "meta": "20 min", "description": "Professional stomach waxing for smooth, hair-free skin.", "image": "assets/images/image21.png" },
-        { "id": "breast", "name": "Breast", "meta": "15 min", "description": "Gentle and discreet breast area waxing service.", "image": "assets/images/image21.png" },
-        { "id": "full-back", "name": "Full Back", "meta": "30 min", "description": "Complete back waxing service for smooth, hair-free skin.", "image": "assets/images/image21.png" },
-        { "id": "half-back", "name": "Half Back", "meta": "20 min", "description": "Waxing service for upper or lower back area.", "image": "assets/images/image21.png" },
-        { "id": "bikini-line", "name": "Bikini Line", "meta": "20 min", "description": "Basic bikini line waxing for a clean, neat appearance.", "image": "assets/images/image21.png" },
-        { "id": "french-bikini", "name": "French Bikini", "meta": "25 min", "description": "More extensive than a standard bikini line, leaving a small strip.", "image": "assets/images/image21.png" },
-        { "id": "brazilian", "name": "Brazilian", "meta": "30 min", "description": "Complete hair removal in the bikini area for the smoothest finish.", "image": "assets/images/image21.png" },
-        { "id": "buttocks", "name": "Buttocks", "meta": "20 min", "description": "Professional waxing service for the buttocks area.", "image": "assets/images/image21.png" },
-        { "id": "butt-cheeks", "name": "Butt Cheeks", "meta": "15 min", "description": "Targeted waxing service for butt cheeks only.", "image": "assets/images/image21.png" },
-        { "id": "fingers-toes", "name": "Fingers/Toes", "meta": "10 min", "description": "Quick waxing service for fingers and toes.", "image": "assets/images/image21.png" }
+        {
+          "id": "full-legs",
+          "name": "Full Legs",
+          "meta": "45 min",
+          "description": "Professional waxing service for full legs, providing smooth, long-lasting results.",
+          "image": "assets/images/image21.png"
+        },
+        {
+          "id": "upper-legs",
+          "name": "Upper Legs",
+          "meta": "25 min",
+          "description": "Waxing service for upper legs only, perfect for targeted hair removal.",
+          "image": "assets/images/image21.png"
+        },
+        {
+          "id": "lower-legs",
+          "name": "Lower Legs",
+          "meta": "25 min",
+          "description": "Waxing service for lower legs, from knees to ankles.",
+          "image": "assets/images/image21.png"
+        },
+        {
+          "id": "full-arms",
+          "name": "Full Arms",
+          "meta": "30 min",
+          "description": "Complete arm waxing from shoulders to wrists for smooth, hair-free arms.",
+          "image": "assets/images/image21.png"
+        },
+        {
+          "id": "half-arms",
+          "name": "Half Arms",
+          "meta": "20 min",
+          "description": "Waxing service for lower arms, from elbows to wrists.",
+          "image": "assets/images/image21.png"
+        },
+        {
+          "id": "under-arms",
+          "name": "Under Arms",
+          "meta": "15 min",
+          "description": "Gentle underarm waxing for a clean, smooth finish.",
+          "image": "assets/images/image21.png"
+        },
+        {
+          "id": "stomach",
+          "name": "Stomach",
+          "meta": "20 min",
+          "description": "Professional stomach waxing for smooth, hair-free skin.",
+          "image": "assets/images/image21.png"
+        },
+        {
+          "id": "breast",
+          "name": "Breast",
+          "meta": "15 min",
+          "description": "Gentle and discreet breast area waxing service.",
+          "image": "assets/images/image21.png"
+        },
+        {
+          "id": "full-back",
+          "name": "Full Back",
+          "meta": "30 min",
+          "description": "Complete back waxing service for smooth, hair-free skin.",
+          "image": "assets/images/image21.png"
+        },
+        {
+          "id": "half-back",
+          "name": "Half Back",
+          "meta": "20 min",
+          "description": "Waxing service for upper or lower back area.",
+          "image": "assets/images/image21.png"
+        },
+        {
+          "id": "bikini-line",
+          "name": "Bikini Line",
+          "meta": "20 min",
+          "description": "Basic bikini line waxing for a clean, neat appearance.",
+          "image": "assets/images/image21.png"
+        },
+        {
+          "id": "french-bikini",
+          "name": "French Bikini",
+          "meta": "25 min",
+          "description": "More extensive than a standard bikini line, leaving a small strip.",
+          "image": "assets/images/image21.png"
+        },
+        {
+          "id": "brazilian",
+          "name": "Brazilian",
+          "meta": "30 min",
+          "description": "Complete hair removal in the bikini area for the smoothest finish.",
+          "image": "assets/images/image21.png"
+        },
+        {
+          "id": "buttocks",
+          "name": "Buttocks",
+          "meta": "20 min",
+          "description": "Professional waxing service for the buttocks area.",
+          "image": "assets/images/image21.png"
+        },
+        {
+          "id": "butt-cheeks",
+          "name": "Butt Cheeks",
+          "meta": "15 min",
+          "description": "Targeted waxing service for butt cheeks only.",
+          "image": "assets/images/image21.png"
+        },
+        {
+          "id": "fingers-toes",
+          "name": "Fingers/Toes",
+          "meta": "10 min",
+          "description": "Quick waxing service for fingers and toes.",
+          "image": "assets/images/image21.png"
+        }
       ]
     },
     {
       "name": "Gentlemen's Wax Bar",
       "services": [
-        { "id": "mens-full-arms", "name": "Full Arms", "meta": "30 min", "description": "Professional waxing service for both full arms, providing smooth, hair-free skin with long-lasting results.", "image": "assets/images/image22.png" },
-        { "id": "mens-full-back", "name": "Full Back", "meta": "30 min", "description": "Complete back waxing service for a smooth, clean appearance with professional care and attention.", "image": "assets/images/image22.png" },
-        { "id": "mens-chest-stomach", "name": "Chest/Stomach", "meta": "30 min", "description": "Comprehensive chest and stomach waxing for a smooth, well-groomed look with lasting results.", "image": "assets/images/image22.png" }
+        {
+          "id": "mens-full-arms",
+          "name": "Full Arms",
+          "meta": "30 min",
+          "description": "Professional waxing service for both full arms, providing smooth, hair-free skin with long-lasting results.",
+          "image": "assets/images/image22.png"
+        },
+        {
+          "id": "mens-full-back",
+          "name": "Full Back",
+          "meta": "30 min",
+          "description": "Complete back waxing service for a smooth, clean appearance with professional care and attention.",
+          "image": "assets/images/image22.png"
+        },
+        {
+          "id": "mens-chest-stomach",
+          "name": "Chest/Stomach",
+          "meta": "30 min",
+          "description": "Comprehensive chest and stomach waxing for a smooth, well-groomed look with lasting results.",
+          "image": "assets/images/image22.png"
+        }
       ]
     }
   ]
