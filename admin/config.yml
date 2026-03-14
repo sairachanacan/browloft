@@ -335,7 +335,8 @@ collections:
             fields:
               - { label: "Name", name: "name", widget: "string" }
               - { label: "Address", name: "address", widget: "string" }
-              - { label: "Icon Image", name: "icon", widget: "image", hint: "Logo or icon shown on the location card" }
+              - { label: "Icon Class", name: "icon", widget: "string", hint: "Font Awesome icon class, e.g. fas fa-map-marker-alt" }
+              - { label: "Button Text", name: "button_text", widget: "string", default: "Select" }
           - { label: "Services Section Heading", name: "services_heading", widget: "string" }
           - { label: "Services Section Subtitle", name: "services_subtitle", widget: "string" }
           - label: "Sidebar Card"
