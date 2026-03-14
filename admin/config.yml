@@ -331,11 +331,40 @@ collections:
           - label: "Locations"
             name: "locations"
             widget: "list"
+            summary: "{{fields.name}}"
             fields:
               - { label: "Name", name: "name", widget: "string" }
               - { label: "Address", name: "address", widget: "string" }
+              - { label: "Icon Image", name: "icon", widget: "image", hint: "Logo or icon shown on the location card" }
           - { label: "Services Section Heading", name: "services_heading", widget: "string" }
           - { label: "Services Section Subtitle", name: "services_subtitle", widget: "string" }
+          - label: "Sidebar Card"
+            name: "sidebar"
+            widget: "object"
+            fields:
+              - { label: "Business Logo", name: "logo", widget: "image", hint: "Logo displayed at the top of the sidebar" }
+              - { label: "Business Name", name: "business_name", widget: "string" }
+              - { label: "Tagline", name: "tagline", widget: "string" }
+              - { label: "Phone Number", name: "phone", widget: "string" }
+              - { label: "Email Address", name: "email", widget: "string" }
+              - { label: "Address", name: "address", widget: "string" }
+              - label: "Social Links"
+                name: "social"
+                widget: "object"
+                fields:
+                  - { label: "Facebook URL", name: "facebook", widget: "string", required: false }
+                  - { label: "Instagram URL", name: "instagram", widget: "string", required: false }
+                  - { label: "Twitter URL", name: "twitter", widget: "string", required: false }
+                  - { label: "Pinterest URL", name: "pinterest", widget: "string", required: false }
+              - label: "Opening Hours"
+                name: "hours"
+                widget: "list"
+                summary: "{{fields.days}} — {{fields.time}}"
+                fields:
+                  - { label: "Days", name: "days", widget: "string", hint: "e.g. Monday - Friday" }
+                  - { label: "Time", name: "time", widget: "string", hint: "e.g. 10:00 AM - 7:00 PM" }
+              - { label: "Rating Score", name: "rating_score", widget: "string", hint: "e.g. 4.9/5" }
+              - { label: "Rating Label", name: "rating_label", widget: "string", hint: "e.g. from 500+ clients" }
           - label: "Service Categories"
             name: "categories"
             widget: "list"
