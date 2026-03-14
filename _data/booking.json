@@ -2,11 +2,32 @@
   "location_heading": "Select Your Location",
   "location_subtitle": "Choose which location you'd like to visit.",
   "locations": [
-    { "name": "Langley Location", "address": "Langley, BC, Canada" },
-    { "name": "Burnaby Location", "address": "Burnaby, BC, Canada" }
+    { "name": "Langley Location", "address": "Langley, BC, Canada", "icon": "assets/images/browloft.png" },
+    { "name": "Burnaby Location", "address": "Burnaby, BC, Canada", "icon": "assets/images/browloft.png" }
   ],
   "services_heading": "Services",
   "services_subtitle": "Select the services you'd like to book.",
+  "sidebar": {
+    "logo": "assets/images/browloft.png",
+    "business_name": "Brow Loft",
+    "tagline": "The Brow & Beauty Bar",
+    "phone": "666 888 0000",
+    "email": "browloft@hotmail.com",
+    "address": "Langley, Burnaby - Vancouver, Canada",
+    "social": {
+      "facebook": "",
+      "instagram": "",
+      "twitter": "",
+      "pinterest": ""
+    },
+    "hours": [
+      { "days": "Monday - Friday", "time": "10:00 AM - 7:00 PM" },
+      { "days": "Saturday", "time": "10:00 AM - 6:00 PM" },
+      { "days": "Sunday", "time": "Closed" }
+    ],
+    "rating_score": "4.9/5",
+    "rating_label": "from 500+ clients"
+  },
   "categories": [
     {
       "name": "Eye Brow Threading",
