@@ -382,6 +382,67 @@ collections:
                   - { label: "Langley Price", name: "langley_price", widget: "string" }
                   - { label: "Burnaby Price", name: "burnaby_price", widget: "string" }
                   - { label: "Duration", name: "duration", widget: "string" }
+          - label: "Team Selection Section"
+            name: "team_section"
+            widget: "object"
+            fields:
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Subtitle", name: "subtitle", widget: "string" }
+              - label: "Team Members"
+                name: "members"
+                widget: "list"
+                summary: "{{fields.name}}"
+                fields:
+                  - { label: "Avatar Letter", name: "avatar", widget: "string", hint: "Single letter shown in the avatar circle, e.g. P or S" }
+                  - { label: "Name", name: "name", widget: "string" }
+                  - { label: "Description", name: "description", widget: "string" }
+                  - { label: "Button Text", name: "button_text", widget: "string", default: "Book" }
+          - label: "Add-Ons Section"
+            name: "addons_section"
+            widget: "object"
+            fields:
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Subtitle", name: "subtitle", widget: "string" }
+              - { label: "Group Heading", name: "group_heading", widget: "string", hint: "e.g. Threading & Waxing" }
+              - label: "Add-On Items"
+                name: "items"
+                widget: "list"
+                summary: "{{fields.name}} — {{fields.price}}"
+                fields:
+                  - { label: "Name", name: "name", widget: "string" }
+                  - { label: "Duration", name: "duration", widget: "string", hint: "e.g. 15 mins" }
+                  - { label: "Price", name: "price", widget: "string", hint: "e.g. $15" }
+          - label: "Calendar Section"
+            name: "calendar_section"
+            widget: "object"
+            fields:
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Subtitle", name: "subtitle", widget: "string" }
+              - { label: "Select Date Label", name: "date_label", widget: "string", default: "Select Date" }
+              - { label: "Select Time Label", name: "time_label", widget: "string", default: "Select Time" }
+          - label: "Personal Details Section"
+            name: "details_section"
+            widget: "object"
+            fields:
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Subtitle", name: "subtitle", widget: "string" }
+              - { label: "Personal Info Heading", name: "personal_heading", widget: "string", default: "Personal Information" }
+              - { label: "Additional Info Heading", name: "additional_heading", widget: "string", default: "Additional Information" }
+              - { label: "Notes Placeholder", name: "notes_placeholder", widget: "string", default: "Any special requests or comments for your appointment..." }
+              - { label: "Terms Text", name: "terms_text", widget: "string", default: "I agree to the booking terms and conditions" }
+              - { label: "Submit Button Text", name: "submit_button", widget: "string", default: "Confirm Booking" }
+              - { label: "Confirmation Message", name: "confirmation_message", widget: "string", default: "Your appointment has been booked successfully! Check your email for confirmation." }
+          - label: "Booking Summary Labels"
+            name: "summary_labels"
+            widget: "object"
+            fields:
+              - { label: "Summary Title", name: "title", widget: "string", default: "Booking Summary" }
+              - { label: "Location Label", name: "location", widget: "string", default: "Location" }
+              - { label: "Services Label", name: "services", widget: "string", default: "Services" }
+              - { label: "Empty Services Text", name: "empty_services", widget: "string", default: "No services selected" }
+              - { label: "Team Label", name: "team", widget: "string", default: "Team" }
+              - { label: "Add-ons Label", name: "addons", widget: "string", default: "Add-ons" }
+              - { label: "Total Label", name: "total", widget: "string", default: "Total" }
 
   # ── Footer ────────────────────────────────────────────────
   - name: "footer"
