@@ -5,6 +5,8 @@
     { "name": "Langley Location", "address": "Langley, BC, Canada", "icon": "fas fa-map-marker-alt", "button_text": "Select" },
     { "name": "Burnaby Location", "address": "Burnaby, BC, Canada", "icon": "fas fa-map-marker-alt", "button_text": "Select" }
   ],
+  "continue_button": "Continue",
+  "change_location_button": "← Change Location",
   "services_heading": "Services",
   "services_subtitle": "Select the services you'd like to book.",
   "sidebar": {
@@ -20,11 +22,13 @@
       "twitter": "",
       "pinterest": ""
     },
+    "hours_icon": "fas fa-clock",
     "hours": [
       { "days": "Monday - Friday", "time": "10:00 AM - 7:00 PM" },
       { "days": "Saturday", "time": "10:00 AM - 6:00 PM" },
       { "days": "Sunday", "time": "Closed" }
     ],
+    "rating_stars": 5,
     "rating_score": "4.9/5",
     "rating_label": "from 500+ clients"
   },
@@ -182,6 +186,7 @@
     "confirmation_message": "Your appointment has been booked successfully! Check your email for confirmation."
   },
   "summary_labels": {
+    "icon": "fas fa-shopping-bag",
     "title": "Booking Summary",
     "location": "Location",
     "services": "Services",
