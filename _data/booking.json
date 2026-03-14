@@ -143,5 +143,51 @@
         { "id": "saree-tie", "name": "Sari Tie", "langley_price": "$30", "burnaby_price": "$30", "duration": "15 min" }
       ]
     }
-  ]
+  ],
+  "team_section": {
+    "heading": "Select a Team Member",
+    "subtitle": "Choose who you'd like to book with.",
+    "members": [
+      { "avatar": "P", "name": "No Team Member", "description": "We'll assign the best specialist for your service.", "button_text": "Book" },
+      { "avatar": "S", "name": "BL Teams", "description": "Choose this for BL team members.", "button_text": "Book" }
+    ]
+  },
+  "addons_section": {
+    "heading": "Select additional services",
+    "subtitle": "Add any optional services (you can skip this step).",
+    "group_heading": "Threading & Waxing",
+    "items": [
+      { "name": "Brows", "duration": "15 mins", "price": "$15" },
+      { "name": "Lips", "duration": "5 mins", "price": "$10" },
+      { "name": "Chin", "duration": "5 mins", "price": "$10" },
+      { "name": "Forehead", "duration": "5 mins", "price": "$10" },
+      { "name": "Brows & Lips", "duration": "25 mins", "price": "$24" },
+      { "name": "Brows, Lips & Chin", "duration": "30 mins", "price": "$30" }
+    ]
+  },
+  "calendar_section": {
+    "heading": "Select Date & Time",
+    "subtitle": "Choose your preferred appointment date and time",
+    "date_label": "Select Date",
+    "time_label": "Select Time"
+  },
+  "details_section": {
+    "heading": "Your Details",
+    "subtitle": "Complete your booking information",
+    "personal_heading": "Personal Information",
+    "additional_heading": "Additional Information",
+    "notes_placeholder": "Any special requests or comments for your appointment...",
+    "terms_text": "I agree to the booking terms and conditions",
+    "submit_button": "Confirm Booking",
+    "confirmation_message": "Your appointment has been booked successfully! Check your email for confirmation."
+  },
+  "summary_labels": {
+    "title": "Booking Summary",
+    "location": "Location",
+    "services": "Services",
+    "empty_services": "No services selected",
+    "team": "Team",
+    "addons": "Add-ons",
+    "total": "Total"
+  }
 }
