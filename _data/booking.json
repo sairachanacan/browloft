@@ -22,7 +22,15 @@
     ],
     "rating_stars": 5,
     "rating_score": "4.9/5",
-    "rating_label": "from 500+ clients"
+    "rating_label": "from 500+ clients",
+    "summary_icon": "fas fa-shopping-bag",
+    "summary_title": "Booking Summary",
+    "summary_location_label": "Location",
+    "summary_location_default": "--",
+    "summary_services_label": "Services",
+    "summary_empty_services": "No services selected",
+    "summary_total_label": "Total",
+    "summary_total_default": "$0.00"
   },
   "langley_categories": [
     {
@@ -276,15 +284,5 @@
     "terms_text": "I agree to the booking terms and conditions",
     "submit_button": "Confirm Booking",
     "confirmation_message": "Your appointment has been booked successfully! Check your email for confirmation."
-  },
-  "summary_labels": {
-    "icon": "fas fa-shopping-bag",
-    "title": "Booking Summary",
-    "location": "Location",
-    "services": "Services",
-    "empty_services": "No services selected",
-    "team": "Team",
-    "addons": "Add-ons",
-    "total": "Total"
   }
 }
