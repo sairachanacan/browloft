@@ -14,15 +14,6 @@
   "sidebar": {
     "business_name": "Brow Loft",
     "tagline": "The Brow & Beauty Bar",
-    "phone": "666 888 0000",
-    "email": "browloft@hotmail.com",
-    "address": "Langley, Burnaby - Vancouver, Canada",
-    "social": {
-      "facebook": "",
-      "instagram": "",
-      "twitter": "",
-      "pinterest": ""
-    },
     "hours_icon": "fas fa-clock",
     "hours": [
       { "days": "Monday - Friday", "time": "10:00 AM - 7:00 PM" },
