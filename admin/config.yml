@@ -337,10 +337,12 @@ collections:
               - { label: "Address", name: "address", widget: "string" }
               - { label: "Icon Class", name: "icon", widget: "string", hint: "Font Awesome icon class, e.g. fas fa-map-marker-alt" }
               - { label: "Button Text", name: "button_text", widget: "string", default: "Select" }
-              - { label: "Services Heading", name: "services_heading", widget: "string", hint: "e.g. Langley Services" }
-              - { label: "Services Subtitle", name: "services_subtitle", widget: "string", hint: "e.g. Select the services you'd like to book at Langley." }
           - { label: "Continue Button Text", name: "continue_button", widget: "string", default: "Continue" }
           - { label: "Change Location Button Text", name: "change_location_button", widget: "string", default: "← Change Location" }
+          - { label: "Langley Services Heading", name: "langley_services_heading", widget: "string" }
+          - { label: "Langley Services Subtitle", name: "langley_services_subtitle", widget: "string" }
+          - { label: "Burnaby Services Heading", name: "burnaby_services_heading", widget: "string" }
+          - { label: "Burnaby Services Subtitle", name: "burnaby_services_subtitle", widget: "string" }
           - label: "Service Categories"
             name: "categories"
             widget: "list"
