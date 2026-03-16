@@ -34,119 +34,219 @@
     "rating_score": "4.9/5",
     "rating_label": "from 500+ clients"
   },
-  "categories": [
+  "langley_categories": [
     {
       "name": "Eye Brow Threading",
       "services": [
-        { "id": "luxe-brows", "name": "Luxe Brows", "langley_price": "$15", "burnaby_price": "$20", "duration": "20 min" },
-        { "id": "teen-brows", "name": "Teen Brows", "langley_price": "$10", "burnaby_price": "$15", "duration": "15 min" },
-        { "id": "signature-area-threading", "name": "Luxe Facial Touch-Up Threading/Waxing", "langley_price": "$8", "burnaby_price": "$13", "duration": "10 min" },
-        { "id": "luxe-brows-signature-1", "name": "Luxe Brows & One Area Facial Touch-Up Threading/Waxing", "langley_price": "$20", "burnaby_price": "$25", "duration": "25 min" },
-        { "id": "luxe-brows-signature-2", "name": "Luxe Brows & Two Area Facial Touch-Up Threading/Waxing", "langley_price": "$28", "burnaby_price": "$33", "duration": "25 min" },
-        { "id": "luxe-smooth-face", "name": "The Luxe Smooth Face", "langley_price": "$38", "burnaby_price": "$43", "duration": "30 min" }
+        { "name": "Luxe Brows", "price": "$15", "duration": "20 min" },
+        { "name": "Teen Brows", "price": "$10", "duration": "15 min" },
+        { "name": "Luxe Facial Touch-Up Threading/Waxing", "price": "$8", "duration": "10 min" },
+        { "name": "Luxe Brows & One Area Facial Touch-Up Threading/Waxing", "price": "$20", "duration": "25 min" },
+        { "name": "Luxe Brows & Two Area Facial Touch-Up Threading/Waxing", "price": "$28", "duration": "25 min" },
+        { "name": "The Luxe Smooth Face", "price": "$38", "duration": "30 min" }
       ]
     },
     {
       "name": "Brow & Lash Treatments",
       "services": [
-        { "id": "brow-tint", "name": "Luxe Brow Tint", "langley_price": "$20", "burnaby_price": "$20", "duration": "15 min" },
-        { "id": "lash-tint", "name": "Luxe Lash Tint", "langley_price": "$25", "burnaby_price": "$25", "duration": "20 min" },
-        { "id": "henna-brows", "name": "Henna Luxe Brows", "langley_price": "$50", "burnaby_price": "$50", "duration": "30 min" },
-        { "id": "lash-lift", "name": "Luxe Lash Lift", "langley_price": "$65", "burnaby_price": "$65", "duration": "45 min" },
-        { "id": "brow-lamination", "name": "Luxe Brow Lamination", "langley_price": "$65", "burnaby_price": "$65", "duration": "60 min" }
+        { "name": "Luxe Brow Tint", "price": "$20", "duration": "15 min" },
+        { "name": "Luxe Lash Tint", "price": "$25", "duration": "20 min" },
+        { "name": "Henna Luxe Brows", "price": "$50", "duration": "30 min" },
+        { "name": "Luxe Lash Lift", "price": "$65", "duration": "45 min" },
+        { "name": "Luxe Brow Lamination", "price": "$65", "duration": "60 min" }
       ]
     },
     {
-      "name": "Add-Ons",
+      "name": "Add-On Services",
       "services": [
-        { "id": "glow-go", "name": "10-minute Luxe Glow & Go", "langley_price": "$15", "burnaby_price": "$15", "duration": "10 min" },
-        { "id": "eye-renewal", "name": "Eye Renewal Mask", "langley_price": "$5", "burnaby_price": "$5", "duration": "5 min" },
-        { "id": "brow-prep", "name": "Brow Prep & Polish", "langley_price": "$5", "burnaby_price": "$5", "duration": "5 min" }
+        { "name": "10-minute Luxe Glow & Go", "price": "$15", "duration": "10 min" },
+        { "name": "Eye Renewal Mask", "price": "$5", "duration": "5 min" },
+        { "name": "Brow Prep & Polish", "price": "$5", "duration": "5 min" }
       ]
     },
     {
-      "name": "Packages",
+      "name": "Package Deals",
       "services": [
-        { "id": "package-brows-tinting", "name": "Luxe Brows & Tinting Package", "langley_price": "$28", "burnaby_price": "$28", "duration": "35 min" },
-        { "id": "package-brows-tinting-1velvet", "name": "Luxe Brows & Tinting + 1 Luxe Facial Touch-Up Threading/Waxing", "langley_price": "$35", "burnaby_price": "$35", "duration": "45 min" },
-        { "id": "package-brows-tinting-2velvet", "name": "Luxe Brows & Tinting + 2 Luxe Facial Touch-Up Threading/Waxing", "langley_price": "$45", "burnaby_price": "$45", "duration": "55 min" },
-        { "id": "package-brows-brow-lash-tint", "name": "Luxe Brows + Brow Tinting + Lash Tint Bundle", "langley_price": "$52", "burnaby_price": "$52", "duration": "55 min" },
-        { "id": "package-lash-lift-tint", "name": "Luxe Lash Lift + Lash Tint Bundle", "langley_price": "$75", "burnaby_price": "$75", "duration": "65 min" },
-        { "id": "package-brows-henna", "name": "Luxe Brows + Brow Henna", "langley_price": "$55", "burnaby_price": "$55", "duration": "50 min" },
-        { "id": "package-brow-lash-lamination", "name": "Brow Lamination + Luxe Lash Lift Bundle", "langley_price": "$130", "burnaby_price": "$130", "duration": "105 min" }
+        { "name": "Luxe Brows & Tinting Package", "price": "$28", "duration": "35 min" },
+        { "name": "Luxe Brows & Tinting + 1 Facial Touch-Up", "price": "$35", "duration": "45 min" },
+        { "name": "Luxe Brows & Tinting + 2 Facial Touch-Up", "price": "$45", "duration": "55 min" },
+        { "name": "Luxe Brows + Brow Tinting + Lash Tint Bundle", "price": "$52", "duration": "55 min" },
+        { "name": "Luxe Lash Lift + Lash Tint Bundle", "price": "$75", "duration": "65 min" },
+        { "name": "Luxe Brows + Brow Henna", "price": "$55", "duration": "50 min" },
+        { "name": "Brow Lamination + Luxe Lash Lift Bundle", "price": "$130", "duration": "105 min" }
       ]
     },
     {
       "name": "Gentlemen's Bar",
       "services": [
-        { "id": "mens-unibrow", "name": "Men's Unibrow", "langley_price": "$12", "burnaby_price": "$12", "duration": "10 min" },
-        { "id": "mens-luxe-brows", "name": "Men's Luxe Brows", "langley_price": "$20", "burnaby_price": "$20", "duration": "20 min" },
-        { "id": "mens-cheeks-forehead", "name": "Men's Cheeks + Forehead or Ears", "langley_price": "$15", "burnaby_price": "$15", "duration": "15 min" }
+        { "name": "Men's Unibrow", "price": "$12", "duration": "10 min" },
+        { "name": "Men's Luxe Brows", "price": "$20", "duration": "20 min" },
+        { "name": "Men's Cheeks + Forehead or Ears", "price": "$15", "duration": "15 min" }
       ]
     },
     {
       "name": "Luxe Facial Bar",
       "services": [
-        { "id": "luxe-express-facial", "name": "Luxe Express Facial", "langley_price": "$65", "burnaby_price": "$65", "duration": "30 min" },
-        { "id": "purely-yours-facial", "name": "Purely Yours Facial", "langley_price": "$110", "burnaby_price": "$110", "duration": "60 min" },
-        { "id": "coconut-glow-facial", "name": "Coconut Glow Hydrating Facial", "langley_price": "$110", "burnaby_price": "$110", "duration": "60 min" },
-        { "id": "delicate-care-facial", "name": "Delicate Care Facial", "langley_price": "$110", "burnaby_price": "$110", "duration": "60 min" },
-        { "id": "organic-pregnancy-facial", "name": "Organic Pregnancy Facial", "langley_price": "$110", "burnaby_price": "$110", "duration": "60 min" },
-        { "id": "eminence-ashwagandha-facial", "name": "Éminence Ashwagandha Facial", "langley_price": "$110", "burnaby_price": "$110", "duration": "60 min" }
+        { "name": "Luxe Express Facial", "price": "$65", "duration": "30 min" },
+        { "name": "Purely Yours Facial", "price": "$110", "duration": "60 min" },
+        { "name": "Coconut Glow Hydrating Facial", "price": "$110", "duration": "60 min" },
+        { "name": "Delicate Care Facial", "price": "$110", "duration": "60 min" },
+        { "name": "Organic Pregnancy Facial", "price": "$110", "duration": "60 min" },
+        { "name": "Éminence Ashwagandha Facial", "price": "$110", "duration": "60 min" }
       ]
     },
     {
       "name": "Facial Add-Ons",
       "services": [
-        { "id": "lip-revival-facial", "name": "Lip Revival Facial", "langley_price": "$10", "burnaby_price": "$10", "duration": "15 min" },
-        { "id": "booster", "name": "Booster", "langley_price": "$10", "burnaby_price": "$10", "duration": "15 min" },
-        { "id": "depuff-eye-brightening", "name": "De-Puff & Eye Brightening", "langley_price": "$10", "burnaby_price": "$10", "duration": "15 min" }
+        { "name": "Lip Revival Facial", "price": "$10", "duration": "15 min" },
+        { "name": "Booster", "price": "$10", "duration": "15 min" },
+        { "name": "De-Puff & Eye Brightening", "price": "$10", "duration": "15 min" }
       ]
     },
     {
       "name": "Micro-Needling",
       "services": [
-        { "id": "microneedling", "name": "Micro-Needling", "langley_price": "$300", "burnaby_price": "$300", "duration": "60 min" }
+        { "name": "Micro-Needling", "price": "$300", "duration": "60 min" }
       ]
     },
     {
       "name": "Luxe Waxing Bar for Women",
       "services": [
-        { "id": "full-legs", "name": "Full Legs", "langley_price": "$45", "burnaby_price": "$45", "duration": "45 min" },
-        { "id": "upper-legs", "name": "Upper Legs", "langley_price": "$35", "burnaby_price": "$35", "duration": "25 min" },
-        { "id": "lower-legs", "name": "Lower Legs", "langley_price": "$30", "burnaby_price": "$30", "duration": "25 min" },
-        { "id": "full-arms", "name": "Full Arms", "langley_price": "$35", "burnaby_price": "$35", "duration": "30 min" },
-        { "id": "half-arms", "name": "Half Arms", "langley_price": "$22", "burnaby_price": "$22", "duration": "20 min" },
-        { "id": "under-arms", "name": "Under Arms", "langley_price": "$12", "burnaby_price": "$12", "duration": "15 min" },
-        { "id": "stomach", "name": "Stomach", "langley_price": "$30", "burnaby_price": "$30", "duration": "20 min" },
-        { "id": "breast", "name": "Breast", "langley_price": "$20", "burnaby_price": "$20", "duration": "15 min" },
-        { "id": "full-back", "name": "Full Back", "langley_price": "$35", "burnaby_price": "$35", "duration": "30 min" },
-        { "id": "half-back", "name": "Half Back", "langley_price": "$25", "burnaby_price": "$25", "duration": "20 min" },
-        { "id": "bikini-line", "name": "Bikini Line", "langley_price": "$20", "burnaby_price": "$20", "duration": "20 min" },
-        { "id": "french-bikini", "name": "French Bikini", "langley_price": "$33+", "burnaby_price": "$33+", "duration": "25 min" },
-        { "id": "brazilian", "name": "Brazilian", "langley_price": "$50", "burnaby_price": "$50", "duration": "30 min" },
-        { "id": "buttocks", "name": "Buttocks", "langley_price": "$20+", "burnaby_price": "$20+", "duration": "20 min" },
-        { "id": "butt-cheeks", "name": "Butt Cheeks", "langley_price": "$15", "burnaby_price": "$15", "duration": "15 min" },
-        { "id": "fingers-toes", "name": "Fingers/Toes", "langley_price": "$10", "burnaby_price": "$10", "duration": "10 min" },
-        { "id": "full-body-waxing", "name": "Full Body Waxing", "langley_price": "$170", "burnaby_price": "$170", "duration": "120 min" }
+        { "name": "Full Legs", "price": "$45", "duration": "45 min" },
+        { "name": "Upper Legs", "price": "$35", "duration": "25 min" },
+        { "name": "Lower Legs", "price": "$30", "duration": "25 min" },
+        { "name": "Full Arms", "price": "$35", "duration": "30 min" },
+        { "name": "Half Arms", "price": "$22", "duration": "20 min" },
+        { "name": "Under Arms", "price": "$12", "duration": "15 min" },
+        { "name": "Stomach", "price": "$30", "duration": "20 min" },
+        { "name": "Breast", "price": "$20", "duration": "15 min" },
+        { "name": "Full Back", "price": "$35", "duration": "30 min" },
+        { "name": "Half Back", "price": "$25", "duration": "20 min" },
+        { "name": "Bikini Line", "price": "$20", "duration": "20 min" },
+        { "name": "French Bikini", "price": "$33+", "duration": "25 min" },
+        { "name": "Brazilian", "price": "$50", "duration": "30 min" },
+        { "name": "Buttocks", "price": "$20+", "duration": "20 min" },
+        { "name": "Butt Cheeks", "price": "$15", "duration": "15 min" },
+        { "name": "Fingers/Toes", "price": "$10", "duration": "10 min" },
+        { "name": "Full Body Waxing", "price": "$170", "duration": "120 min" }
       ]
     },
     {
       "name": "Gentlemen's Wax Bar",
       "services": [
-        { "id": "mens-full-arms", "name": "Full Arms", "langley_price": "$50", "burnaby_price": "$50", "duration": "30 min" },
-        { "id": "mens-full-back", "name": "Full Back", "langley_price": "$50", "burnaby_price": "$50", "duration": "30 min" },
-        { "id": "mens-chest-stomach", "name": "Chest/Stomach", "langley_price": "$50", "burnaby_price": "$50", "duration": "30 min" }
+        { "name": "Full Arms", "price": "$50", "duration": "30 min" },
+        { "name": "Full Back", "price": "$50", "duration": "30 min" },
+        { "name": "Chest/Stomach", "price": "$50", "duration": "30 min" }
       ]
     },
     {
       "name": "Makeup and Hairstyle",
       "services": [
-        { "id": "makeup", "name": "Makeup", "langley_price": "$100+", "burnaby_price": "$100+", "duration": "45 min" },
-        { "id": "hairstyle", "name": "Hair Style", "langley_price": "$50+", "burnaby_price": "$50+", "duration": "60 min" },
-        { "id": "eye-makeup", "name": "Eye Makeup", "langley_price": "$30+", "burnaby_price": "$30+", "duration": "30 min" },
-        { "id": "eye-makeup-lashes", "name": "Eye Makeup with Lashes", "langley_price": "$50+", "burnaby_price": "$50+", "duration": "45 min" },
-        { "id": "saree-tie", "name": "Sari Tie", "langley_price": "$30", "burnaby_price": "$30", "duration": "15 min" }
+        { "name": "Makeup", "price": "$100+", "duration": "45 min" },
+        { "name": "Hair Style", "price": "$50+", "duration": "60 min" },
+        { "name": "Eye Makeup", "price": "$30+", "duration": "30 min" },
+        { "name": "Eye Makeup with Lashes", "price": "$50+", "duration": "45 min" },
+        { "name": "Sari Tie", "price": "$30", "duration": "15 min" }
+      ]
+    }
+  ],
+  "burnaby_categories": [
+    {
+      "name": "Eye Brow Threading",
+      "services": [
+        { "name": "Luxe Brows", "price": "$20", "duration": "20 min" },
+        { "name": "Teen Brows", "price": "$15", "duration": "15 min" },
+        { "name": "Luxe Facial Touch-Up Threading/Waxing", "price": "$13", "duration": "10 min" },
+        { "name": "Luxe Brows & One Area Facial Touch-Up Threading/Waxing", "price": "$25", "duration": "25 min" },
+        { "name": "Luxe Brows & Two Area Facial Touch-Up Threading/Waxing", "price": "$33", "duration": "25 min" },
+        { "name": "The Luxe Smooth Face", "price": "$43", "duration": "30 min" }
+      ]
+    },
+    {
+      "name": "Brow & Lash Treatments",
+      "services": [
+        { "name": "Luxe Brow Tint", "price": "$20", "duration": "15 min" },
+        { "name": "Luxe Lash Tint", "price": "$25", "duration": "20 min" },
+        { "name": "Henna Luxe Brows", "price": "$50", "duration": "30 min" },
+        { "name": "Luxe Lash Lift", "price": "$65", "duration": "45 min" },
+        { "name": "Luxe Brow Lamination", "price": "$65", "duration": "60 min" }
+      ]
+    },
+    {
+      "name": "Add-On Services",
+      "services": [
+        { "name": "10-minute Luxe Glow & Go", "price": "$15", "duration": "10 min" },
+        { "name": "Eye Renewal Mask", "price": "$5", "duration": "5 min" },
+        { "name": "Brow Prep & Polish", "price": "$5", "duration": "5 min" }
+      ]
+    },
+    {
+      "name": "Package Deals",
+      "services": [
+        { "name": "Luxe Brows & Tinting Package", "price": "$28", "duration": "35 min" },
+        { "name": "Luxe Brows & Tinting + 1 Facial Touch-Up", "price": "$35", "duration": "45 min" },
+        { "name": "Luxe Brows & Tinting + 2 Facial Touch-Up", "price": "$45", "duration": "55 min" },
+        { "name": "Luxe Brows + Brow Tinting + Lash Tint Bundle", "price": "$52", "duration": "55 min" },
+        { "name": "Luxe Lash Lift + Lash Tint Bundle", "price": "$75", "duration": "65 min" },
+        { "name": "Luxe Brows + Brow Henna", "price": "$55", "duration": "50 min" },
+        { "name": "Brow Lamination + Luxe Lash Lift Bundle", "price": "$130", "duration": "105 min" }
+      ]
+    },
+    {
+      "name": "Gentlemen's Bar",
+      "services": [
+        { "name": "Men's Unibrow", "price": "$12", "duration": "10 min" },
+        { "name": "Men's Luxe Brows", "price": "$20", "duration": "20 min" },
+        { "name": "Men's Cheeks + Forehead or Ears", "price": "$15", "duration": "15 min" }
+      ]
+    },
+    {
+      "name": "Luxe Facial Bar",
+      "services": [
+        { "name": "Luxe Express Facial", "price": "$65", "duration": "30 min" },
+        { "name": "Purely Yours Facial", "price": "$110", "duration": "60 min" },
+        { "name": "Coconut Glow Hydrating Facial", "price": "$110", "duration": "60 min" },
+        { "name": "Delicate Care Facial", "price": "$110", "duration": "60 min" },
+        { "name": "Organic Pregnancy Facial", "price": "$110", "duration": "60 min" },
+        { "name": "Éminence Ashwagandha Facial", "price": "$110", "duration": "60 min" }
+      ]
+    },
+    {
+      "name": "Facial Add-Ons",
+      "services": [
+        { "name": "Lip Revival Facial", "price": "$10", "duration": "15 min" },
+        { "name": "Booster", "price": "$10", "duration": "15 min" },
+        { "name": "De-Puff & Eye Brightening", "price": "$10", "duration": "15 min" }
+      ]
+    },
+    {
+      "name": "Luxe Waxing Bar for Women",
+      "services": [
+        { "name": "Full Legs", "price": "$45", "duration": "45 min" },
+        { "name": "Upper Legs", "price": "$35", "duration": "25 min" },
+        { "name": "Lower Legs", "price": "$30", "duration": "25 min" },
+        { "name": "Full Arms", "price": "$35", "duration": "30 min" },
+        { "name": "Half Arms", "price": "$22", "duration": "20 min" },
+        { "name": "Under Arms", "price": "$12", "duration": "15 min" },
+        { "name": "Stomach", "price": "$30", "duration": "20 min" },
+        { "name": "Breast", "price": "$20", "duration": "15 min" },
+        { "name": "Full Back", "price": "$35", "duration": "30 min" },
+        { "name": "Half Back", "price": "$25", "duration": "20 min" },
+        { "name": "Bikini Line", "price": "$20", "duration": "20 min" },
+        { "name": "French Bikini", "price": "$33+", "duration": "25 min" },
+        { "name": "Brazilian", "price": "$50", "duration": "30 min" },
+        { "name": "Buttocks", "price": "$20+", "duration": "20 min" },
+        { "name": "Butt Cheeks", "price": "$15", "duration": "15 min" },
+        { "name": "Fingers/Toes", "price": "$10", "duration": "10 min" },
+        { "name": "Full Body Waxing", "price": "$170", "duration": "120 min" }
+      ]
+    },
+    {
+      "name": "Gentlemen's Wax Bar",
+      "services": [
+        { "name": "Full Arms", "price": "$50", "duration": "30 min" },
+        { "name": "Full Back", "price": "$50", "duration": "30 min" },
+        { "name": "Chest/Stomach", "price": "$50", "duration": "30 min" }
       ]
     }
   ],

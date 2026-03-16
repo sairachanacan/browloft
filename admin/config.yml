@@ -343,8 +343,8 @@ collections:
           - { label: "Langley Services Subtitle", name: "langley_services_subtitle", widget: "string" }
           - { label: "Burnaby Services Heading", name: "burnaby_services_heading", widget: "string" }
           - { label: "Burnaby Services Subtitle", name: "burnaby_services_subtitle", widget: "string" }
-          - label: "Service Categories"
-            name: "categories"
+          - label: "Langley Service Categories"
+            name: "langley_categories"
             widget: "list"
             summary: "{{fields.name}}"
             fields:
@@ -352,12 +352,24 @@ collections:
               - label: "Services"
                 name: "services"
                 widget: "list"
-                summary: "{{fields.name}} — {{fields.duration}}"
+                summary: "{{fields.name}} — {{fields.price}}"
                 fields:
-                  - { label: "Service ID", name: "id", widget: "hidden" }
                   - { label: "Service Name", name: "name", widget: "string" }
-                  - { label: "Langley Price", name: "langley_price", widget: "string" }
-                  - { label: "Burnaby Price", name: "burnaby_price", widget: "string" }
+                  - { label: "Price", name: "price", widget: "string" }
+                  - { label: "Duration", name: "duration", widget: "string" }
+          - label: "Burnaby Service Categories"
+            name: "burnaby_categories"
+            widget: "list"
+            summary: "{{fields.name}}"
+            fields:
+              - { label: "Category Name", name: "name", widget: "string" }
+              - label: "Services"
+                name: "services"
+                widget: "list"
+                summary: "{{fields.name}} — {{fields.price}}"
+                fields:
+                  - { label: "Service Name", name: "name", widget: "string" }
+                  - { label: "Price", name: "price", widget: "string" }
                   - { label: "Duration", name: "duration", widget: "string" }
           - label: "Sidebar Card"
             name: "sidebar"
