@@ -261,19 +261,6 @@
     ]
   },
   "team_continue_button": "Continue",
-  "addons_section": {
-    "heading": "Select additional services",
-    "subtitle": "Add any optional services (you can skip this step).",
-    "group_heading": "Threading & Waxing",
-    "items": [
-      { "name": "Brows", "duration": "15 mins", "price": "$15" },
-      { "name": "Lips", "duration": "5 mins", "price": "$10" },
-      { "name": "Chin", "duration": "5 mins", "price": "$10" },
-      { "name": "Forehead", "duration": "5 mins", "price": "$10" },
-      { "name": "Brows & Lips", "duration": "25 mins", "price": "$24" },
-      { "name": "Brows, Lips & Chin", "duration": "30 mins", "price": "$30" }
-    ]
-  },
   "calendar_section": {
     "heading": "Select Date & Time",
     "subtitle": "Choose your preferred appointment date and time",
