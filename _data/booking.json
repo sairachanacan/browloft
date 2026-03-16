@@ -267,6 +267,8 @@
     "date_label": "Select Date",
     "time_label": "Select Time"
   },
+  "calendar_continue_button": "Continue",
+  "calendar_back_button": "← Back",
   "details_section": {
     "heading": "Your Details",
     "subtitle": "Complete your booking information",

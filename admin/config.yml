@@ -424,6 +424,8 @@ collections:
               - { label: "Subtitle", name: "subtitle", widget: "string" }
               - { label: "Select Date Label", name: "date_label", widget: "string", default: "Select Date" }
               - { label: "Select Time Label", name: "time_label", widget: "string", default: "Select Time" }
+          - { label: "Calendar Continue Button", name: "calendar_continue_button", widget: "string", default: "Continue" }
+          - { label: "Calendar Back Button", name: "calendar_back_button", widget: "string", default: "← Back" }
           - label: "Personal Details Section"
             name: "details_section"
             widget: "object"
