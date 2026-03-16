@@ -391,7 +391,8 @@ collections:
               - { label: "Summary Icon", name: "summary_icon", widget: "string", default: "fas fa-shopping-bag", hint: "Font Awesome icon class for summary title" }
               - { label: "Summary Title", name: "summary_title", widget: "string", default: "Booking Summary" }
               - { label: "Location Label", name: "summary_location_label", widget: "string", default: "Location" }
-              - { label: "Location Default", name: "summary_location_default", widget: "string", default: "--" }
+              - { label: "Location - Langley", name: "summary_location_langley", widget: "string", default: "Langley Location" }
+              - { label: "Location - Burnaby", name: "summary_location_burnaby", widget: "string", default: "Burnaby Location" }
               - { label: "Services Label", name: "summary_services_label", widget: "string", default: "Services" }
               - { label: "Empty Services Text", name: "summary_empty_services", widget: "string", default: "No services selected" }
               - { label: "Total Label", name: "summary_total_label", widget: "string", default: "Total" }
