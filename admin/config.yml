@@ -371,6 +371,8 @@ collections:
                   - { label: "Service Name", name: "name", widget: "string" }
                   - { label: "Price", name: "price", widget: "string" }
                   - { label: "Duration", name: "duration", widget: "string" }
+          - { label: "Services Continue Button", name: "services_continue_button", widget: "string", default: "Continue" }
+          - { label: "Services Back Button", name: "services_back_button", widget: "string", default: "← Back" }
           - label: "Sidebar Card"
             name: "sidebar"
             widget: "object"

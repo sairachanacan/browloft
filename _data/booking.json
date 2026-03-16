@@ -11,6 +11,8 @@
   "langley_services_subtitle": "Select the services you'd like to book at Langley.",
   "burnaby_services_heading": "Burnaby Services",
   "burnaby_services_subtitle": "Select the services you'd like to book at Burnaby.",
+  "services_continue_button": "Continue",
+  "services_back_button": "← Back",
   "sidebar": {
     "business_name": "Brow Loft",
     "tagline": "The Brow & Beauty Bar",
