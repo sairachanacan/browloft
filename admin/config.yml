@@ -388,6 +388,14 @@ collections:
               - { label: "Rating Stars", name: "rating_stars", widget: "number", default: 5, hint: "Number of stars to display (e.g. 5)" }
               - { label: "Rating Score", name: "rating_score", widget: "string", hint: "e.g. 4.9/5" }
               - { label: "Rating Label", name: "rating_label", widget: "string", hint: "e.g. from 500+ clients" }
+              - { label: "Summary Icon", name: "summary_icon", widget: "string", default: "fas fa-shopping-bag", hint: "Font Awesome icon class for summary title" }
+              - { label: "Summary Title", name: "summary_title", widget: "string", default: "Booking Summary" }
+              - { label: "Location Label", name: "summary_location_label", widget: "string", default: "Location" }
+              - { label: "Location Default", name: "summary_location_default", widget: "string", default: "--" }
+              - { label: "Services Label", name: "summary_services_label", widget: "string", default: "Services" }
+              - { label: "Empty Services Text", name: "summary_empty_services", widget: "string", default: "No services selected" }
+              - { label: "Total Label", name: "summary_total_label", widget: "string", default: "Total" }
+              - { label: "Total Default", name: "summary_total_default", widget: "string", default: "$0.00" }
           - label: "Team Selection Section"
             name: "team_section"
             widget: "object"
@@ -438,18 +446,6 @@ collections:
               - { label: "Terms Text", name: "terms_text", widget: "string", default: "I agree to the booking terms and conditions" }
               - { label: "Submit Button Text", name: "submit_button", widget: "string", default: "Confirm Booking" }
               - { label: "Confirmation Message", name: "confirmation_message", widget: "string", default: "Your appointment has been booked successfully! Check your email for confirmation." }
-          - label: "Booking Summary Labels"
-            name: "summary_labels"
-            widget: "object"
-            fields:
-              - { label: "Summary Icon", name: "icon", widget: "string", default: "fas fa-shopping-bag", hint: "Font Awesome icon class for summary title" }
-              - { label: "Summary Title", name: "title", widget: "string", default: "Booking Summary" }
-              - { label: "Location Label", name: "location", widget: "string", default: "Location" }
-              - { label: "Services Label", name: "services", widget: "string", default: "Services" }
-              - { label: "Empty Services Text", name: "empty_services", widget: "string", default: "No services selected" }
-              - { label: "Team Label", name: "team", widget: "string", default: "Team" }
-              - { label: "Add-ons Label", name: "addons", widget: "string", default: "Add-ons" }
-              - { label: "Total Label", name: "total", widget: "string", default: "Total" }
 
   # ── Footer ────────────────────────────────────────────────
   - name: "footer"
