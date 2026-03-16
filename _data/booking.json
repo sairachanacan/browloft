@@ -269,12 +269,17 @@
   },
   "calendar_continue_button": "Continue",
   "calendar_back_button": "← Back",
+  "details_back_button": "← Back",
   "details_section": {
     "heading": "Your Details",
     "subtitle": "Complete your booking information",
     "personal_heading": "Personal Information",
+    "first_name_label": "First Name *",
+    "last_name_label": "Last Name *",
+    "email_label": "Email Address *",
+    "phone_label": "Phone Number *",
     "additional_heading": "Additional Information",
-    "notes_placeholder": "Any special requests or comments for your appointment...",
+    "notes_label": "Notes (Optional)",
     "terms_text": "I agree to the booking terms and conditions",
     "submit_button": "Confirm Booking",
     "confirmation_message": "Your appointment has been booked successfully! Check your email for confirmation."
