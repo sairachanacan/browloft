@@ -375,7 +375,6 @@ collections:
             name: "sidebar"
             widget: "object"
             fields:
-              - { label: "Business Logo", name: "logo", widget: "image", hint: "Logo displayed at the top of the sidebar" }
               - { label: "Business Name", name: "business_name", widget: "string" }
               - { label: "Tagline", name: "tagline", widget: "string" }
               - { label: "Phone Number", name: "phone", widget: "string" }
