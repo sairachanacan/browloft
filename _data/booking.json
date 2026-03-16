@@ -2,8 +2,8 @@
   "location_heading": "Select Your Location",
   "location_subtitle": "Choose which location you'd like to visit.",
   "locations": [
-    { "name": "Langley Location", "address": "Langley, BC, Canada", "icon": "fas fa-map-marker-alt", "button_text": "Select" },
-    { "name": "Burnaby Location", "address": "Burnaby, BC, Canada", "icon": "fas fa-map-marker-alt", "button_text": "Select" }
+    { "name": "Langley Location", "address": "Langley, BC, Canada", "icon": "fas fa-map-marker-alt", "button_text": "Select", "services_heading": "Langley Services", "services_subtitle": "Select the services you'd like to book at Langley." },
+    { "name": "Burnaby Location", "address": "Burnaby, BC, Canada", "icon": "fas fa-map-marker-alt", "button_text": "Select", "services_heading": "Burnaby Services", "services_subtitle": "Select the services you'd like to book at Burnaby." }
   ],
   "continue_button": "Continue",
   "change_location_button": "← Change Location",
