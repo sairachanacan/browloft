@@ -426,6 +426,7 @@ collections:
               - { label: "Select Date Label", name: "date_label", widget: "string", default: "Select Date" }
               - { label: "Select Time Label", name: "time_label", widget: "string", default: "Select Time" }
           - { label: "Calendar Continue Button", name: "calendar_continue_button", widget: "string", default: "Continue" }
+          - { label: "Details Back Button", name: "details_back_button", widget: "string", default: "← Back" }
           - label: "Personal Details Section"
             name: "details_section"
             widget: "object"
@@ -433,9 +434,13 @@ collections:
               - { label: "Heading", name: "heading", widget: "string" }
               - { label: "Subtitle", name: "subtitle", widget: "string" }
               - { label: "Personal Info Heading", name: "personal_heading", widget: "string", default: "Personal Information" }
+              - { label: "First Name Label", name: "first_name_label", widget: "string", default: "First Name *" }
+              - { label: "Last Name Label", name: "last_name_label", widget: "string", default: "Last Name *" }
+              - { label: "Email Label", name: "email_label", widget: "string", default: "Email Address *" }
+              - { label: "Phone Label", name: "phone_label", widget: "string", default: "Phone Number *" }
               - { label: "Additional Info Heading", name: "additional_heading", widget: "string", default: "Additional Information" }
-              - { label: "Notes Placeholder", name: "notes_placeholder", widget: "string", default: "Any special requests or comments for your appointment..." }
-              - { label: "Terms Text", name: "terms_text", widget: "string", default: "I agree to the booking terms and conditions" }
+              - { label: "Notes Label", name: "notes_label", widget: "string", default: "Notes (Optional)" }
+              - { label: "Terms Checkbox Text", name: "terms_text", widget: "string", default: "I agree to the booking terms and conditions" }
               - { label: "Submit Button Text", name: "submit_button", widget: "string", default: "Confirm Booking" }
               - { label: "Confirmation Message", name: "confirmation_message", widget: "string", default: "Your appointment has been booked successfully! Check your email for confirmation." }
 
