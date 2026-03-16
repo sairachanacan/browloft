@@ -416,6 +416,7 @@ collections:
                   - { label: "Description", name: "description", widget: "string" }
                   - { label: "Button Text", name: "button_text", widget: "string", default: "Book" }
           - { label: "Team Continue Button", name: "team_continue_button", widget: "string", default: "Continue" }
+          - { label: "Calendar Back Button", name: "calendar_back_button", widget: "string", default: "← Back" }
           - label: "Calendar Section"
             name: "calendar_section"
             widget: "object"
@@ -425,7 +426,6 @@ collections:
               - { label: "Select Date Label", name: "date_label", widget: "string", default: "Select Date" }
               - { label: "Select Time Label", name: "time_label", widget: "string", default: "Select Time" }
           - { label: "Calendar Continue Button", name: "calendar_continue_button", widget: "string", default: "Continue" }
-          - { label: "Calendar Back Button", name: "calendar_back_button", widget: "string", default: "← Back" }
           - label: "Personal Details Section"
             name: "details_section"
             widget: "object"
