@@ -399,6 +399,7 @@ collections:
               - { label: "Empty Services Text", name: "summary_empty_services", widget: "string", default: "No services selected" }
               - { label: "Total Label", name: "summary_total_label", widget: "string", default: "Total" }
               - { label: "Total Default", name: "summary_total_default", widget: "string", default: "$0.00" }
+          - { label: "Team Back Button", name: "team_back_button", widget: "string", default: "← Back" }
           - label: "Team Selection Section"
             name: "team_section"
             widget: "object"
@@ -414,6 +415,7 @@ collections:
                   - { label: "Name", name: "name", widget: "string" }
                   - { label: "Description", name: "description", widget: "string" }
                   - { label: "Button Text", name: "button_text", widget: "string", default: "Book" }
+          - { label: "Team Continue Button", name: "team_continue_button", widget: "string", default: "Continue" }
           - label: "Add-Ons Section"
             name: "addons_section"
             widget: "object"

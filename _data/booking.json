@@ -251,6 +251,7 @@
       ]
     }
   ],
+  "team_back_button": "← Back",
   "team_section": {
     "heading": "Select a Team Member",
     "subtitle": "Choose who you'd like to book with.",
@@ -259,6 +260,7 @@
       { "avatar": "S", "name": "BL Teams", "description": "Choose this for BL team members.", "button_text": "Book" }
     ]
   },
+  "team_continue_button": "Continue",
   "addons_section": {
     "heading": "Select additional services",
     "subtitle": "Add any optional services (you can skip this step).",
