@@ -7,8 +7,6 @@
   ],
   "continue_button": "Continue",
   "change_location_button": "← Change Location",
-  "services_heading": "Services",
-  "services_subtitle": "Select the services you'd like to book.",
   "sidebar": {
     "logo": "assets/images/browloft.png",
     "business_name": "Brow Loft",

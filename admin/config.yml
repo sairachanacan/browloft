@@ -339,8 +339,6 @@ collections:
               - { label: "Button Text", name: "button_text", widget: "string", default: "Select" }
           - { label: "Continue Button Text", name: "continue_button", widget: "string", default: "Continue" }
           - { label: "Change Location Button Text", name: "change_location_button", widget: "string", default: "← Change Location" }
-          - { label: "Services Section Heading", name: "services_heading", widget: "string" }
-          - { label: "Services Section Subtitle", name: "services_subtitle", widget: "string" }
           - label: "Sidebar Card"
             name: "sidebar"
             widget: "object"
