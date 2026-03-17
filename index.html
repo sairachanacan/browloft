@@ -1025,44 +1025,30 @@
                                         <span class="footer-heading-line"></span>
                                     </div>
                                     <div class="widget-content">
-                                        <ul class="info-list clearfix">
-                                            <li class="footer-location-label">
-                                                <strong>Langley Location</strong>
-                                            </li>
-                                            <li>
-                                                <i class="flaticon-phone-call"></i>
-                                                <p><a href="tel:6046709977">604-670-9977</a></p>
-                                            </li>
-                                            <li>
-                                                <i class="flaticon-maps-and-flags"></i>
-                                                <p><a href="https://maps.google.com/?q=8233+208B+Street+A+105,+Langley+Township,+BC+V2Y2B2,+Canada" target="_blank">8233 208B Street A 105, Langley Township, BC V2Y2B2, Canada</a></p>
-                                            </li>
-                                            <li class="footer-location-label">
-                                                <strong>Burnaby Location</strong>
-                                            </li>
-                                            <li>
-                                                <i class="flaticon-phone-call"></i>
-                                                <p><a href="tel:6047968074">604-796-8074</a></p>
-                                            </li>
-                                            <li>
-                                                <i class="flaticon-maps-and-flags"></i>
-                                                <p><a href="https://maps.google.com/?q=2193+Madison+Avenue,+Burnaby,+BC+V5C6T5,+Canada" target="_blank">2193 Madison Avenue, Burnaby, BC V5C6T5, Canada</a></p>
-                                            </li>
-                                            <li>
-                                                <i class="flaticon-email-2"></i>
-                                                <p><a href="mailto:browloft@hotmail.com">browloft@hotmail.com</a></p>
-                                            </li>
-                                        </ul>
+                                        <div class="footer-location-block">
+                                            <div class="footer-location-info">
+                                                <h6>Langley Location</h6>
+                                                <p><i class="flaticon-phone-call"></i><a href="tel:6046709977">604-670-9977</a></p>
+                                                <p><i class="flaticon-maps-and-flags"></i><a href="https://maps.google.com/?q=8233+208B+Street+A+105,+Langley+Township,+BC+V2Y2B2,+Canada" target="_blank">8233 208B Street A 105, Langley Township, BC V2Y2B2, Canada</a></p>
+                                            </div>
+                                            <div class="footer-location-map">
+                                                <iframe src="https://maps.google.com/maps?q=8233+208B+Street+A+105,+Langley+Township,+BC+V2Y2B2,+Canada&t=&z=15&ie=UTF8&iwloc=&output=embed" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                            </div>
+                                        </div>
+                                        <div class="footer-location-block">
+                                            <div class="footer-location-info">
+                                                <h6>Burnaby Location</h6>
+                                                <p><i class="flaticon-phone-call"></i><a href="tel:6047968074">604-796-8074</a></p>
+                                                <p><i class="flaticon-maps-and-flags"></i><a href="https://maps.google.com/?q=2193+Madison+Avenue,+Burnaby,+BC+V5C6T5,+Canada" target="_blank">2193 Madison Avenue, Burnaby, BC V5C6T5, Canada</a></p>
+                                            </div>
+                                            <div class="footer-location-map">
+                                                <iframe src="https://maps.google.com/maps?q=2193+Madison+Avenue,+Burnaby,+BC+V5C6T5,+Canada&t=&z=15&ie=UTF8&iwloc=&output=embed" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                            </div>
+                                        </div>
+                                        <div class="footer-email-row">
+                                            <p><i class="flaticon-email-2"></i><a href="mailto:browloft@hotmail.com">browloft@hotmail.com</a></p>
+                                        </div>
                                     </div>
-                                    <div class="footer-maps-row">
-                                        <div class="footer-map-block">
-                                            <h6>Langley</h6>
-                                            <iframe src="https://maps.google.com/maps?q=8233+208B+Street+A+105,+Langley+Township,+BC+V2Y2B2,+Canada&t=&z=15&ie=UTF8&iwloc=&output=embed" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                                        </div>
-                                        <div class="footer-map-block">
-                                            <h6>Burnaby</h6>
-                                            <iframe src="https://maps.google.com/maps?q=2193+Madison+Avenue,+Burnaby,+BC+V5C6T5,+Canada&t=&z=15&ie=UTF8&iwloc=&output=embed" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                                        </div>
                                     </div>
                                      <div class="col-lg-6 col-md-12 col-sm-12 footer-column footer-column--left">
                                         <ul class="footer-social footer-social--inline clearfix">
@@ -1298,13 +1284,13 @@
             .then(function(r) { return r.json(); })
             .then(function(s) {
                 // Footer contact - Langley
-                var ftPhoneLangley = document.querySelector('.footer-widget .info-list a[href*="6046709977"]');
+                var ftPhoneLangley = document.querySelector('.footer-widget a[href*="6046709977"]');
                 if (ftPhoneLangley && s.langley_phone) { ftPhoneLangley.textContent = s.langley_phone; ftPhoneLangley.href = 'tel:' + s.langley_phone.replace(/[-\s]/g,''); }
                 // Footer contact - Burnaby
-                var ftPhoneBurnaby = document.querySelector('.footer-widget .info-list a[href*="6047968074"]');
+                var ftPhoneBurnaby = document.querySelector('.footer-widget a[href*="6047968074"]');
                 if (ftPhoneBurnaby && s.burnaby_phone) { ftPhoneBurnaby.textContent = s.burnaby_phone; ftPhoneBurnaby.href = 'tel:' + s.burnaby_phone.replace(/[-\s]/g,''); }
                 // Footer email
-                var ftEmail = document.querySelector('.footer-widget .info-list a[href^="mailto:"]');
+                var ftEmail = document.querySelector('.footer-widget a[href^="mailto:"]');
                 if (ftEmail && s.email) { ftEmail.textContent = s.email; ftEmail.href = 'mailto:' + s.email; }
 
                 // Footer services list
