@@ -10024,3 +10024,129 @@ div#mCSB_1_container{
         min-height: auto;
     }
 }
+
+/* ===== Shop Eminence Page ===== */
+
+.shop-intro{
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 40px;
+  font-size: 16px;
+  line-height: 28px;
+  color: #555;
+}
+
+.shop-grid{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  max-width: 100%;
+}
+
+.shop-card{
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.shop-card:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+}
+
+.shop-card__image{
+  width: 100%;
+  height: 280px;
+  overflow: hidden;
+  background: #f5f1ec;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.shop-card__image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.shop-card:hover .shop-card__image img{
+  transform: scale(1.05);
+}
+
+.shop-card__content{
+  padding: 20px;
+  text-align: center;
+}
+
+.shop-card__title{
+  font-size: 16px;
+  font-weight: 600;
+  color: #1e1e1e;
+  margin-bottom: 8px;
+  line-height: 22px;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.shop-card__desc{
+  font-size: 14px;
+  line-height: 22px;
+  color: #666;
+  margin-bottom: 12px;
+  min-height: 44px;
+}
+
+.shop-card__price{
+  font-size: 20px;
+  font-weight: 700;
+  color: #b08a61;
+  margin-bottom: 16px;
+}
+
+.shop-card__btn{
+  display: inline-block;
+  padding: 10px 28px;
+  background: #b08a61;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+  text-decoration: none;
+}
+
+.shop-card__btn:hover{
+  background: #967348;
+  color: #fff;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 1199px){
+  .shop-grid{
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (max-width: 991px){
+  .shop-grid{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 575px){
+  .shop-grid{
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .shop-card__image{
+    height: 240px;
+  }
+}
