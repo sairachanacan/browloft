@@ -209,16 +209,12 @@
                         <div class="about-founders">
                             <div class="about-founders-images">
                                 <div class="founder-card">
-                                    <div class="founder-image-placeholder">
-                                        <i class="fas fa-user"></i>
-                                    </div>
+                                    <img class="founder-photo" src="assets/images/founder1.JPG" alt="Founder">
                                     <h4>Founder Name</h4>
                                     <span>Co-Founder & Lead Cosmetologist</span>
                                 </div>
                                 <div class="founder-card">
-                                    <div class="founder-image-placeholder">
-                                        <i class="fas fa-user"></i>
-                                    </div>
+                                    <img class="founder-photo" src="assets/images/founder2.JPG" alt="Founder">
                                     <h4>Founder Name</h4>
                                     <span>Co-Founder & Lead Cosmetologist</span>
                                 </div>
@@ -387,7 +383,7 @@
             .then(function(d){
                 var h=document.querySelector(".section-heading");
                 if(h&&d.page_heading)h.textContent=d.page_heading;
-                if(d.founders){var fc=document.querySelectorAll(".founder-card");d.founders.forEach(function(f,i){if(!fc[i])return;var n=fc[i].querySelector("h4");var r=fc[i].querySelector("span");if(n)n.textContent=f.name;if(r)r.textContent=f.role;});}
+                if(d.founders){var fc=document.querySelectorAll(".founder-card");d.founders.forEach(function(f,i){if(!fc[i])return;var n=fc[i].querySelector("h4");var r=fc[i].querySelector("span");var img=fc[i].querySelector(".founder-photo");if(n)n.textContent=f.name;if(r)r.textContent=f.role;if(img&&f.photo){img.src=f.photo;img.alt=f.name;}});}
                 if(d.story){var sH=document.querySelector(".about-story-title");if(sH)sH.textContent=d.story.heading;var sP=document.querySelectorAll(".about-story p");if(d.story.paragraphs)d.story.paragraphs.forEach(function(t,i){if(sP[i])sP[i].textContent=t;});}
                 if(d.values){var vc=document.querySelectorAll(".about-value-card");d.values.forEach(function(v,i){if(!vc[i])return;var t=vc[i].querySelector("h4");var p=vc[i].querySelector("p");if(t)t.textContent=v.title;if(p)p.textContent=v.description;});}
                 if(d.why_choose){var wt=document.querySelectorAll(".about-story-title");if(wt[1])wt[1].textContent=d.why_choose.heading;var wl=document.querySelector(".about-why-list");if(wl&&d.why_choose.items)wl.innerHTML=d.why_choose.items.map(function(i){return "<li>"+i+"</li>";}).join("");}
