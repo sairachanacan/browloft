@@ -3953,6 +3953,11 @@ div#mCSB_1_container{
   display: block;
 }
 
+.founder-photo--zoomed-in{
+  object-fit: cover;
+  transform: scale(1.15);
+}
+
 .founder-photo--zoomed-out{
   object-fit: contain;
   background: #f5f0eb;
