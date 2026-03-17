@@ -5080,6 +5080,13 @@ div#mCSB_1_container{
   padding: 14px 0px 11px 36px;
 }
 
+.footer-top .contact-widget .info-list li.footer-location-label{
+  padding-left: 0;
+  color: #d9c6a6;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+}
+
 .footer-top .contact-widget .info-list li:last-child{
   border-bottom: none;
 }
