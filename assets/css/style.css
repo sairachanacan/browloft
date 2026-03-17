@@ -3948,6 +3948,7 @@ div#mCSB_1_container{
   border-radius: 50%;
   border: 3px solid #b08a61;
   object-fit: cover;
+  object-position: center 20%;
   margin: 0 auto 16px;
   display: block;
 }
