@@ -5001,40 +5001,22 @@ div#mCSB_1_container{
   color: #d7c3a2;
   white-space: nowrap;
   position: relative;
-  padding: 0px 50px;
+  padding: 0;
 }
 
 .footer-heading h5:before,
 .footer-heading h5:after{
-  position: absolute;
-  content: '';
-  top: 50%;
-  width: 45px;
+  display: none;
+}
+
+.footer-heading-line{
+  flex: 0 0 45px;
   height: 2px;
   background: linear-gradient(90deg, rgba(187,168,137,0.85), rgba(187,168,137,0.15));
 }
 
-.footer-heading h5:before{
-  left: 175px;
-  transform: translateY(-50%);
-}
-
-.footer-heading h5:after{
-  right: 175px;
-  transform: translateY(-50%) scaleX(-1);
-}
-
-.footer-heading h5 span{
-  position: relative;
-}
-
-.footer-heading h5:before,
-.footer-heading h5:after{
-  box-shadow: inset 0 0 0 1px rgba(187,168,137,0.35);
-}
-
-.footer-heading-line{
-  display: none;
+.footer-heading-line:first-child{
+  background: linear-gradient(90deg, rgba(187,168,137,0.15), rgba(187,168,137,0.85));
 }
 
 .footer-heading-icon{
@@ -8852,13 +8834,6 @@ div#mCSB_1_container{
     flex-direction: column;
   }
 
-  .footer-heading h5:before{
-    left: 80px;
-  }
-
-  .footer-heading h5:after{
-    right: 80px;
-  }
 }
 
 .booking-header{
