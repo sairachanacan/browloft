@@ -2,8 +2,8 @@
   "location_heading": "Select Your Location",
   "location_subtitle": "Choose which location you'd like to visit.",
   "locations": [
-    { "name": "Langley Location", "address": "Langley, BC, Canada", "icon": "fas fa-map-marker-alt", "button_text": "Select" },
-    { "name": "Burnaby Location", "address": "Burnaby, BC, Canada", "icon": "fas fa-map-marker-alt", "button_text": "Select" }
+    { "name": "Langley Location", "address": "8233 208B Street A 105, Langley Township, BC V2Y2B2, Canada", "phone": "604-670-9977", "icon": "fas fa-map-marker-alt", "button_text": "Select" },
+    { "name": "Burnaby Location", "address": "2193 Madison Avenue, Burnaby, BC V5C6T5, Canada", "phone": "604-796-8074", "icon": "fas fa-map-marker-alt", "button_text": "Select" }
   ],
   "continue_button": "Continue",
   "change_location_button": "← Change Location",
