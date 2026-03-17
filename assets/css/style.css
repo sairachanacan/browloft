@@ -5010,6 +5010,7 @@ div#mCSB_1_container{
 }
 
 .footer-heading-line{
+  display: block;
   flex: 0 0 45px;
   height: 2px;
   background: linear-gradient(90deg, rgba(187,168,137,0.85), rgba(187,168,137,0.15));
