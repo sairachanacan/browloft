@@ -3942,6 +3942,16 @@ div#mCSB_1_container{
   object-fit: cover;
 }
 
+.founder-photo{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 3px solid #b08a61;
+  object-fit: cover;
+  margin: 0 auto 16px;
+  display: block;
+}
+
 .founder-card h4{
   font-size: 20px;
   color: #333;
@@ -4083,6 +4093,11 @@ div#mCSB_1_container{
 
   .founder-image-placeholder i{
     font-size: 44px;
+  }
+
+  .founder-photo{
+    width: 150px;
+    height: 150px;
   }
 
   .about-values-grid{
