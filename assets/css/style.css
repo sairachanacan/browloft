@@ -4982,14 +4982,10 @@ div#mCSB_1_container{
 }
 
 .footer-heading{
-  display: flex;
-  align-items: center;
-  gap: 12px;
+  display: block;
   padding-bottom: 0px;
   margin-bottom: 20px;
-  justify-content: center;
   text-align: center;
-  flex-wrap: nowrap;
 }
 
 .footer-heading:after{
@@ -4997,7 +4993,7 @@ div#mCSB_1_container{
 }
 
 .footer-heading h5{
-  margin-bottom: 0px;
+  margin-bottom: 10px;
   color: #d7c3a2;
   white-space: nowrap;
   position: relative;
@@ -5010,14 +5006,15 @@ div#mCSB_1_container{
 }
 
 .footer-heading-line{
-  display: block;
-  flex: 0 0 45px;
-  height: 2px;
-  background: linear-gradient(90deg, rgba(187,168,137,0.85), rgba(187,168,137,0.15));
+  display: none;
 }
 
-.footer-heading-line:first-child{
-  background: linear-gradient(90deg, rgba(187,168,137,0.15), rgba(187,168,137,0.85));
+.footer-heading-line:last-child{
+  display: block;
+  width: 45px;
+  height: 2px;
+  margin: 0 auto;
+  background: linear-gradient(90deg, rgba(187,168,137,0.15), rgba(187,168,137,0.85), rgba(187,168,137,0.15));
 }
 
 .footer-heading-icon{
