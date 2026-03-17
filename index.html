@@ -1287,13 +1287,15 @@
         fetch('_data/site-settings.json')
             .then(function(r) { return r.json(); })
             .then(function(s) {
-                // Footer contact
-                var ftPhone = document.querySelector('.footer-widget .info-list a[href^="tel:"]');
-                if (ftPhone) { ftPhone.textContent = s.phone; ftPhone.href = 'tel:' + s.phone.replace(/\s/g,''); }
+                // Footer contact - Langley
+                var ftPhoneLangley = document.querySelector('.footer-widget .info-list a[href*="6046709977"]');
+                if (ftPhoneLangley && s.langley_phone) { ftPhoneLangley.textContent = s.langley_phone; ftPhoneLangley.href = 'tel:' + s.langley_phone.replace(/[-\s]/g,''); }
+                // Footer contact - Burnaby
+                var ftPhoneBurnaby = document.querySelector('.footer-widget .info-list a[href*="6047968074"]');
+                if (ftPhoneBurnaby && s.burnaby_phone) { ftPhoneBurnaby.textContent = s.burnaby_phone; ftPhoneBurnaby.href = 'tel:' + s.burnaby_phone.replace(/[-\s]/g,''); }
+                // Footer email
                 var ftEmail = document.querySelector('.footer-widget .info-list a[href^="mailto:"]');
-                if (ftEmail) { ftEmail.textContent = s.email; ftEmail.href = 'mailto:' + s.email; }
-                var ftAddr = document.querySelector('.footer-widget .info-list li:last-child p');
-                if (ftAddr) ftAddr.textContent = s.address;
+                if (ftEmail && s.email) { ftEmail.textContent = s.email; ftEmail.href = 'mailto:' + s.email; }
 
                 // Footer services list
                 if (s.footer_services) {
