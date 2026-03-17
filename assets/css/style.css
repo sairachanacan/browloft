@@ -5147,6 +5147,47 @@ div#mCSB_1_container{
   color: #a9a6a4;
 }
 
+.footer-maps-row{
+  display: flex;
+  gap: 20px;
+  margin-top: 25px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+.footer-map-block{
+  flex: 1;
+}
+
+.footer-map-block h6{
+  color: #d9c6a6;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-family: 'Jost', sans-serif;
+}
+
+.footer-map-block iframe{
+  width: 100%;
+  height: 160px;
+  border: none;
+  border-radius: 6px;
+  filter: grayscale(0.3) brightness(0.85);
+  transition: filter 0.3s ease;
+}
+
+.footer-map-block iframe:hover{
+  filter: grayscale(0) brightness(1);
+}
+
+@media only screen and (max-width: 767px){
+  .footer-maps-row{
+    flex-direction: column;
+  }
+}
+
 .footer-top .contact-widget .info-list li p a:hover{
 
 }
