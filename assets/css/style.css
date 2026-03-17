@@ -5160,7 +5160,7 @@ div#mCSB_1_container{
 }
 
 .footer-location-info{
-  flex: 1;
+  flex: 0 0 40%;
   min-width: 0;
 }
 
@@ -5200,8 +5200,8 @@ div#mCSB_1_container{
 }
 
 .footer-location-map{
-  width: 220px;
-  min-width: 220px;
+  flex: 1;
+  min-width: 0;
 }
 
 .footer-location-map iframe{
