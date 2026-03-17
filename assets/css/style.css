@@ -3953,9 +3953,23 @@ div#mCSB_1_container{
   display: block;
 }
 
-.founder-photo--zoomed-in{
-  object-fit: cover;
+.founder-photo-wrap{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 3px solid #b08a61;
+  overflow: hidden;
+  margin: 0 auto 16px;
+}
+
+.founder-photo-wrap .founder-photo{
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 0;
+  margin: 0;
   transform: scale(1.3);
+  object-position: center 20%;
 }
 
 .founder-photo--zoomed-out{
