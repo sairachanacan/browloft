@@ -1,7 +1,9 @@
 {
-  "phone": "666 888 0000",
+  "langley_phone": "604-670-9977",
+  "langley_address": "8233 208B Street A 105, Langley Township, BC V2Y2B2, Canada",
+  "burnaby_phone": "604-796-8074",
+  "burnaby_address": "2193 Madison Avenue, Burnaby, BC V5C6T5, Canada",
   "email": "browloft@hotmail.com",
-  "address": "Langley, Burnaby - Vancouver, Canada",
   "copyright": "2026 Brow Loft. All rights reserved.",
   "footer_services": [
     { "name": "Eye Brow Threading",   "link": "langley-location.html#eyebrow-threading" },
