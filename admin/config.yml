@@ -102,9 +102,11 @@ collections:
           - label: "Founders"
             name: "founders"
             widget: "list"
+            summary: "{{fields.name}}"
             fields:
               - { label: "Name", name: "name", widget: "string" }
               - { label: "Role", name: "role", widget: "string" }
+              - { label: "Photo", name: "photo", widget: "image" }
           - label: "Our Story"
             name: "story"
             widget: "object"
