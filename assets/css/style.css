@@ -3953,6 +3953,11 @@ div#mCSB_1_container{
   display: block;
 }
 
+.founder-photo--zoomed-out{
+  object-fit: contain;
+  background: #f5f0eb;
+}
+
 .founder-card h4{
   font-size: 20px;
   color: #333;
