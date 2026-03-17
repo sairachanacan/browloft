@@ -2,7 +2,7 @@
   "page_heading": "ABOUT US",
   "founders": [
     { "name": "Founder Name", "role": "Co-Founder & Lead Cosmetologist", "photo": "assets/images/founder1.JPG" },
-    { "name": "Founder Name", "role": "Co-Founder & Lead Cosmetologist", "photo": "assets/images/founder2.JPG" }
+    { "name": "Founder Name", "role": "Co-Founder & Lead Cosmetologist", "photo": "assets/images/founder2.png" }
   ],
   "story": {
     "heading": "Our Story",
