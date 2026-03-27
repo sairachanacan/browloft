@@ -2191,13 +2191,17 @@
     function toggleAddons(headerElement) {
         const addonItems = headerElement.nextElementSibling;
         const isExpanded = headerElement.classList.contains('expanded');
-        
+
         if (isExpanded) {
             headerElement.classList.remove('expanded');
             addonItems.classList.remove('expanded');
         } else {
             headerElement.classList.add('expanded');
             addonItems.classList.add('expanded');
+            // Scroll the section into view after expanding
+            setTimeout(function() {
+                headerElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }, 100);
         }
     }
     </script>
