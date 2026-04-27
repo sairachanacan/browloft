@@ -9746,6 +9746,15 @@ div#mCSB_1_container{
 
 .add-on-btn:hover {
     background: #f9f5f0;
+    color: #b08a61 !important;
+}
+
+.add-on-btn,
+.add-on-btn:visited,
+.add-on-btn:link,
+.add-on-btn:active {
+    color: #b08a61 !important;
+    text-decoration: none !important;
 }
 
 .book-btn {
