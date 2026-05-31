@@ -110,20 +110,6 @@
       ]
     },
     {
-      "name": "Gentlemen's Facials",
-      "services": [
-        {
-          "id": "glow-go",
-          "name": "10-minute Luxe Glow & Go",
-          "meta": "10 min",
-          "description": "Experience a gold-finished massage wand and organic facial oil to boost circulation, restore radiance, and create a calming ritual for your skin and soul.",
-          "image": "assets/images/image17.png",
-          "button_text": "Book Now",
-          "button_link": "booking.html"
-        }
-      ]
-    },
-    {
       "name": "Luxe Facial Bar",
       "services": [
         {
@@ -355,7 +341,7 @@
       ]
     },
     {
-      "name": "Gentlemen's Bar",
+      "name": "Gentlemen's Brow Bar",
       "services": [
         {
           "id": "mens-unibrow",
@@ -385,6 +371,9 @@
           "button_link": "booking.html"
         }
       ]
+    },
+    {
+      "name": "Gentlemen's Facials "
     },
     {
       "name": "Gentlemen's Wax Bar",
@@ -481,9 +470,6 @@
           "button_link": "booking.html"
         }
       ]
-    },
-    {
-      "name": "Gentlemen's Facials "
     }
   ]
 }
