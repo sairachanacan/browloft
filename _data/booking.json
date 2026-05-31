@@ -129,7 +129,7 @@
           "duration": "60 min"
         },
         {
-          "name": "Coconut Glow Hydrating Facial",
+          "name": "Signature Wellness Facial",
           "price": "$110",
           "duration": "60 min"
         },
@@ -167,16 +167,6 @@
           "name": "De-Puff & Eye Brightening",
           "price": "$10",
           "duration": "15 min"
-        }
-      ]
-    },
-    {
-      "name": "Micro-Needling",
-      "services": [
-        {
-          "name": "Micro-Needling",
-          "price": "$300",
-          "duration": "60 min"
         }
       ]
     },
@@ -322,6 +312,16 @@
           "name": "Men's deep Cleaning Facial",
           "price": "$110.00",
           "duration": "60 mins"
+        }
+      ]
+    },
+    {
+      "name": "Micro-Needling",
+      "services": [
+        {
+          "name": "Micro-Needling",
+          "price": "$300",
+          "duration": "60 min"
         }
       ]
     },
