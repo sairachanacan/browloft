@@ -373,7 +373,17 @@
       ]
     },
     {
-      "name": "Gentlemen's Facials "
+      "name": "Gentlemen's Facials ",
+      "services": [
+        {
+          "button_text": "Book Now",
+          "button_link": "booking.html",
+          "name": "Luxe Express Facial",
+          "description": "A quick, 30-minute facial that cleanses, exfoliates, and revitalizes your skin, finished with a soothing mask and complimentary facial massage. Extractions are not included.",
+          "meta": "30 mins",
+          "image": "assets/images/men-s-facial.png"
+        }
+      ]
     },
     {
       "name": "Gentlemen's Wax Bar",
