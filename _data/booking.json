@@ -146,26 +146,6 @@
       ]
     },
     {
-      "name": "Facial Add-Ons",
-      "services": [
-        {
-          "name": "Lip Revival Facial",
-          "price": "$10",
-          "duration": "15 min"
-        },
-        {
-          "name": "Booster",
-          "price": "$10",
-          "duration": "15 min"
-        },
-        {
-          "name": "De-Puff & Eye Brightening",
-          "price": "$10",
-          "duration": "15 min"
-        }
-      ]
-    },
-    {
       "name": "Luxe Waxing Bar for Women",
       "services": [
         {
