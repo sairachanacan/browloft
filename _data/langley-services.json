@@ -56,6 +56,14 @@
           "image": "assets/images/image.png",
           "button_text": "Book Now",
           "button_link": "booking.html"
+        },
+        {
+          "button_text": "Book Now",
+          "button_link": "booking.html",
+          "name": "Botanic Facial Oli Massage",
+          "meta": "10 min",
+          "description": "Indulge in a relaxing and nourishing Botanic Facial Oil Massage designed to rejuvenate your skin and calm your mind. Using luxurious botanical oils rich in vitamins and antioxidants, this treatment helps improve circulation, restore hydration, and promote a healthy, radiant glow. Gentle massage techniques relieve facial tension, enhance skin elasticity, and leave your skin feeling soft, smooth, and deeply nourished.",
+          "image": "assets/images/botonic-facial-oil.png"
         }
       ]
     },
