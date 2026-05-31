@@ -398,6 +398,13 @@
           "image": "assets/images/image22.png",
           "button_text": "Book Now",
           "button_link": "booking.html"
+        },
+        {
+          "button_text": "Book Now",
+          "button_link": "booking.html",
+          "description": "Achieve smooth, clean, and long-lasting results with our Men's Underarm Waxing service. Waxing removes unwanted hair from the root, leaving the underarm area softer.",
+          "name": "Men's Underarms",
+          "meta": "10"
         }
       ]
     },
