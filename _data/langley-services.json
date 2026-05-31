@@ -110,7 +110,7 @@
       ]
     },
     {
-      "name": "Add-On Services",
+      "name": "Gentlemen's Facials",
       "services": [
         {
           "id": "glow-go",
@@ -118,56 +118,6 @@
           "meta": "10 min",
           "description": "Experience a gold-finished massage wand and organic facial oil to boost circulation, restore radiance, and create a calming ritual for your skin and soul.",
           "image": "assets/images/image17.png",
-          "button_text": "Book Now",
-          "button_link": "booking.html"
-        },
-        {
-          "id": "eye-renewal",
-          "name": "Eye Renewal Mask",
-          "meta": "5 min",
-          "description": "Nourishing botanicals refresh and restore, delivering deep hydration, visible plumping, and a youthful glow while easing puffiness and fatigue.",
-          "image": "assets/images/image17.png",
-          "button_text": "Book Now",
-          "button_link": "booking.html"
-        },
-        {
-          "id": "brow-prep",
-          "name": "Brow Prep & Polish",
-          "meta": "5 min",
-          "description": "Refresh your brows and skin for an enhanced glow and improved results from your favourite brow treatments.",
-          "image": "assets/images/image17.png",
-          "button_text": "Book Now",
-          "button_link": "booking.html"
-        }
-      ]
-    },
-    {
-      "name": "Gentlemen's Bar",
-      "services": [
-        {
-          "id": "mens-unibrow",
-          "name": "Men's Unibrow",
-          "meta": "10 min",
-          "description": "Threading and clean-up between the brows for a polished look.",
-          "image": "assets/images/image18.png",
-          "button_text": "Book Now",
-          "button_link": "booking.html"
-        },
-        {
-          "id": "mens-luxe-brows",
-          "name": "Men's Luxe Brows",
-          "meta": "20 min",
-          "description": "A comprehensive brow service for men, including trimming, shaping, threading, a soothing brow massage, and a personalized consultation.",
-          "image": "assets/images/image18.png",
-          "button_text": "Book Now",
-          "button_link": "booking.html"
-        },
-        {
-          "id": "mens-cheeks-forehead",
-          "name": "Men's Cheeks + Forehead or Ears",
-          "meta": "15 min",
-          "description": "Threading and clean-up for both cheeks, plus your choice of either the forehead or the area around the ears.",
-          "image": "assets/images/image18.png",
           "button_text": "Book Now",
           "button_link": "booking.html"
         }
@@ -405,6 +355,38 @@
       ]
     },
     {
+      "name": "Gentlemen's Bar",
+      "services": [
+        {
+          "id": "mens-unibrow",
+          "name": "Men's Unibrow",
+          "meta": "10 min",
+          "description": "Threading and clean-up between the brows for a polished look.",
+          "image": "assets/images/image18.png",
+          "button_text": "Book Now",
+          "button_link": "booking.html"
+        },
+        {
+          "id": "mens-luxe-brows",
+          "name": "Men's Luxe Brows",
+          "meta": "20 min",
+          "description": "A comprehensive brow service for men, including trimming, shaping, threading, a soothing brow massage, and a personalized consultation.",
+          "image": "assets/images/image18.png",
+          "button_text": "Book Now",
+          "button_link": "booking.html"
+        },
+        {
+          "id": "mens-cheeks-forehead",
+          "name": "Men's Cheeks + Forehead or Ears",
+          "meta": "15 min",
+          "description": "Threading and clean-up for both cheeks, plus your choice of either the forehead or the area around the ears.",
+          "image": "assets/images/image18.png",
+          "button_text": "Book Now",
+          "button_link": "booking.html"
+        }
+      ]
+    },
+    {
       "name": "Gentlemen's Wax Bar",
       "services": [
         {
@@ -499,6 +481,9 @@
           "button_link": "booking.html"
         }
       ]
+    },
+    {
+      "name": "Gentlemen's Facials "
     }
   ]
 }
