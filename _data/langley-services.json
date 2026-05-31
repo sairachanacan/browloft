@@ -382,6 +382,14 @@
           "description": "A quick, 30-minute facial that cleanses, exfoliates, and revitalizes your skin, finished with a soothing mask and complimentary facial massage. Extractions are not included.",
           "meta": "30 mins",
           "image": "assets/images/men-s-facial.png"
+        },
+        {
+          "button_text": "Book Now",
+          "button_link": "booking.html",
+          "name": "Men's deep Cleaning Facial",
+          "meta": "60 mins",
+          "description": "Refresh and restore your skin with our Men's Deep Cleaning Facial. This treatment is designed to deeply cleanse pores, remove impurities, reduce congestion, and improve overall skin health. It includes cleansing, exfoliation, extractions (if needed), a customized mask, and hydration to leave your skin feeling clean, smooth, and revitalized. Ideal for men experiencing clogged pores, rough texture, razor irritation, or dull-looking skin.",
+          "image": "assets/images/men-s-facial.png"
         }
       ]
     },
