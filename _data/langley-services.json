@@ -142,74 +142,6 @@
       ]
     },
     {
-      "name": "Package Deals",
-      "services": [
-        {
-          "id": "package-brows-tinting",
-          "name": "Luxe Brows & Tinting Package",
-          "meta": "35 min",
-          "description": "Save with this bundle of luxe brow threading and brow tinting.",
-          "image": "assets/images/image17.png",
-          "button_text": "Book Now",
-          "button_link": "booking.html"
-        },
-        {
-          "id": "package-brows-tinting-1velvet",
-          "name": "Luxe Brows & Tinting + 1 Luxe Facial Touch-Up Threading/Waxing",
-          "meta": "45 min",
-          "description": "Save with this combination of luxe brow threading, tinting, and one signature threading area.",
-          "image": "assets/images/image17.png",
-          "button_text": "Book Now",
-          "button_link": "booking.html"
-        },
-        {
-          "id": "package-brows-tinting-2velvet",
-          "name": "Luxe Brows & Tinting + 2 Luxe Facial Touch-Up Threading/Waxing",
-          "meta": "55 min",
-          "description": "Save with a package that includes luxe brow threading, tinting, and two signature threading areas.",
-          "image": "assets/images/image17.png",
-          "button_text": "Book Now",
-          "button_link": "booking.html"
-        },
-        {
-          "id": "package-brows-brow-lash-tint",
-          "name": "Luxe Brows + Brow Tinting + Lash Tint Bundle",
-          "meta": "55 min",
-          "description": "Enjoy luxe brow threading, brow tinting, and lash tinting together in this value package.",
-          "image": "assets/images/image17.png",
-          "button_text": "Book Now",
-          "button_link": "booking.html"
-        },
-        {
-          "id": "package-lash-lift-tint",
-          "name": "Luxe Lash Lift + Lash Tint Bundle",
-          "meta": "65 min",
-          "description": "Combine lash lift and lash tinting for long-lasting, beautiful lashes.",
-          "image": "assets/images/image17.png",
-          "button_text": "Book Now",
-          "button_link": "booking.html"
-        },
-        {
-          "id": "package-brows-henna",
-          "name": "Luxe Brows + Brow Henna",
-          "meta": "50 min",
-          "description": "Bundle luxe brow threading and brow henna for enhanced, defined brows.",
-          "image": "assets/images/image17.png",
-          "button_text": "Book Now",
-          "button_link": "booking.html"
-        },
-        {
-          "id": "package-brow-lash-lamination",
-          "name": "Brow Lamination + Luxe Lash Lift Bundle",
-          "meta": "105 min",
-          "description": "Get both brow lamination and a luxe lash lift for a complete eye enhancement experience.",
-          "image": "assets/images/image17.png",
-          "button_text": "Book Now",
-          "button_link": "booking.html"
-        }
-      ]
-    },
-    {
       "name": "Gentlemen's Bar",
       "services": [
         {
@@ -264,9 +196,9 @@
         },
         {
           "id": "coconut-glow-facial",
-          "name": "Coconut Glow Hydrating Facial",
+          "name": "Signature Wellness Facial",
           "meta": "60 min",
-          "description": "This antioxidant-rich, organic facial uses coconut to nourish and firm the skin, restoring a youthful texture and a glowing complexion. Extractions are included.",
+          "description": "Experience the ultimate in relaxation and skin rejuvenation with our Green Envee Signature Wellness Facial. This luxurious treatment combines organic, nutrient-rich botanical products with customized skincare techniques to deeply cleanse, hydrate, and nourish your skin. Designed to restore balance, enhance radiance, and promote overall wellness, this facial leaves your complexion refreshed, glowing, and revitalized while providing a truly calming spa experience.\nBest For: All skin types, especially dull, dehydrated, or stressed skin.",
           "image": "assets/images/image19.png",
           "button_text": "Book Now",
           "button_link": "booking.html"
@@ -285,15 +217,6 @@
           "name": "Organic Pregnancy Facial",
           "meta": "60 min",
           "description": "Our Organic Pregnancy Facial is a calming, customized treatment created to support the unique skincare needs of pregnancy. Using only organic, toxin-free, and pregnancy-safe products, this facial helps relieve dryness, sensitivity, and hormonal breakouts while restoring a healthy glow. The treatment is performed with gentle techniques to ensure complete comfort and safety for both mother and baby.",
-          "image": "assets/images/image19.png",
-          "button_text": "Book Now",
-          "button_link": "booking.html"
-        },
-        {
-          "id": "eminence-ashwagandha-facial",
-          "name": "Éminence Ashwagandha Facial",
-          "meta": "60 min",
-          "description": "The Éminence Ashwagandha Facial is a deeply restorative treatment designed to combat the visible effects of stress, fatigue, and environmental damage. Powered by Éminence's Adaptogenic Herbal Complex—including ashwagandha, reishi mushroom, and rhodiola—this facial helps strengthen the skin barrier, improve resilience, and restore a healthy, radiant glow. Ideal for stressed, dull, or prematurely aging skin.",
           "image": "assets/images/image19.png",
           "button_text": "Book Now",
           "button_link": "booking.html"
