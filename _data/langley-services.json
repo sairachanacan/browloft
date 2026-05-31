@@ -168,38 +168,6 @@
       ]
     },
     {
-      "name": "Facial Add-Ons",
-      "services": [
-        {
-          "id": "lip-revival-facial",
-          "name": "Lip Revival Facial",
-          "meta": "15 min",
-          "description": "Enriched with citrus and pineapple enzymes, this treatment smooths dryness, softens fine lines, deeply hydrates, and helps boost collagen for fuller, healthier-looking lips.",
-          "image": "assets/images/image19.png",
-          "button_text": "Book Now",
-          "button_link": "booking.html"
-        },
-        {
-          "id": "booster",
-          "name": "Booster",
-          "meta": "15 min",
-          "description": "Let our estheticians select booster serums, concentrates, and oils to penetrate deeply and deliver optimal skin results.",
-          "image": "assets/images/image19.png",
-          "button_text": "Book Now",
-          "button_link": "booking.html"
-        },
-        {
-          "id": "depuff-eye-brightening",
-          "name": "De-Puff & Eye Brightening",
-          "meta": "15 min",
-          "description": "Hydrating ingredients soothe and revitalize tired eyes, reducing puffiness, dark circles, and fatigue while supporting circulation and lymphatic drainage for a refreshed look.",
-          "image": "assets/images/image19.png",
-          "button_text": "Book Now",
-          "button_link": "booking.html"
-        }
-      ]
-    },
-    {
       "name": "Luxe Waxing Services",
       "services": [
         {
