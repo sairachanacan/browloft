@@ -272,6 +272,11 @@
           "name": "Chest/Stomach",
           "price": "$50",
           "duration": "30 min"
+        },
+        {
+          "duration": "10 min",
+          "price": "$20.00",
+          "name": "Men's Underarms"
         }
       ]
     },
