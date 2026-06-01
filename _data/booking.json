@@ -349,32 +349,32 @@
       "services": [
         {
           "name": "Luxe Brows",
-          "price": "$20",
+          "price": "$25",
           "duration": "20 min"
         },
         {
           "name": "Teen Brows",
-          "price": "$15",
+          "price": "$20",
           "duration": "15 min"
         },
         {
           "name": "Luxe Facial Touch-Up Threading/Waxing",
-          "price": "$13",
+          "price": "$15",
           "duration": "10 min"
         },
         {
           "name": "Luxe Brows & One Area Facial Touch-Up Threading/Waxing",
-          "price": "$25",
+          "price": "$40",
           "duration": "25 min"
         },
         {
           "name": "Luxe Brows & Two Area Facial Touch-Up Threading/Waxing",
-          "price": "$33",
+          "price": "$55",
           "duration": "25 min"
         },
         {
           "name": "The Luxe Smooth Face",
-          "price": "$43",
+          "price": "$55",
           "duration": "30 min"
         }
       ]
@@ -384,108 +384,28 @@
       "services": [
         {
           "name": "Luxe Brow Tint",
-          "price": "$20",
+          "price": "$25",
           "duration": "15 min"
         },
         {
           "name": "Luxe Lash Tint",
-          "price": "$25",
+          "price": "$30",
           "duration": "20 min"
         },
         {
           "name": "Henna Luxe Brows",
-          "price": "$50",
+          "price": "$60",
           "duration": "30 min"
         },
         {
           "name": "Luxe Lash Lift",
-          "price": "$65",
+          "price": "$95",
           "duration": "45 min"
         },
         {
           "name": "Luxe Brow Lamination",
-          "price": "$65",
+          "price": "$95",
           "duration": "60 min"
-        }
-      ]
-    },
-    {
-      "name": "Add-On Services",
-      "services": [
-        {
-          "name": "10-minute Luxe Glow & Go",
-          "price": "$15",
-          "duration": "10 min"
-        },
-        {
-          "name": "Eye Renewal Mask",
-          "price": "$5",
-          "duration": "5 min"
-        },
-        {
-          "name": "Brow Prep & Polish",
-          "price": "$5",
-          "duration": "5 min"
-        }
-      ]
-    },
-    {
-      "name": "Package Deals",
-      "services": [
-        {
-          "name": "Luxe Brows & Tinting Package",
-          "price": "$28",
-          "duration": "35 min"
-        },
-        {
-          "name": "Luxe Brows & Tinting + 1 Facial Touch-Up",
-          "price": "$35",
-          "duration": "45 min"
-        },
-        {
-          "name": "Luxe Brows & Tinting + 2 Facial Touch-Up",
-          "price": "$45",
-          "duration": "55 min"
-        },
-        {
-          "name": "Luxe Brows + Brow Tinting + Lash Tint Bundle",
-          "price": "$52",
-          "duration": "55 min"
-        },
-        {
-          "name": "Luxe Lash Lift + Lash Tint Bundle",
-          "price": "$75",
-          "duration": "65 min"
-        },
-        {
-          "name": "Luxe Brows + Brow Henna",
-          "price": "$55",
-          "duration": "50 min"
-        },
-        {
-          "name": "Brow Lamination + Luxe Lash Lift Bundle",
-          "price": "$130",
-          "duration": "105 min"
-        }
-      ]
-    },
-    {
-      "name": "Gentlemen's Bar",
-      "services": [
-        {
-          "name": "Men's Unibrow",
-          "price": "$12",
-          "duration": "10 min"
-        },
-        {
-          "name": "Men's Luxe Brows",
-          "price": "$20",
-          "duration": "20 min"
-        },
-        {
-          "name": "Men's Cheeks + Forehead or Ears",
-          "price": "$15",
-          "duration": "15 min"
         }
       ]
     },
@@ -494,53 +414,28 @@
       "services": [
         {
           "name": "Luxe Express Facial",
-          "price": "$65",
+          "price": "$85",
           "duration": "30 min"
         },
         {
           "name": "Purely Yours Facial",
-          "price": "$110",
+          "price": "$135",
           "duration": "60 min"
         },
         {
-          "name": "Coconut Glow Hydrating Facial",
-          "price": "$110",
+          "name": "Signature Wellness Facial",
+          "price": "$135",
           "duration": "60 min"
         },
         {
           "name": "Delicate Care Facial",
-          "price": "$110",
+          "price": "$135",
           "duration": "60 min"
         },
         {
-          "name": "Organic Pregnancy Facial",
-          "price": "$110",
+          "name": "Organic Pregnancy / Brest Feeding Facial",
+          "price": "$135",
           "duration": "60 min"
-        },
-        {
-          "name": "Éminence Ashwagandha Facial",
-          "price": "$110",
-          "duration": "60 min"
-        }
-      ]
-    },
-    {
-      "name": "Facial Add-Ons",
-      "services": [
-        {
-          "name": "Lip Revival Facial",
-          "price": "$10",
-          "duration": "15 min"
-        },
-        {
-          "name": "Booster",
-          "price": "$10",
-          "duration": "15 min"
-        },
-        {
-          "name": "De-Puff & Eye Brightening",
-          "price": "$10",
-          "duration": "15 min"
         }
       ]
     },
@@ -549,7 +444,7 @@
       "services": [
         {
           "name": "Full Legs",
-          "price": "$45",
+          "price": "$55",
           "duration": "45 min"
         },
         {
@@ -569,17 +464,17 @@
         },
         {
           "name": "Half Arms",
-          "price": "$22",
+          "price": "$25",
           "duration": "20 min"
         },
         {
           "name": "Under Arms",
-          "price": "$12",
+          "price": "$20",
           "duration": "15 min"
         },
         {
           "name": "Stomach",
-          "price": "$30",
+          "price": "$45",
           "duration": "20 min"
         },
         {
@@ -589,7 +484,7 @@
         },
         {
           "name": "Full Back",
-          "price": "$35",
+          "price": "$45",
           "duration": "30 min"
         },
         {
@@ -609,7 +504,7 @@
         },
         {
           "name": "Brazilian",
-          "price": "$50",
+          "price": "$60",
           "duration": "30 min"
         },
         {
@@ -623,14 +518,29 @@
           "duration": "15 min"
         },
         {
-          "name": "Fingers/Toes",
-          "price": "$10",
+          "name": "Full Body Waxing",
+          "price": "$200",
+          "duration": "120 min"
+        }
+      ]
+    },
+    {
+      "name": "Gentlemen's Brow Bar",
+      "services": [
+        {
+          "name": "Men's Unibrow",
+          "price": "$12",
           "duration": "10 min"
         },
         {
-          "name": "Full Body Waxing",
-          "price": "$170",
-          "duration": "120 min"
+          "name": "Men's Luxe Brows",
+          "price": "$20",
+          "duration": "20 min"
+        },
+        {
+          "name": "Men's Cheeks + Forehead or Ears",
+          "price": "$15",
+          "duration": "15 min"
         }
       ]
     },
@@ -651,6 +561,36 @@
           "name": "Chest/Stomach",
           "price": "$50",
           "duration": "30 min"
+        },
+        {
+          "name": "Men's Underarms",
+          "price": "$20.00",
+          "duration": "10 mins"
+        }
+      ]
+    },
+    {
+      "name": "Gentlemen's Facials",
+      "services": [
+        {
+          "name": "Luxe Express Facial",
+          "price": "$85.00",
+          "duration": "30 mins"
+        },
+        {
+          "name": "Men's deep Cleaning Facial",
+          "price": "$135.00",
+          "duration": "60 mins"
+        }
+      ]
+    },
+    {
+      "name": "Micro-Needling",
+      "services": [
+        {
+          "name": "Micro-Needling",
+          "price": "$300.00",
+          "duration": "60 mins"
         }
       ]
     }
