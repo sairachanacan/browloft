@@ -1,38 +1,77 @@
 {
   "hero": {
-    "title": "Your Complete\nBrow Care",
-    "subtitle": "Gracefully sculpted brows, designed for you.",
+    "title": "Flawless Brows, Confident Beauty",
+    "subtitle": "Expert Beauty Care, Stunning Results Always",
     "button_text": "Book Now",
     "desktop_image": "assets/images/image111.png",
     "mobile_image": "assets/images/image222.png"
   },
   "about_section": {
-    "heading": "Discover Beauty with Brow Loft",
-    "description": "Experience the art of refined beauty in our salon, where every detail is tailored to enhance your natural glow. From perfectly sculpted brows to luminous, glowing skin, we ensure each visit leaves you looking and feeling effortlessly beautiful.",
+    "heading": "Experience Timeless Beauty at Brow Loft",
+    "description": "Receive luxurious care from our beauty salon at Brow Loft, where we offer the best threading and eyebrow waxing services in town. We provide exceptional facial skincare treatments that will have you looking better than ever.\n\nWhy Choose Us",
     "image_top": "assets/images/image15.png",
     "image_bottom": "assets/images/image14.png",
     "features": [
-      "Stylish brow & lash enhancements",
-      "Luxurious, glow-enhancing facials",
-      "Experienced beauty professionals",
-      "Relaxing, elegant salon experience"
+      "Expert brow threading specialists",
+      "Luxury facials and personalized treatments",
+      "Professional waxing services",
+      "Relaxing and hygienic salon environment",
+      "Premium beauty products for lasting results"
     ],
     "stats": [
-      { "number": "27+", "label": "Years of Experience" },
-      { "number": "25+", "label": "Services Offered" }
+      {
+        "number": "27+",
+        "label": "Years of Experience"
+      },
+      {
+        "number": "25+",
+        "label": "Services Offered"
+      }
     ]
   },
   "services_section": {
     "heading": "Our Services",
     "cards": [
-      { "title": "Eye Brow Threading",       "image": "assets/images/image3.png",  "link": "langley-location.html#eyebrow-threading" },
-      { "title": "Brow & Lash Bar",           "image": "assets/images/image4.png",  "link": "langley-location.html#brow-lash-treatments" },
-      { "title": "Gentlemen's Bar",           "image": "assets/images/image5.png",  "link": "langley-location.html#gentlemens-bar" },
-      { "title": "Luxe Facial Bar",           "image": "assets/images/image6.png",  "link": "langley-location.html#luxe-facial-bar" },
-      { "title": "Micro-Needling",            "image": "assets/images/image7.png",  "link": "langley-location.html#micro-needling" },
-      { "title": "Women's Wax Bar",           "image": "assets/images/image8.png",  "link": "langley-location.html#womens-wax-bar" },
-      { "title": "Gentlemen's Wax Bar",       "image": "assets/images/image9.png",  "link": "langley-location.html#gentlemens-wax-bar" },
-      { "title": "Makeup and Hairstyle",      "image": "assets/images/image10.png", "link": "langley-location.html#makeup-hairstyle" }
+      {
+        "title": "Eye Brow Threading",
+        "image": "assets/images/image3.png",
+        "link": "langley-location.html#eyebrow-threading"
+      },
+      {
+        "title": "Brow & Lash Bar",
+        "image": "assets/images/image4.png",
+        "link": "langley-location.html#brow-lash-treatments"
+      },
+      {
+        "title": "Gentlemen's Bar",
+        "image": "assets/images/image5.png",
+        "link": "langley-location.html#gentlemens-bar"
+      },
+      {
+        "title": "Luxe Facial Bar",
+        "image": "assets/images/image6.png",
+        "link": "langley-location.html#luxe-facial-bar"
+      },
+      {
+        "title": "Micro-Needling",
+        "image": "assets/images/image7.png",
+        "link": "langley-location.html#micro-needling"
+      },
+      {
+        "title": "Women's Wax Bar",
+        "image": "assets/images/image8.png",
+        "link": "langley-location.html#womens-wax-bar"
+      },
+      {
+        "title": "Gentlemen's Wax Bar",
+        "image": "assets/images/image9.png",
+        "link": "langley-location.html#gentlemens-wax-bar"
+      },
+      {
+        "title": "Makeup and Hairstyle",
+        "image": "assets/images/image10.png",
+        "link": "langley-location.html#makeup-hairstyle"
+      }
     ]
   },
   "why_choose": {
@@ -58,9 +97,15 @@
   },
   "how_it_works": {
     "steps": [
-      { "label": "Select Your Service" },
-      { "label": "Make Appointment" },
-      { "label": "Enjoy Our Services" }
+      {
+        "label": "Select Your Service"
+      },
+      {
+        "label": "Make Appointment"
+      },
+      {
+        "label": "Enjoy Our Services"
+      }
     ]
   },
   "enquiry": {
@@ -70,6 +115,11 @@
     "placeholder_phone": "Phone",
     "placeholder_message": "Write message",
     "button_text": "Book Now",
-    "services": ["Threading", "Brow & Lash", "Waxing", "Facial"]
+    "services": [
+      "Threading",
+      "Brow & Lash",
+      "Waxing",
+      "Facial"
+    ]
   }
 }
